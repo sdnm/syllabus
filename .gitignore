@@ -1,0 +1,5 @@
+# Ignore generated files / directories
+.sass-cache
+*.sass-cache*
+node_modules/
+npm-debug.log

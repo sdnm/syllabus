@@ -1,0 +1,759 @@
+
+
+#page{
+  //background-color:LightGray;
+}
+
+article.syllabus_profile {
+  header{
+    padding-bottom: 1em;
+  }
+  .institute_description{
+    padding-bottom: 1em;
+    font-size: x-large;
+    >section {
+      display: inline-block;
+    }
+    .institute_description_icon {
+      margin-top: -20px;
+      padding-right: 50px;
+      padding-left: 2em;
+      overflow: hidden;
+      img{
+        overflow: hidden;
+      }
+    }
+    .institute_description_information {
+      border-left: 1px solid black;
+      padding-left:10px;
+      white-space:nowrap;
+    }
+  }
+  .course_description {
+     font-size: large;
+     border: 5px solid black;
+     .field,
+     .group-course-code {
+       text-align:center;
+     }
+    .field-name-field-course-code,
+    .field-name-field-section,
+    .field-name-field-first-name,
+    .field-name-field-family-name {
+      display: inline-block;
+    }
+    .field-name-field-section,
+    .field-name-field-family-name{
+      padding-left: 5px;
+    }
+    .field-name-field-program-title {
+      padding-top:5px;
+    }
+
+    >.field-name-field-program-title,
+    >.group-course-code,
+    >.field-name-field-professor-collection,
+    >.field-name-field-session {
+      padding-bottom: 7px;
+    }
+  }
+  .general_information {
+    padding: 1em;
+   
+    >.field-name-field-course-hours,
+    .field-name-field-office-number,
+    .field-name-field-email,
+    .field-name-field-syllabus-office-hours,
+    .field-name-field-ass-prof-office-hours,
+    >.field-name-field-assistant-collection {
+      >.field-label {
+        width:20%;
+      }
+      >.field-items{
+        width:80%;
+      }
+    }
+
+    
+    .field-name-field-timetable {
+      >.field-items{
+        width:100%;
+      }
+    }
+    
+    .field-name-field-office-location {
+      width: 60%;
+      float: right;
+    }
+
+    .field-name-field-office-day,
+    .field-name-field-hours-from,
+    .field-name-field-office-location,
+    .field-name-field-first-name,
+    .field-name-field-family-name {
+      display:inline-block;
+    }
+    .field-name-field-hours-from {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .field-name-field-family-name {
+      padding-left: 5px;
+    }
+    .field-name-field-office-day,
+    .field-name-field-hours-from {
+      white-space:nowrap;
+    } 
+   
+  }
+  .center {
+    padding: 1em;
+    .field-name-field-course-description,
+    .field-name-field-general-objectives,
+    .field-name-field-specific-objectives,
+    .field-name-field-agreements,
+    .field-name-field-required-material,
+    .field-name-field-syllabus-evaluation,
+    .field-name-field-fc-agreements,
+    .field-name-field-course-progress,
+    .field-name-field-teaching-methods {
+      page-break-inside:avoid;
+      >.field-items{
+        border-top:2px solid black;
+        padding-bottom: 1em;
+      } 
+    }
+    .field-name-field-agreements {
+      >.field-items{
+        padding-top:1em;
+        >.field-item{   
+          .field{
+            display:list-item;
+            margin-left:2em;
+          }
+        }
+      }
+    }
+    .field-name-field-syllabus-evaluation {
+      >.field-items{
+       padding-top:1em;
+        >.field-item{
+          display:list-item;
+          margin-left: 2em;
+        }
+      }
+      .field-name-field-evaluation-list,
+      .field-name-field-evaluation-date,
+      .field-name-field-evaluation-percentage {
+        display:inline-block;
+      }
+      .field-name-field-evaluation-list {
+        width: 20%;
+      }
+      .field-name-field-evaluation-date {
+        width: 40%;
+      }
+      .field-name-field-evaluation-percentage {
+        width: 20%;
+      }
+    }
+   
+  }
+  .course_calendar {
+    padding: 1em;
+    .field-name-field-course-calendar {
+      >.field-items{
+        border-top: 2px solid black;
+        padding-top: 1em;
+        >.field-item {
+           padding-left:1em;
+           padding-right:1em;
+           border:1px solid black;
+          .field-name-field-course-calendar-date,
+          .field-name-field-course-calendar-activity {
+            display:inline-block;
+            width:48%;
+            .field-label{
+              display:none;
+            }
+          }
+        }
+         >.field-item:first-child {
+          .field-name-field-course-calendar-date,
+          .field-name-field-course-calendar-activity {
+            .field-label{
+              display:block;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer{
+    padding: 1em;
+    .field-name-field-monograph,
+    .field-name-field-scientific-article,
+    .field-name-field-document-article,
+    .field-name-field-other-documents {
+      .field-items{
+        border-top:2px solid black;
+        padding-bottom:1em;
+      }
+    }
+  }
+}
+
+.print-content{
+  article.syllabus_profile {
+    >.general_information,
+    >.center,
+    >.course-calendar,
+    >footer{
+      padding-left:0px;
+      padding-right:0px;
+    }
+
+  }
+}
+
+#syllabus-form-add-form,
+#syllabus-form-edit-form{
+  .field-name-field-learning-outcome{
+    display:none;
+  }
+}
+
+.block {
+  form {
+    >div {
+      >div {
+        padding-left: 1em;  
+        padding-right: 1em;
+      }
+    }
+  }
+}
+
+#syllabus-pending-form{
+  >div{
+    padding:1em;
+  }
+}
+#syllabus-mine-form{
+  fieldset{
+    margin-left:0px;
+    margin-right:0px;
+    border-left:0px none;
+    border-right:0px none;
+    border-bottom: 1px solid #ccc;
+    padding-bottom:5px;
+    padding-top: 5px;
+  }
+  .form-submit{
+    margin-left: 1em;
+    float:right;
+    width: 75px;
+  }
+  
+}
+
+#field-professor-collection-values,
+#field-assistant-collection-values{
+  .tabledrag-toggle-weight-wrapper {
+    display:none;
+  }
+  .field-name-field-syllabus-professor,
+  .field-name-field-ass-prof-info {
+    .field-type-text,
+    .field-type-email { 
+      label {
+        float:left;
+        width: 20%;
+        text-align:left;
+      }
+      input {
+        float:left;
+        width: 80%;
+      }
+    }
+    >div {
+      >fieldset{
+        border:0px none;
+        legend{
+          display:none;
+        }
+      }
+    }
+  }
+  .field-name-field-syllabus-office-hours,
+  .field-name-field-ass-prof-office-hours {
+    .field-type-list-text {
+      label {
+        float:left;
+        width: 10%;
+        text-align:left;
+      }
+      select {
+        float:left;
+        
+      }
+    }
+    .field-name-field-hours-from {
+      >fieldset{
+        border:0px none;
+        legend{
+          display:none;
+        }
+        .form-type-textfield {
+          label {
+            float:left;
+            width: 10%;
+            text-align:left;
+          }
+          input {
+            float:left;
+            width: 20%;
+            margin-right: 1em;
+          }
+          .description {
+            display:none;
+          }
+        }
+      }
+    }
+    .field-name-field-office-location {
+      label {
+        float:left;
+        width: 10%;
+        text-align:left;
+      }
+      input {
+        float:left;
+        width: 70%;
+      }
+    }
+    .form-actions {
+      float:left;
+      margin-top:-20px;
+      margin-left:50px;
+    }
+    .clearfix{
+      float:left;
+    }
+  }
+}
+
+#edit-field-agreements-other{
+  padding-left: 1em;
+  margin-top: -1em;
+  border-bottom: 1px solid #CCC;
+}
+
+.field-name-field-agreement-checked {
+  float:left;
+  width:30%;
+}
+.field-name-field-agreement-text{
+  label{
+    float:left;
+    margin-right: 1em;
+  }
+  input {
+    float:left;
+    width:30%;
+    margin-right: 1em;
+  }
+}
+
+.field-name-field-agreement-inclusion,
+.field-name-field-agreement-assessed {
+  label{
+    float:left;
+    margin-right: 1em;
+  }
+  select {
+    float:left;
+    margin-right: 1em;
+  }
+}
+
+.field-name-field-agreements-text {
+  .form-action {
+    margin-top:-20px;
+    margin-left:50px;
+  }
+}
+#edit-field-other-teaching-methods{
+  margin-top:-23px;
+}
+#edit-submit-previous{
+  float:left;
+}
+
+#edit-submit-next{
+  float:right;
+  margin-bottom:1em;
+}
+
+#edit-submit-publish {
+  float:left;
+  margin-left: 1em;
+  margin-bottom:1em;
+}
+#edit-submit-draft {
+  float:left;
+  margin-left: 40em;
+  margin-bottom:1em;
+}
+
+
+#edit-field-syllabus-evaluation{
+  .field-name-field-evaluation-list {
+    label{
+      float:left;
+      margin-right: 1em;
+    }
+    select {
+      float:left;
+      margin-right: 1em;
+    }
+  }
+  .field-name-field-evaluation-date {
+    fieldset{
+      border:0px none;
+      width:30%;
+    }
+    legend {
+      display:none;
+    }
+    .form-type-date-select {
+      float:left;
+      label{
+        float:left;
+        margin-right: 1em;
+      }
+      select {
+        float:left;
+        margin-right: 1em;
+      }
+    }
+  }
+}
+#edit-field-fc-agreements{
+  .field-name-field-agreement-lc {
+    display:none;
+  }
+}
+
+#edit-field-course-hours{
+  table {
+    tbody{
+      tr {
+        fieldset{
+          border:0px none;
+          >legend {
+            display:none;
+          }
+          
+        }
+      }
+    }
+  }
+  >div{
+    >div{
+      margin-top:0px;
+      marg-in-bottom:0px;
+    }
+  }
+}
+#edit-tabs {
+  border:0px none;
+  padding-left:0px;
+  padding-right:0px;
+}
+
+#edit-field-course-code,
+#edit-field-section,
+#edit-field-session {
+  padding-right: 1em;
+  float: left;
+}
+
+#edit-field-faculty{
+  clear:left;
+  float:left;
+  padding-right: 1em;
+  >div{
+    margin-top:0px;
+    margin-bottom:0px;
+  }
+}
+
+#edit-field-department{
+  padding-right: 1em;
+  float:left;
+  margin:0px;
+  padding:0px;
+  >div{
+    margin-top:0px;
+    margin-bottom:0px;
+    >.form-type-select {
+      margin-top:0px;
+    }
+  }
+}
+
+#edit-field-program-title{
+  clear:left;
+  float:left;
+  padding-right: 1em;
+  >div{
+    margin-bottom:0px;
+    margin-top:0px;
+    >div{
+      margin:0px;
+    }
+  }
+}
+
+#edit-field-course-hours {
+  padding:0px;
+  margin:0px;
+}
+
+#edit-field-course-hours,
+#edit-field-course-description{
+  clear:left;
+  float:left;
+  width:100%;
+}
+
+.field-name-field-timetable {
+  .field-name-field-office-day,
+  .field-name-field-hours-from {
+    float:left;
+  }
+  .field-name-field-hours-from{
+    >fieldset{
+      margin:0px;
+      padding-top:0px;
+    }
+    .form-type-textfield {
+      float:left;
+      padding-left:1em;
+    }
+    .description{
+      display:none;
+    }
+  }
+  .field-name-field-office-location {
+    float:left;
+  }
+  >div{
+    >fieldset{
+      padding:0px;
+      margin:0px;
+    }
+  }
+}
+
+#edit-new{
+  margin-left: 1em;
+}
+
+.tabledrag-toggle-weight-wrapper{
+  display:none;
+}
+
+
+
+#edit-field-cl-outcomes{
+  thead{
+    .field-label{
+      color:#222;
+    }
+  }
+  tbody{
+    tr{
+      td{
+        .form-item{
+          float:left;
+          width:100%;
+          >input{
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+#field-other-fc-agreement-values{
+  .field-label{
+    display:none;
+  }
+  >tbody{
+    border-top:0px none;
+  }
+  .field-name-field-program-learning-outcomes {
+    .form-type-textfield {
+      label{
+        display:none;
+      }
+      input{
+        float:left;
+        margin-right: 1em;
+      }
+    }
+  }
+}
+
+
+#edit-field-other-teaching-strategies{
+  #field-other-teaching-strategies-values{
+    .field-label{
+      display:none;
+    }
+    .form-type-textfield {
+      input{
+        float:left;
+      }
+    }
+  }
+}
+.field-name-field-evaluation-list {
+  display:inline-block;
+  float:left;
+}
+
+.field-name-field-evaluation-date {
+  display:inline-block;
+  float:left;
+  fieldset{
+    padding: 0px;
+  }
+  .date-padding {
+    padding:0px;
+    label {
+      display:inline-block;
+      float:left;
+      padding-right:1em;
+    }
+    input{
+      display:inline-block;
+    }
+    .description{
+      display:none;
+    }
+  }
+}
+
+.field-name-field-evaluation-percentage {
+  display:inline-block;
+  float:left;
+  label{
+    float:left;
+    padding-right:1em;
+    display:inline-block;
+  }
+  .description{
+    display:inline-block;
+  }
+}
+
+.field-name-field-evaluation-info {
+  clear:left;
+  label{
+    float:left;
+  }
+  .form-textarea-wrapper {
+    clear:left;
+  }
+}
+
+.field-name-field-course-calendar-date {
+  display:inline-block;
+  float:left;
+  fieldset{
+    border: 0px none;
+    padding:0px;
+  }
+  legend{
+    display:none;
+  }
+  .form-type-date-popup {
+    display:inline-block;
+    
+    label{
+      float:left;
+    }
+    .description{
+      display:none;
+    }
+  }
+}
+
+.field-name-field-course-calendar-activity{
+  display:inline-block;
+  float:left;
+  label{
+    text-align:left;
+  }
+}
+
+#edit-field-course-calendar{
+  .field-multiple-table{
+    .form-submit {
+      margin-top:25px;
+    }
+  }
+}
+
+.field-name-field-on-going {
+  display: inline-block;
+  float:left;
+  label{
+    margin-right: 1em;
+  }
+}
+#syllabus-form-view-form{
+  .field-name-field-course-hours {
+    >.field-items{
+      padding-bottom: 1em;
+    }
+  }
+  .field-name-field-fc-agreements {
+    >.field-items{
+      padding-top: 1em;
+      padding-left: 1em;
+      .field-label{
+        display:none;
+      }
+      .field-name-field-agreement-lc,
+      .field-name-field-agreement-assessed,
+      .field-name-field-agreement-inclusion {
+        width: 30%;
+        display:inline-block;
+      }
+      >.field-item:first-child {
+        .field-label{
+          display:block;
+        }
+      }
+    }
+  }
+}
+
+
+#block-syllabus-block-syllabus-search {
+  .form-actions{
+    margin-top: 0px;
+  }
+}
+
+
+#syllabus-block-search-result-form {
+
+}
+
+
