@@ -518,20 +518,9 @@ input[type="submit"] {
   }
   display: inline-block;
   margin: .25em .25em .25em 0;
-  padding: .2em 1em .2em;
-  @include border-radius(3px);
-  @include box-shadow(none);
-
-  color: $text-color;  
-  border: 1px solid $medium-grey;
-  background-color: $light-grey;
-  @include ease(all, 200ms, ease-in-out);
-  &:hover{
-    color: $text-color;
-    background-color: darken($light-grey, 10%);
-    border: 1px solid darken($medium-grey, 20%);
-  }
+  @include button-3d($light-grey, #333);
 }
+
 
 /**
 * Re-set default cursor for disabled elements.
