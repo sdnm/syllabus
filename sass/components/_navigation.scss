@@ -6,6 +6,7 @@
 header.header{
   height: 65px;
   @include box-shadow(rgba(0,0,0,0.2) 1px 0 4px);
+  background-color: #fff;
 }
 
 /* Wrapping link for logo. */
@@ -107,7 +108,7 @@ menu.user-menu{
 .header__secondary-menu{
   padding: 0;
   @include border-box;
-  
+  background: #fff;
   // creates sliding effect
   position: absolute;
   width: 70%;
@@ -116,7 +117,7 @@ menu.user-menu{
   bottom: 0;
   height: 100%;
   @include ease(all, 300ms, ease-in-out);
-  @include box-shadow(rgba(0,0,0, 0.1) 20px 0 20px -10px inset);
+  @include box-shadow(rgba(0,0,0, 0.35) 15px 0 20px -15px inset);
   min-height: 800px;
   @media #{$mobile-landscape}{
     width: 50%;
@@ -142,7 +143,7 @@ menu.user-menu{
         border-bottom: 1px solid $medium-grey;
         display: block;
         padding: .75em 1em;
-        @include box-shadow(rgba(0,0,0, 0.1) 20px 0 20px -10px inset);
+        @include box-shadow(rgba(0,0,0, 0.35) 15px 0 20px -15px inset);
         @include anti-aliasing;
         &:hover{
           background-color: $light-grey;          

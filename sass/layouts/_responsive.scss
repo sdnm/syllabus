@@ -42,6 +42,7 @@ $zen-auto-include-item-base: false;
 #navigation,
 .region-sidebar-first,
 .region-sidebar-second,
+.responsive .panel-display .panel-panel,
 #footer {
   // See the note about $zen-auto-include-item-base above.
   @include zen-grid-item-base();
@@ -50,6 +51,7 @@ $zen-auto-include-item-base: false;
 /* Containers for grid items and flow items. */
 #header,
 #main,
+.responsive .panel-display,
 #footer {
   @include zen-grid-container();
 }
@@ -207,3 +209,69 @@ $zen-auto-include-item-base: false;
     }
   }
 }
+
+
+/*
+ * Page Layouts
+ */
+ 
+// 2 Col Bricks
+  
+.responsive .panel-2col-bricks{
+  $zen-column-count: 6;
+  
+  .inside{
+    @include rem-fallback(margin, 2, 0, 0); // Sets spacing at top of page **
+  }
+  
+  .panel-col-top,
+  .panel-col-middle,
+  .panel-col-bottom, 
+  .panel-col-first,
+  .panel-col-last{
+    @include zen-grid-item(6, 1);
+    @include zen-clear();
+  }
+  
+  @media only screen and (min-width: 70em){
+    
+    .panel-col-first{
+      @include zen-grid-item(3, 1)
+    }
+    .panel-col-last{
+      @include zen-grid-item(3, 4);
+      @include zen-clear(none);
+    }
+  }
+}
+
+// Panel 2-col
+.responsive .panel-2col{
+  $zen-column-count: 6;
+  
+  .inside{
+    @include rem-fallback(margin, 2, 0, 0); // Sets spacing at top of page **
+    background-color: #fff;
+    @include border-box;
+    padding: 1em;
+  }
+ 
+  .panel-col-first,
+  .panel-col-last{
+    @include zen-grid-item(6, 1);
+    @include zen-clear();
+  }
+  
+  @media only screen and (min-width: 60em){
+    
+    .panel-col-first{
+      @include zen-grid-item(3, 1)
+    }
+    .panel-col-last{
+      @include zen-grid-item(3, 4);
+      @include zen-clear(none);
+    }
+  }
+}
+
+
