@@ -251,9 +251,6 @@ $zen-auto-include-item-base: false;
   
   .inside{
     @include rem-fallback(margin, 2, 0, 0); // Sets spacing at top of page **
-    background-color: #fff;
-    @include border-box;
-    padding: 1em;
   }
  
   .panel-col-first,

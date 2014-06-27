@@ -403,7 +403,6 @@ figure {
 fieldset {
   margin: 0 2px;
   /* Apply borders and padding that keep the vertical rhythm. */
-  border-color: #c0c0c0;
   @include apply-side-rhythm-border(top,    $width: 1px, $lines: 0.35);
   @include apply-side-rhythm-border(bottom, $width: 1px, $lines: 0.65);
   @include apply-side-rhythm-border(left,   $width: 1px, $lines: 0.65);
@@ -421,6 +420,7 @@ legend {
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
     *margin-left: -7px; /* 3 */
   }
+  
   position: absolute;
   top: -1.95em;
   left: 0;
@@ -444,6 +444,61 @@ legend {
   }
 }
 
+fieldset{
+  border: 0;
+  margin: 4em 0 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+  @include border-radius(0 0 3px 3px);
+  @include box-shadow($light-grey 0 0 0 1px inset);
+}
+
+fieldset.collapsible{
+  legend{
+    padding: 0.2em .5em;
+  }
+  .fieldset-legend{
+    padding-left: 20px !important;
+  }
+} 
+
+/* Collapsed fieldset */
+fieldset.collapsed{
+  @include box-shadow(none);
+  
+}
+
+.fieldset-description{
+  color: $dark-grey;
+  @include rem-fallback(font-size, .875);  
+  font-weight: 100;
+}
+
+.vertical-tabs-panes {
+  legend{
+    top: .25em;
+    left: 1em;
+  }
+  fieldset{
+    margin-top: 2em;
+  }
+  .fieldset-wrapper{ padding-top: .5em;}
+  fieldset.collapsible{
+    margin-top: 4em;
+    legend{
+      top: -1.95em;
+      left: 0;
+    }
+  }
+}
+
+fieldset.collapsed, 
+fieldset.vertical-tabs-pane, 
+fieldset.filter-wrapper{
+  @include box-shadow(none);
+  
+}
 
 
 

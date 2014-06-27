@@ -36,3 +36,51 @@ footer#footer{
     }
   }
 }
+
+
+
+
+
+/*
+ * Page Styles Colors
+ */
+  
+.responsive{
+  // Responsive Dashboard
+  .panel-2col-bricks, 
+  .panel-2col{
+    .panel-panel .inside{
+      background-color: #fff;
+      @include box-sizing(border-box);
+      @include border-radius(3px);
+      @include box-shadow(rgba(0,0,0,0.1) 0 1px 3px);
+    }
+  }
+  // Responsive Non Dashboard
+  h2.block__title{
+    @include rem-fallback(padding, .1, 1.5);
+    border-bottom: 1px solid $light-grey;
+    margin: 0;
+  }
+  .view, form{
+    @include rem-fallback(padding, 0, 1.5, 1);
+    @include box-sizing(border-box);
+  }
+  .field{
+    @include rem-fallback(padding, 0, 1.5);
+    @include box-sizing(border-box);    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

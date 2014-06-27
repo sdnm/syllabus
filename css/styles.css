@@ -459,7 +459,6 @@ figure {
 fieldset {
   margin: 0 2px;
   /* Apply borders and padding that keep the vertical rhythm. */
-  border-color: #c0c0c0;
   border-top-style: solid;
   border-top-width: 0.0625em;
   padding-top: 0.4625em;
@@ -479,7 +478,7 @@ fieldset {
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  * 3. Correct alignment displayed oddly in IE 6/7.
  */
-/* line 418, ../sass/_normalize.scss */
+/* line 417, ../sass/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -515,6 +514,80 @@ legend a:focus {
   border-color: transparent;
 }
 
+/* line 447, ../sass/_normalize.scss */
+fieldset {
+  border: 0;
+  margin: 4em 0 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  -ms-border-radius: 0 0 3px 3px;
+  -o-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  -webkit-box-shadow: whitesmoke 0 0 0 1px inset;
+  -moz-box-shadow: whitesmoke 0 0 0 1px inset;
+  box-shadow: whitesmoke 0 0 0 1px inset;
+}
+
+/* line 458, ../sass/_normalize.scss */
+fieldset.collapsible legend {
+  padding: 0.2em .5em;
+}
+/* line 461, ../sass/_normalize.scss */
+fieldset.collapsible .fieldset-legend {
+  padding-left: 20px !important;
+}
+
+/* Collapsed fieldset */
+/* line 467, ../sass/_normalize.scss */
+fieldset.collapsed {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 472, ../sass/_normalize.scss */
+.fieldset-description {
+  color: #333333;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 100;
+}
+
+/* line 479, ../sass/_normalize.scss */
+.vertical-tabs-panes legend {
+  top: .25em;
+  left: 1em;
+}
+/* line 483, ../sass/_normalize.scss */
+.vertical-tabs-panes fieldset {
+  margin-top: 2em;
+}
+/* line 486, ../sass/_normalize.scss */
+.vertical-tabs-panes .fieldset-wrapper {
+  padding-top: .5em;
+}
+/* line 487, ../sass/_normalize.scss */
+.vertical-tabs-panes fieldset.collapsible {
+  margin-top: 4em;
+}
+/* line 489, ../sass/_normalize.scss */
+.vertical-tabs-panes fieldset.collapsible legend {
+  top: -1.95em;
+  left: 0;
+}
+
+/* line 498, ../sass/_normalize.scss */
+fieldset.collapsed,
+fieldset.vertical-tabs-pane,
+fieldset.filter-wrapper {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
 /**
 * 1. Correct font family not being inherited in all browsers.
 * 2. Correct font size not being inherited in all browsers.
@@ -522,7 +595,7 @@ legend a:focus {
 * 4. Improve appearance and consistency with IE 6/7.
 * 5. Keep form elements constrained in their containers.
 */
-/* line 460, ../sass/_normalize.scss */
+/* line 515, ../sass/_normalize.scss */
 button,
 input,
 select,
@@ -555,7 +628,7 @@ textarea {
 * Address Firefox 4+ setting `line-height` on `input` using `!important` in
 * the UA stylesheet.
 */
-/* line 482, ../sass/_normalize.scss */
+/* line 537, ../sass/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -567,7 +640,7 @@ input {
 * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
 * Correct `select` style inheritance in Firefox 4+ and Opera.
 */
-/* line 493, ../sass/_normalize.scss */
+/* line 548, ../sass/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -585,7 +658,7 @@ select {
 * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
 *    Known issue: inner spacing remains in IE 6.
 */
-/* line 511, ../sass/_normalize.scss */
+/* line 566, ../sass/_normalize.scss */
 button,
 a.button,
 html input[type="button"],
@@ -643,7 +716,7 @@ input[type="submit"]:active {
 /**
 * Re-set default cursor for disabled elements.
 */
-/* line 527, ../sass/_normalize.scss */
+/* line 582, ../sass/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -655,7 +728,7 @@ html input[disabled] {
 * 3. Remove excess padding in IE 7.
 *    Known issue: excess padding remains in IE 6.
 */
-/* line 538, ../sass/_normalize.scss */
+/* line 593, ../sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -672,7 +745,7 @@ input[type="radio"] {
 * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
 *    (include `-moz` to future-proof).
 */
-/* line 553, ../sass/_normalize.scss */
+/* line 608, ../sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -686,14 +759,14 @@ input[type="search"] {
 * Remove inner padding and search cancel button in Safari 5 and Chrome
 * on OS X.
 */
-/* line 563, ../sass/_normalize.scss */
+/* line 618, ../sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 /* Remove inner padding and border in Firefox 4+. */
-/* line 569, ../sass/_normalize.scss */
+/* line 624, ../sass/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -704,7 +777,7 @@ input::-moz-focus-inner {
 * 1. Remove default vertical scrollbar in IE 8/9.
 * 2. Improve readability and alignment in all browsers.
 */
-/* line 578, ../sass/_normalize.scss */
+/* line 633, ../sass/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -715,7 +788,7 @@ textarea {
 }
 
 /* Drupal-style form labels. */
-/* line 586, ../sass/_normalize.scss */
+/* line 641, ../sass/_normalize.scss */
 label {
   display: block;
   font-weight: bold;
@@ -1043,13 +1116,8 @@ label {
 .responsive .panel-2col .inside {
   margin: 32px 0px 0px;
   margin: 2rem 0rem 0rem;
-  background-color: #fff;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 1em;
 }
-/* line 260, ../sass/layouts/_responsive.scss */
+/* line 257, ../sass/layouts/_responsive.scss */
 .responsive .panel-2col .panel-col-first,
 .responsive .panel-2col .panel-col-last {
   float: left;
@@ -1059,14 +1127,14 @@ label {
   clear: left;
 }
 @media only screen and (min-width: 60em) {
-  /* line 267, ../sass/layouts/_responsive.scss */
+  /* line 264, ../sass/layouts/_responsive.scss */
   .responsive .panel-2col .panel-col-first {
     float: left;
     width: 50%;
     margin-left: 0%;
     margin-right: -50%;
   }
-  /* line 270, ../sass/layouts/_responsive.scss */
+  /* line 267, ../sass/layouts/_responsive.scss */
   .responsive .panel-2col .panel-col-last {
     float: left;
     width: 50%;
@@ -1666,6 +1734,49 @@ footer#footer {
 /* line 33, ../sass/components/_pages.scss */
 .footer-wrapper .colophon a:hover {
   text-decoration: underline;
+}
+
+/*
+ * Page Styles Colors
+ */
+/* line 52, ../sass/components/_pages.scss */
+.responsive .panel-2col-bricks .panel-panel .inside,
+.responsive .panel-2col .panel-panel .inside {
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
+}
+/* line 60, ../sass/components/_pages.scss */
+.responsive h2.block__title {
+  padding: 1.6px 24px;
+  padding: 0.1rem 1.5rem;
+  border-bottom: 1px solid whitesmoke;
+  margin: 0;
+}
+/* line 65, ../sass/components/_pages.scss */
+.responsive .view, .responsive form {
+  padding: 0px 24px 16px;
+  padding: 0rem 1.5rem 1rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 69, ../sass/components/_pages.scss */
+.responsive .field {
+  padding: 0px 24px;
+  padding: 0rem 1.5rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /**
