@@ -1,0 +1,39 @@
+/**
+ * Background styling
+ */
+main#main, 
+footer#footer{
+  background-color: $medium-grey;
+  @include zero;
+}
+
+.footer-wrapper{
+  text-align: center;
+  .info{
+    margin-top: 1em;
+    span, a{
+      color: $link-grey;
+      @include rem-fallback(font-size, .75);
+      letter-spacing: 1px;
+    }
+    span:after{
+      content:'|';
+      padding: 0 .5em;
+    }
+    span:last-child:after{
+      content:'';
+    }
+  }
+  .colophon{
+    background-color: #c2c2c2;
+    margin: 1em 0 0;
+    padding: .3em 0;
+    a{
+      color: $text-color;
+      font-weight: bold;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
