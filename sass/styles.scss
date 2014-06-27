@@ -16,6 +16,9 @@
 @import "layouts/responsive";
 
 /* Component (SMACSS module) rules */
+@import "components/navigation";
+@import "components/forms";
+@import "components/pages";
 @import "components/misc";
 // Optionally, add your own components here.
 @import "print";

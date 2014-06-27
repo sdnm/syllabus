@@ -8,12 +8,15 @@
  */
 ?>
 
-<div id="page">
+<div id="page" data-state="slide-closed">
+  <div class="sliding-canvas">
 
   <header class="header" id="header" role="banner">
 
     <?php if ($logo): ?>
+    <span class="red-bg">
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
+    </span>
     <?php endif; ?>
 
     <?php if ($site_name || $site_slogan): ?>
@@ -29,16 +32,17 @@
         <?php endif; ?>
       </div>
     <?php endif; ?>
-    <menu role="menubar">
+
+    <menu class="user-menu" role="menubar">
+      <a id='open_secondary-menu' href="#">GEAR</a>
     </menu>
 
-    <a id='open_secondary-menu' href="#">GEAR</a>
     <?php if ($secondary_menu): ?>
       <nav class="header__secondary-menu" id="secondary-menu" role="navigation" data-state="unselected">
         <?php print theme('links__system_secondary_menu', array(
           'links' => $secondary_menu,
           'attributes' => array(
-            'class' => array('links', 'inline', 'clearfix'),
+            'class' => array('links', 'clearfix'),
           ),
           'heading' => array(
             'text' => $secondary_menu_heading,

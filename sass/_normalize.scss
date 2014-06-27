@@ -139,14 +139,12 @@ a:visited{
   color: $link-color;
   text-decoration: none;
   @include ease(all, 200ms, ease-in-out);
-  border-bottom: 1px solid transparent;
   
 }
 a:hover,
 a:focus,
 a:active{
   color: darken($link-color, 20%);
-  border-bottom: 1px solid darken($link-color, 20%);
 }
 
 /* Address `outline` inconsistency between Chrome and other browsers. */

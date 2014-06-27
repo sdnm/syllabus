@@ -1,0 +1,442 @@
+/**
+ * Branding header.
+ */
+ 
+
+header.header{
+  height: 65px;
+  @include box-shadow(rgba(0,0,0,0.2) 1px 0 4px);
+}
+
+/* Wrapping link for logo. */
+
+.header__logo {
+  img{
+    width: 105px;
+    height: 35px;    
+  }
+  &:hover{
+    @include opacity(.9);
+  }
+}
+
+.red-bg{
+  padding: 13px 1em 17px 2em;
+  float: left;
+  margin: 0;
+  display: inline-block;
+  @include background-image(linear-gradient(#980e27, #970822));
+  //hide uottawa logo on phones
+  display: none;
+  @media only screen and (min-width: 25em){
+    display: inline-block;
+  }
+}
+
+
+
+/* Logo image. */
+.header__logo-image {
+  vertical-align: bottom;
+}
+
+/* Wrapper for website name and slogan. */
+.header__name-and-slogan {
+  float: left;
+}
+
+/* The name of the website. */
+.header__site-name {
+  margin: 0;
+  @include rem-fallback(font-size, 1.3125); //21px
+  @include rem-fallback(padding, 1.2, 1, 0);
+}
+
+/* The link around the name of the website. */
+.header__site-link {
+  font-weight: 700;
+  &:link,
+  &:visited {
+    color: $text-color;
+    text-decoration: none;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+  .x-bold{
+    font-weight: 800;
+  }
+}
+
+/* Gear Icon for Sliding Menu */
+.not-logged-in{
+  menu.user-menu #open_secondary-menu{
+    display: none;
+  }
+}
+menu.user-menu{
+  display: inline-block;
+  @include zero;
+  float: right;
+  margin: 1.1em 2em 0 0;
+  #open_secondary-menu{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    @include border-radius(3px);
+    border: 1px solid transparent;
+    @include hide-text;
+    @include retina-bg(gear, 30px 30px);
+    &:hover, 
+    &:focus,
+    &:active{
+      border: 1px solid $medium-grey;
+    }
+  }
+}
+
+
+
+/* The slogan (or tagline) of a website. */
+.header__site-slogan {
+  margin: 0;
+}
+
+/* The secondary menu (login, etc.) */
+.header__secondary-menu{
+  padding: 0;
+  @include border-box;
+  
+  // creates sliding effect
+  position: absolute;
+  width: 70%;
+  right: -70%;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  @include ease(all, 300ms, ease-in-out);
+  @include box-shadow(rgba(0,0,0, 0.1) 20px 0 20px -10px inset);
+  min-height: 800px;
+  @media #{$mobile-landscape}{
+    width: 50%;
+    right: -50%;
+  }
+  @media #{$tablet}{
+    width: 30%;
+    right: -30%;
+  }
+  @media #{$tablet-landscape}{
+    width: 275px;
+    right: -275px;
+  }
+  ul{
+    @include zero;
+    list-style-type: none;
+    background-color: #fff;
+    
+    li{
+      text-align: center;
+      a{
+        color: $text-color;
+        border-bottom: 1px solid $medium-grey;
+        display: block;
+        padding: .75em 1em;
+        @include box-shadow(rgba(0,0,0, 0.1) 20px 0 20px -10px inset);
+        @include anti-aliasing;
+        &:hover{
+          background-color: $light-grey;          
+        }
+      }
+      &:first-child a{
+        border-top: 1px solid $medium-grey;
+      }
+    }
+  }
+  //slides me
+
+}
+
+// Page should move when nav opens
+#page{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  z-index: 100;
+  .sliding-canvas{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    @include translateX(0);
+    @include ease(all, 300ms, ease-in-out);    
+  }
+  
+  &[data-state='slide-open'] .sliding-canvas{
+    @include translateX(-70%);
+    @media #{$mobile-landscape}{
+      @include translateX(-50%);
+    }
+    @media #{$tablet}{
+      @include translateX(-30%);
+    }
+    @media #{$tablet-landscape}{
+      @include translateX(-275px);
+    }
+  }
+}
+
+
+/* Wrapper for any blocks placed in the header region. */
+.header__region {
+  /* Clear the logo. */
+  clear: both;
+}
+
+
+
+/**
+ * Navigation bar.
+ */
+#navigation {
+  /* Sometimes you want to prevent overlapping with main div. */
+  /* overflow: hidden; */
+
+  .block {
+    margin-bottom: 0;
+  }
+
+  .block-menu .block__title,
+  .block-menu-block .block__title {
+    @extend %element-invisible;
+  }
+
+  /* Main menu and secondary menu links and menu block links. */
+  .links,
+  .menu {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+
+    li {
+      /* A simple method to get navigation links to appear in one line. */
+      float: left;
+      padding: 0 10px 0 0;
+      list-style-type: none;
+      list-style-image: none;
+    }
+  }
+}
+
+
+/**
+ * Breadcrumb navigation.
+ */
+.breadcrumb {
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+/**
+ * Tabs.
+ */
+
+/* Basic positioning styles shared by primary and secondary tabs. */
+%tabs {
+  @include clearfix;
+  @include background-image(linear-gradient(bottom, $tabs-border 1px, transparent 1px));
+  /* IE 9 and earlier don't understand gradients. */
+  list-style: none;
+  border-bottom: 1px solid $tabs-border \0/ie;
+  margin: rhythm(1) 0;
+  padding: 0 2px;
+  white-space: nowrap;
+}
+%tabs__tab {
+  float: left;
+  margin: 0 3px;
+}
+%tabs__tab-link {
+  border-right: 0;
+  border-bottom: 0;
+  display: block;
+  @include adjust-leading-to(1);
+  text-decoration: none;
+}
+
+/* Primary tabs. */
+.tabs-primary {
+  @extend %tabs;
+}
+.tabs-primary__tab {
+  @extend %tabs__tab;
+  @include border-top-radius(3px);
+  border: 1px solid $tabs-border;
+  border-bottom-color: transparent;
+  /* IE 9 and earlier don't understand gradients. */
+  border-bottom: 0 \0/ie;
+}
+.tabs-primary__tab.is-active {
+  @extend .tabs-primary__tab;
+  border-bottom-color: $tabs-container-bg;
+}
+
+// We use 3 placeholder styles to prevent @extend from going selector crazy.
+%tabs-primary__tab-link {
+  @extend %tabs__tab-link;
+  @include border-top-radius(4px);
+  @include transition(background-color 0.3s);
+  color: #333;
+  background-color: $light-grey;
+  letter-spacing: 1px;
+  padding: .2em 1em .1em;
+  text-align: center;
+}
+%tabs-primary__tab-link-is-hover {
+  background-color: #eee;
+}
+%tabs-primary__tab-link-is-active {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+a.tabs-primary__tab-link {
+  @extend %tabs-primary__tab-link;
+
+  &:hover,
+  &:focus {
+    @extend %tabs-primary__tab-link-is-hover;
+  }
+  &:active {
+    @extend %tabs-primary__tab-link-is-active;
+  }
+}
+a.tabs-primary__tab-link.is-active {
+  @extend %tabs-primary__tab-link;
+  @extend %tabs-primary__tab-link-is-active;
+}
+
+/* Secondary tabs. */
+.tabs-secondary {
+  @extend %tabs;
+  font-size: .9em;
+  /* Collapse bottom margin of ul.primary. */
+  margin-top: -(rhythm(1));
+}
+.tabs-secondary__tab,
+.tabs-secondary__tab.is-active {
+  @extend %tabs__tab;
+  margin: rhythm(1)/2 3px;
+}
+
+// We use 3 placeholder styles to prevent @extend from going selector crazy.
+%tabs-secondary__tab-link {
+  @extend %tabs__tab-link;
+  @include border-radius(.75em);
+  @include transition(background-color 0.3s);
+  //@include single-text-shadow(#fff, 1px, 1px, 0);
+  background-color: #f2f2f2;
+  color: #666;
+  padding: 0 .5em;
+}
+%tabs-secondary__tab-link-is-focus {
+  background-color: #dedede;
+  border-color: #999;
+  color: #333;
+}
+%tabs-secondary__tab-link-is-active {
+  @include single-text-shadow(#333, 1px, 1px, 0);
+  background-color: #666;
+  border-color: #000;
+  color: #fff;
+}
+
+a.tabs-secondary__tab-link {
+  @extend %tabs-secondary__tab-link;
+
+  &:hover,
+  &:focus {
+    @extend %tabs-secondary__tab-link-is-focus;
+  }
+  &:active {
+    @extend %tabs-secondary__tab-link-is-active;
+  }
+}
+a.tabs-secondary__tab-link.is-active {
+  @extend %tabs-secondary__tab-link;
+  @extend %tabs-secondary__tab-link-is-active;
+}
+
+
+/**
+ * Pager.
+ */
+
+/* A list of page numbers when more than 1 page of content is available. */
+.pager {
+  clear: both;
+  padding: 0;
+  text-align: center;
+}
+%pager__item {
+  display: inline;
+  padding: 0 0.5em;
+  list-style-type: none;
+  background-image: none;
+}
+
+.pager-item,      /* A list item containing a page number in the list of pages. */
+.pager-first,     /* The first page's list item. */
+.pager-previous,  /* The previous page's list item. */
+.pager-next,      /* The next page's list item. */
+.pager-last,      /* The last page's list item. */
+.pager-ellipsis { /* A concatenation of several list items using an ellipsis. */
+  @extend %pager__item;
+}
+
+/* The current page's list item. */
+.pager-current {
+  @extend %pager__item;
+  font-weight: bold;
+}
+
+
+/**
+ * Menus.
+ */
+.menu__item.is-leaf {
+  list-style-image: inline-image("menu-leaf.png");
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    *list-style-image: image-url("menu-leaf.png");
+  }
+  list-style-type: square;
+}
+.menu__item.is-expanded {
+  list-style-image: inline-image("menu-expanded.png");
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    *list-style-image: image-url("menu-expanded.png");
+  }
+  list-style-type: circle;
+}
+.menu__item.is-collapsed {
+  list-style-image: inline-image("menu-collapsed.png");
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    *list-style-image: image-url("menu-collapsed.png");
+  }
+  list-style-type: disc;
+}
+
+/* The active item in a Drupal menu. */
+.menu a.active {
+  color: #000;
+}
+
+
