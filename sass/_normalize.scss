@@ -444,61 +444,6 @@ legend {
   }
 }
 
-fieldset{
-  border: 0;
-  margin: 4em 0 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  position: relative;
-  @include border-radius(0 0 3px 3px);
-  @include box-shadow($light-grey 0 0 0 1px inset);
-}
-
-fieldset.collapsible{
-  legend{
-    padding: 0.2em .5em;
-  }
-  .fieldset-legend{
-    padding-left: 20px !important;
-  }
-} 
-
-/* Collapsed fieldset */
-fieldset.collapsed{
-  @include box-shadow(none);
-  
-}
-
-.fieldset-description{
-  color: $dark-grey;
-  @include rem-fallback(font-size, .875);  
-  font-weight: 100;
-}
-
-.vertical-tabs-panes {
-  legend{
-    top: .25em;
-    left: 1em;
-  }
-  fieldset{
-    margin-top: 2em;
-  }
-  .fieldset-wrapper{ padding-top: .5em;}
-  fieldset.collapsible{
-    margin-top: 4em;
-    legend{
-      top: -1.95em;
-      left: 0;
-    }
-  }
-}
-
-fieldset.collapsed, 
-fieldset.vertical-tabs-pane, 
-fieldset.filter-wrapper{
-  @include box-shadow(none);
-  
-}
 
 
 
@@ -601,19 +546,19 @@ input[type="radio"] {
 }
 
 /**
-* 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
-* 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
-*    (include `-moz` to future-proof).
-*/
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
 input[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   @include box-sizing(content-box); /* 2 */
 }
 
 /**
-* Remove inner padding and search cancel button in Safari 5 and Chrome
-* on OS X.
-*/
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -627,14 +572,13 @@ input::-moz-focus-inner {
 }
 
 /**
-* 1. Remove default vertical scrollbar in IE 8/9.
-* 2. Improve readability and alignment in all browsers.
-*/
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
 textarea {
   overflow: auto; /* 1 */
   vertical-align: top; /* 2 */
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: .5em;
 }
 
 /* Drupal-style form labels. */
@@ -642,3 +586,19 @@ label {
   display: block;
   font-weight: bold;
 }
+
+/**
+ * Tables
+ */
+table {
+  /* Remove most spacing between table cells. */
+  border-collapse: collapse;
+  border-spacing: 0;
+  /* Prevent cramped-looking tables */
+  width: 100%;
+  /* Add vertical rhythm margins. */
+  @include leader(1);
+  @include trailer(1);  
+  background-color: #fff;
+}
+

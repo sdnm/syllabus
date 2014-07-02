@@ -234,7 +234,8 @@ span.field-label {
 /* The "new" or "updated" marker. */
 .new,
 .update {
-  color: #c00;
+  @include rem-fallback(font-size, .675);
+  color: $text-color;
   /* Remove background highlighting from <mark> in normalize. */
   background-color: transparent;
 }
