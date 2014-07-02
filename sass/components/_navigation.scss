@@ -63,7 +63,8 @@ header.header{
   }
   &:hover,
   &:focus {
-    text-decoration: underline;
+    @include opacity(.8);
+    //text-decoration: underline;
   }
   .x-bold{
     font-weight: 800;

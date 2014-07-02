@@ -26,7 +26,9 @@
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-      <?php print render($page['content']); ?>
+      <div class="content-wrapper">
+        <?php print render($page['content']); ?>
+      </div>
       <?php print $feed_icons; ?>
     </div>
 

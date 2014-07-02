@@ -1164,20 +1164,21 @@ header.header {
 }
 /* line 65, ../sass/components/_navigation.scss */
 .header__site-link:hover, .header__site-link:focus {
-  text-decoration: underline;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
 }
-/* line 68, ../sass/components/_navigation.scss */
+/* line 69, ../sass/components/_navigation.scss */
 .header__site-link .x-bold {
   font-weight: 800;
 }
 
 /* Gear Icon for Sliding Menu */
-/* line 75, ../sass/components/_navigation.scss */
+/* line 76, ../sass/components/_navigation.scss */
 .not-logged-in menu.user-menu #open_secondary-menu {
   display: none;
 }
 
-/* line 79, ../sass/components/_navigation.scss */
+/* line 80, ../sass/components/_navigation.scss */
 menu.user-menu {
   display: inline-block;
   margin: 0;
@@ -1185,7 +1186,7 @@ menu.user-menu {
   float: right;
   margin: 1.1em 2em 0 0;
 }
-/* line 84, ../sass/components/_navigation.scss */
+/* line 85, ../sass/components/_navigation.scss */
 menu.user-menu #open_secondary-menu {
   display: inline-block;
   height: 30px;
@@ -1212,19 +1213,19 @@ menu.user-menu #open_secondary-menu {
     background-image: url(../images/gear@2x.png);
   }
 }
-/* line 94, ../sass/components/_navigation.scss */
+/* line 95, ../sass/components/_navigation.scss */
 menu.user-menu #open_secondary-menu:hover, menu.user-menu #open_secondary-menu:focus, menu.user-menu #open_secondary-menu:active {
   border: 1px solid #e5e5e5;
 }
 
 /* The slogan (or tagline) of a website. */
-/* line 103, ../sass/components/_navigation.scss */
+/* line 104, ../sass/components/_navigation.scss */
 .header__site-slogan {
   margin: 0;
 }
 
 /* The secondary menu (login, etc.) */
-/* line 108, ../sass/components/_navigation.scss */
+/* line 109, ../sass/components/_navigation.scss */
 .header__secondary-menu {
   padding: 0;
   -moz-box-sizing: border-box;
@@ -1255,38 +1256,38 @@ menu.user-menu #open_secondary-menu:hover, menu.user-menu #open_secondary-menu:f
   min-height: 800px;
 }
 @media only screen and (min-width: 30em) {
-  /* line 108, ../sass/components/_navigation.scss */
+  /* line 109, ../sass/components/_navigation.scss */
   .header__secondary-menu {
     width: 50%;
     right: -50%;
   }
 }
 @media only screen and (min-width: 37.5em) {
-  /* line 108, ../sass/components/_navigation.scss */
+  /* line 109, ../sass/components/_navigation.scss */
   .header__secondary-menu {
     width: 30%;
     right: -30%;
   }
 }
 @media only screen and (min-width: 60em) {
-  /* line 108, ../sass/components/_navigation.scss */
+  /* line 109, ../sass/components/_navigation.scss */
   .header__secondary-menu {
     width: 275px;
     right: -275px;
   }
 }
-/* line 134, ../sass/components/_navigation.scss */
+/* line 135, ../sass/components/_navigation.scss */
 .header__secondary-menu ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   background-color: #fff;
 }
-/* line 139, ../sass/components/_navigation.scss */
+/* line 140, ../sass/components/_navigation.scss */
 .header__secondary-menu ul li {
   text-align: center;
 }
-/* line 141, ../sass/components/_navigation.scss */
+/* line 142, ../sass/components/_navigation.scss */
 .header__secondary-menu ul li a {
   color: #333333;
   border-bottom: 1px solid #e5e5e5;
@@ -1298,23 +1299,23 @@ menu.user-menu #open_secondary-menu:hover, menu.user-menu #open_secondary-menu:f
   -webkit-font-smoothing: subpixel-antialiased;
   font-smoothing: subpixel-antialiased;
 }
-/* line 148, ../sass/components/_navigation.scss */
+/* line 149, ../sass/components/_navigation.scss */
 .header__secondary-menu ul li a:hover {
   background-color: whitesmoke;
 }
-/* line 152, ../sass/components/_navigation.scss */
+/* line 153, ../sass/components/_navigation.scss */
 .header__secondary-menu ul li:first-child a {
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 162, ../sass/components/_navigation.scss */
+/* line 163, ../sass/components/_navigation.scss */
 #page {
   position: relative;
   overflow: hidden;
   width: 100%;
   z-index: 100;
 }
-/* line 167, ../sass/components/_navigation.scss */
+/* line 168, ../sass/components/_navigation.scss */
 #page .sliding-canvas {
   width: 100%;
   height: 100%;
@@ -1337,7 +1338,7 @@ menu.user-menu #open_secondary-menu:hover, menu.user-menu #open_secondary-menu:f
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 175, ../sass/components/_navigation.scss */
+/* line 176, ../sass/components/_navigation.scss */
 #page[data-state='slide-open'] .sliding-canvas {
   -webkit-transform: translateX(-70%);
   -moz-transform: translateX(-70%);
@@ -1346,7 +1347,7 @@ menu.user-menu #open_secondary-menu:hover, menu.user-menu #open_secondary-menu:f
   transform: translateX(-70%);
 }
 @media only screen and (min-width: 30em) {
-  /* line 175, ../sass/components/_navigation.scss */
+  /* line 176, ../sass/components/_navigation.scss */
   #page[data-state='slide-open'] .sliding-canvas {
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -1356,7 +1357,7 @@ menu.user-menu #open_secondary-menu:hover, menu.user-menu #open_secondary-menu:f
   }
 }
 @media only screen and (min-width: 37.5em) {
-  /* line 175, ../sass/components/_navigation.scss */
+  /* line 176, ../sass/components/_navigation.scss */
   #page[data-state='slide-open'] .sliding-canvas {
     -webkit-transform: translateX(-30%);
     -moz-transform: translateX(-30%);
@@ -1366,7 +1367,7 @@ menu.user-menu #open_secondary-menu:hover, menu.user-menu #open_secondary-menu:f
   }
 }
 @media only screen and (min-width: 60em) {
-  /* line 175, ../sass/components/_navigation.scss */
+  /* line 176, ../sass/components/_navigation.scss */
   #page[data-state='slide-open'] .sliding-canvas {
     -webkit-transform: translateX(-275px);
     -moz-transform: translateX(-275px);
@@ -1377,7 +1378,7 @@ menu.user-menu #open_secondary-menu:hover, menu.user-menu #open_secondary-menu:f
 }
 
 /* Wrapper for any blocks placed in the header region. */
-/* line 191, ../sass/components/_navigation.scss */
+/* line 192, ../sass/components/_navigation.scss */
 .header__region {
   /* Clear the logo. */
   clear: both;
@@ -1386,24 +1387,24 @@ menu.user-menu #open_secondary-menu:hover, menu.user-menu #open_secondary-menu:f
 /**
  * Navigation bar.
  */
-/* line 201, ../sass/components/_navigation.scss */
+/* line 202, ../sass/components/_navigation.scss */
 #navigation {
   /* Sometimes you want to prevent overlapping with main div. */
   /* overflow: hidden; */
   /* Main menu and secondary menu links and menu block links. */
 }
-/* line 205, ../sass/components/_navigation.scss */
+/* line 206, ../sass/components/_navigation.scss */
 #navigation .block {
   margin-bottom: 0;
 }
-/* line 216, ../sass/components/_navigation.scss */
+/* line 217, ../sass/components/_navigation.scss */
 #navigation .links,
 #navigation .menu {
   margin: 0;
   padding: 0;
   text-align: left;
 }
-/* line 221, ../sass/components/_navigation.scss */
+/* line 222, ../sass/components/_navigation.scss */
 #navigation .links li,
 #navigation .menu li {
   /* A simple method to get navigation links to appear in one line. */
@@ -1416,12 +1417,12 @@ menu.user-menu #open_secondary-menu:hover, menu.user-menu #open_secondary-menu:f
 /**
  * Breadcrumb navigation.
  */
-/* line 236, ../sass/components/_navigation.scss */
+/* line 237, ../sass/components/_navigation.scss */
 .breadcrumb ol {
   margin: 0;
   padding: 0;
 }
-/* line 240, ../sass/components/_navigation.scss */
+/* line 241, ../sass/components/_navigation.scss */
 .breadcrumb li {
   display: inline;
   list-style-type: none;
@@ -1433,7 +1434,7 @@ menu.user-menu #open_secondary-menu:hover, menu.user-menu #open_secondary-menu:f
  * Tabs.
  */
 /* Basic positioning styles shared by primary and secondary tabs. */
-/* line 254, ../sass/components/_navigation.scss */
+/* line 255, ../sass/components/_navigation.scss */
 .tabs-primary, .tabs-secondary {
   overflow: hidden;
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(100%, #bbbbbb), color-stop(100%, transparent));
@@ -1449,14 +1450,14 @@ menu.user-menu #open_secondary-menu:hover, menu.user-menu #open_secondary-menu:f
   white-space: nowrap;
 }
 
-/* line 264, ../sass/components/_navigation.scss */
+/* line 265, ../sass/components/_navigation.scss */
 .tabs-primary__tab, .tabs-primary__tab.is-active, .tabs-secondary__tab,
 .tabs-secondary__tab.is-active {
   float: left;
   margin: 0 3px;
 }
 
-/* line 268, ../sass/components/_navigation.scss */
+/* line 269, ../sass/components/_navigation.scss */
 a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   border-right: 0;
   border-bottom: 0;
@@ -1466,7 +1467,7 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__
 }
 
 /* Primary tabs. */
-/* line 280, ../sass/components/_navigation.scss */
+/* line 281, ../sass/components/_navigation.scss */
 .tabs-primary__tab, .tabs-primary__tab.is-active {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -1480,12 +1481,12 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__
   border-bottom: 0 \0/ie;
 }
 
-/* line 288, ../sass/components/_navigation.scss */
+/* line 289, ../sass/components/_navigation.scss */
 .is-active.tabs-primary__tab {
   border-bottom-color: white;
 }
 
-/* line 294, ../sass/components/_navigation.scss */
+/* line 295, ../sass/components/_navigation.scss */
 a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
@@ -1504,32 +1505,32 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
   text-align: center;
 }
 
-/* line 304, ../sass/components/_navigation.scss */
+/* line 305, ../sass/components/_navigation.scss */
 a.tabs-primary__tab-link:hover, a.tabs-primary__tab-link:focus {
   background-color: #eee;
 }
 
-/* line 307, ../sass/components/_navigation.scss */
+/* line 308, ../sass/components/_navigation.scss */
 a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
   background-color: transparent;
   border-color: #fff;
 }
 
 /* Secondary tabs. */
-/* line 329, ../sass/components/_navigation.scss */
+/* line 330, ../sass/components/_navigation.scss */
 .tabs-secondary {
   font-size: .9em;
   /* Collapse bottom margin of ul.primary. */
   margin-top: -1.5em;
 }
 
-/* line 336, ../sass/components/_navigation.scss */
+/* line 337, ../sass/components/_navigation.scss */
 .tabs-secondary__tab,
 .tabs-secondary__tab.is-active {
   margin: 0.75em 3px;
 }
 
-/* line 342, ../sass/components/_navigation.scss */
+/* line 343, ../sass/components/_navigation.scss */
 a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   -webkit-border-radius: 0.75em;
   -moz-border-radius: 0.75em;
@@ -1545,14 +1546,14 @@ a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   padding: 0 .5em;
 }
 
-/* line 351, ../sass/components/_navigation.scss */
+/* line 352, ../sass/components/_navigation.scss */
 a.tabs-secondary__tab-link:hover, a.tabs-secondary__tab-link:focus {
   background-color: #dedede;
   border-color: #999;
   color: #333;
 }
 
-/* line 356, ../sass/components/_navigation.scss */
+/* line 357, ../sass/components/_navigation.scss */
 a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   text-shadow: 1px 1px 0 #333333;
   background-color: #666;
@@ -1564,14 +1565,14 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
  * Pager.
  */
 /* A list of page numbers when more than 1 page of content is available. */
-/* line 385, ../sass/components/_navigation.scss */
+/* line 386, ../sass/components/_navigation.scss */
 .pager {
   clear: both;
   padding: 0;
   text-align: center;
 }
 
-/* line 390, ../sass/components/_navigation.scss */
+/* line 391, ../sass/components/_navigation.scss */
 .pager-item,
 .pager-first,
 .pager-previous,
@@ -1584,7 +1585,7 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   background-image: none;
 }
 
-/* line 402, ../sass/components/_navigation.scss */
+/* line 403, ../sass/components/_navigation.scss */
 .pager-item,
 .pager-first,
 .pager-previous,
@@ -1595,7 +1596,7 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 }
 
 /* The current page's list item. */
-/* line 407, ../sass/components/_navigation.scss */
+/* line 408, ../sass/components/_navigation.scss */
 .pager-current {
   font-weight: bold;
 }
@@ -1603,26 +1604,26 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 /**
  * Menus.
  */
-/* line 416, ../sass/components/_navigation.scss */
+/* line 417, ../sass/components/_navigation.scss */
 .menu__item.is-leaf {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHBAMAAAA2fErgAAAAD1BMVEX///+/v7+Li4sAAADAwMBFvsw8AAAAAXRSTlMAQObYZgAAAB1JREFUCFtjYAADYwMGBmYVZSDhKAwkFJWhYiAAAB2+Aa/9ugeaAAAAAElFTkSuQmCC');
   list-style-type: square;
 }
 
-/* line 423, ../sass/components/_navigation.scss */
+/* line 424, ../sass/components/_navigation.scss */
 .menu__item.is-expanded {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
   list-style-type: circle;
 }
 
-/* line 430, ../sass/components/_navigation.scss */
+/* line 431, ../sass/components/_navigation.scss */
 .menu__item.is-collapsed {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
   list-style-type: disc;
 }
 
 /* The active item in a Drupal menu. */
-/* line 439, ../sass/components/_navigation.scss */
+/* line 440, ../sass/components/_navigation.scss */
 .menu a.active {
   color: #000;
 }
