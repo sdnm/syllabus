@@ -38,11 +38,8 @@ footer#footer{
 }
 
 
-
-
-
 /*
- * Page Styles Colors
+ * Page Layout Styles
  */
   
 .responsive{
@@ -61,6 +58,8 @@ footer#footer{
     @include rem-fallback(padding, .1, 1.5);
     border-bottom: 1px solid $light-grey;
     margin: 0;
+    font-weight: 600;
+    @include rem-fallback(font-size, 1.3125);
   }
   .view, form{
     @include rem-fallback(padding, 0, 1.5, 1);
@@ -73,8 +72,26 @@ footer#footer{
 }
 
 
-
-
+/*
+ * Login Page
+ */
+ 
+.front.not-logged-in{
+  .block__title{
+    background-color: $primary;
+    color: #fff;
+    @include border-radius(3px 3px 0 0);
+  }
+  input, select{
+    width: 100%;
+  }
+  #block-user-login, 
+  #block-syllabus-block-syllabus-search{
+    input[type='submit']{
+      margin-bottom: 2em;
+    }
+  }
+}
 
 
 

@@ -163,7 +163,7 @@ body {
 /* line 138, ../sass/_normalize.scss */
 a:link,
 a:visited {
-  color: #3073dd;
+  color: #0062bd;
   text-decoration: none;
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -183,7 +183,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-  color: #18468f;
+  color: #002d57;
 }
 
 /* Address `outline` inconsistency between Chrome and other browsers. */
@@ -2079,7 +2079,7 @@ mark.new, mark.updated {
 
 /* line 395, ../sass/components/_forms.scss */
 mark.new {
-  background-color: #b3ccf3;
+  background-color: #57aeff;
 }
 
 /* line 399, ../sass/components/_forms.scss */
@@ -2138,9 +2138,9 @@ footer#footer {
 }
 
 /*
- * Page Styles Colors
+ * Page Layout Styles
  */
-/* line 52, ../sass/components/_pages.scss */
+/* line 49, ../sass/components/_pages.scss */
 .responsive .panel-2col-bricks .panel-panel .inside,
 .responsive .panel-2col .panel-panel .inside {
   background-color: #fff;
@@ -2156,14 +2156,17 @@ footer#footer {
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
 }
-/* line 60, ../sass/components/_pages.scss */
+/* line 57, ../sass/components/_pages.scss */
 .responsive h2.block__title {
   padding: 1.6px 24px;
   padding: 0.1rem 1.5rem;
   border-bottom: 1px solid whitesmoke;
   margin: 0;
+  font-weight: 600;
+  font-size: 21px;
+  font-size: 1.3125rem;
 }
-/* line 65, ../sass/components/_pages.scss */
+/* line 64, ../sass/components/_pages.scss */
 .responsive .view, .responsive form {
   padding: 0px 24px 16px;
   padding: 0rem 1.5rem 1rem;
@@ -2171,13 +2174,36 @@ footer#footer {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 69, ../sass/components/_pages.scss */
+/* line 68, ../sass/components/_pages.scss */
 .responsive .field {
   padding: 0px 24px;
   padding: 0rem 1.5rem;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+/*
+ * Login Page
+ */
+/* line 80, ../sass/components/_pages.scss */
+.front.not-logged-in .block__title {
+  background-color: #0062bd;
+  color: #fff;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+/* line 85, ../sass/components/_pages.scss */
+.front.not-logged-in input, .front.not-logged-in select {
+  width: 100%;
+}
+/* line 90, ../sass/components/_pages.scss */
+.front.not-logged-in #block-user-login input[type='submit'],
+.front.not-logged-in #block-syllabus-block-syllabus-search input[type='submit'] {
+  margin-bottom: 2em;
 }
 
 /**
