@@ -2203,7 +2203,7 @@ footer#footer {
 /* line 90, ../sass/components/_pages.scss */
 .front.not-logged-in #block-user-login input[type='submit'],
 .front.not-logged-in #block-syllabus-block-syllabus-search input[type='submit'] {
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 
 /**
