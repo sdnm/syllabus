@@ -94,6 +94,117 @@ footer#footer{
 }
 
 
+/*
+ * Dashboard Professor
+ */
+ 
+%borders{
+  border-bottom: 1px solid $light-grey;
+  padding: 1em 1.5em;
+}
+
+.front.logged-in{
+    form{
+      padding: 0;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      li{
+        @extend %borders;
+        /*
+        a{
+          display: block;
+        } 
+        a:hover:after{
+          content: '+';
+          margin: 0 1em;
+          padding: 0 1em;
+          @include border-radius(3px);
+          font-weight: bold;
+          display: inline-block;
+          background-color: #697988;
+          color: #fff;
+        }*/
+      }
+    }
+    
+    fieldset{
+      margin: 0;
+      @include box-shadow(none);
+      border-bottom: 1px solid $light-grey;
+      padding: .5em 1.5em;
+    }
+    .legend{
+      background-color: $light-grey;
+      color: $link-grey;
+      font-style: italic;
+      padding: .5em 1.5em;
+      @include rem-fallback(font-size, .75); //12px
+
+      &.first{
+       padding-top: 1em; 
+      }
+      &.last{
+       padding-bottom: 1em; 
+       @include border-radius(0 0 3px 3px)
+      }
+    }
+    
+    #main span{
+      display: inline-block;
+      padding: 0 1em;
+      margin-right: .5em;
+      @include border-radius(3px);
+      font-style: normal;
+      line-height: 1.5;
+      text-transform: capitalize;
+      @include rem-fallback(font-size, .75); //12px
+      
+      &.draft{
+        background-color: #ddd;
+      }//draft
+      &.published,
+      &.public{
+        background-color: #697988;
+        color: #fff;
+      }// published/public
+    }// span
+    
+     #main .fieldset-wrapper{
+      span{
+        margin: 0 10em 0 0; 
+        @media only screen and (min-width: 22.5em){
+          margin: 0 3em 0 1em; 
+        }
+      }
+      @media #{$desktop}{
+        a{
+          margin-top: .5em;
+          display: inline-block;
+        }
+      }//mediaquery
+    }// fieldset-wrapper
+      
+    .administrative-links{
+      @extend %borders;      
+    }
+    
+    // Button Styles
+    #edit-public, 
+    #edit-publish, 
+    #edit-draft{
+      @include button-3d($primary, #fff);
+      @include box-shadow(rgba(0,0,0, 0.2) 0 1px 3px);
+      @media #{$desktop}{
+        float: right;
+      }
+    }// buttons 
+    
+    
+}
+
 
 
 

@@ -2206,6 +2206,169 @@ footer#footer {
   margin-bottom: 1.5em;
 }
 
+/*
+ * Dashboard Professor
+ */
+/* line 101, ../sass/components/_pages.scss */
+.front.logged-in ul li, .front.logged-in .administrative-links {
+  border-bottom: 1px solid whitesmoke;
+  padding: 1em 1.5em;
+}
+
+/* line 107, ../sass/components/_pages.scss */
+.front.logged-in form {
+  padding: 0;
+}
+/* line 110, ../sass/components/_pages.scss */
+.front.logged-in ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 114, ../sass/components/_pages.scss */
+.front.logged-in ul li {
+  /*
+  a{
+    display: block;
+  } 
+  a:hover:after{
+    content: '+';
+    margin: 0 1em;
+    padding: 0 1em;
+    @include border-radius(3px);
+    font-weight: bold;
+    display: inline-block;
+    background-color: #697988;
+    color: #fff;
+  }*/
+}
+/* line 133, ../sass/components/_pages.scss */
+.front.logged-in fieldset {
+  margin: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 1px solid whitesmoke;
+  padding: .5em 1.5em;
+}
+/* line 139, ../sass/components/_pages.scss */
+.front.logged-in .legend {
+  background-color: whitesmoke;
+  color: #666666;
+  font-style: italic;
+  padding: .5em 1.5em;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+/* line 146, ../sass/components/_pages.scss */
+.front.logged-in .legend.first {
+  padding-top: 1em;
+}
+/* line 149, ../sass/components/_pages.scss */
+.front.logged-in .legend.last {
+  padding-bottom: 1em;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  -ms-border-radius: 0 0 3px 3px;
+  -o-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+}
+/* line 155, ../sass/components/_pages.scss */
+.front.logged-in #main span {
+  display: inline-block;
+  padding: 0 1em;
+  margin-right: .5em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-style: normal;
+  line-height: 1.5;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+/* line 165, ../sass/components/_pages.scss */
+.front.logged-in #main span.draft {
+  background-color: #ddd;
+}
+/* line 169, ../sass/components/_pages.scss */
+.front.logged-in #main span.published, .front.logged-in #main span.public {
+  background-color: #697988;
+  color: #fff;
+}
+/* line 176, ../sass/components/_pages.scss */
+.front.logged-in #main .fieldset-wrapper span {
+  margin: 0 10em 0 0;
+}
+@media only screen and (min-width: 22.5em) {
+  /* line 176, ../sass/components/_pages.scss */
+  .front.logged-in #main .fieldset-wrapper span {
+    margin: 0 3em 0 1em;
+  }
+}
+@media only screen and (min-width: 87.5em) {
+  /* line 183, ../sass/components/_pages.scss */
+  .front.logged-in #main .fieldset-wrapper a {
+    margin-top: .5em;
+    display: inline-block;
+  }
+}
+/* line 197, ../sass/components/_pages.scss */
+.front.logged-in #edit-public,
+.front.logged-in #edit-publish,
+.front.logged-in #edit-draft {
+  color: white;
+  border: 1px solid #00488a;
+  padding: .2em .5em .3em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 150ms;
+  -moz-transition-duration: 150ms;
+  -o-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background-color: #0062bd;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.05)));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+}
+/* line 154, ../sass/_mixins.scss */
+.front.logged-in #edit-public:hover, .front.logged-in #edit-public:focus, .front.logged-in #edit-public:active,
+.front.logged-in #edit-publish:hover,
+.front.logged-in #edit-publish:focus,
+.front.logged-in #edit-publish:active,
+.front.logged-in #edit-draft:hover,
+.front.logged-in #edit-draft:focus,
+.front.logged-in #edit-draft:active {
+  border-color: #003a71;
+  background-color: #005aae;
+}
+@media only screen and (min-width: 87.5em) {
+  /* line 197, ../sass/components/_pages.scss */
+  .front.logged-in #edit-public,
+  .front.logged-in #edit-publish,
+  .front.logged-in #edit-draft {
+    float: right;
+  }
+}
+
 /**
  * @file
  * SMACSS Modules
