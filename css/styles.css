@@ -755,7 +755,7 @@ table {
  * by setting a max-width.
  */
 /* line 34, ../sass/layouts/_responsive.scss */
-#page #main,
+.content-wrapper,
 .region-bottom {
   margin-left: auto;
   margin-right: auto;
@@ -769,7 +769,7 @@ table {
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
 /* line 50, ../sass/layouts/_responsive.scss */
-#content,
+.content-wrapper,
 #navigation,
 .region-sidebar-first,
 .region-sidebar-second,
