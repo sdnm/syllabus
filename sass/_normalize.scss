@@ -602,3 +602,13 @@ table {
   background-color: #fff;
 }
 
+/**
+ * Placeholder Text
+ */
+
+::-webkit-input-placeholder,
+:-moz-placeholder, /* Firefox 18- */
+::-moz-placeholder,  /* Firefox 19+ */
+:-ms-input-placeholder {  
+}
+

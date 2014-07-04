@@ -140,7 +140,7 @@ footer#footer{
       background-color: $light-grey;
       color: $link-grey;
       font-style: italic;
-      padding: .5em 1.5em;
+      @include rem-fallback(padding, .5, 1.5);
       @include rem-fallback(font-size, .75); //12px
 
       &.first{

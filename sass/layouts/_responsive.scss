@@ -52,6 +52,7 @@ $zen-auto-include-item-base: false;
 #header,
 #main,
 .responsive .panel-display,
+.responsive .center-wrapper,
 #footer {
   @include zen-grid-container();
 }
@@ -260,7 +261,6 @@ $zen-auto-include-item-base: false;
   }
   
   @media only screen and (min-width: 60em){
-    
     .panel-col-first{
       @include zen-grid-item(3, 1)
     }
