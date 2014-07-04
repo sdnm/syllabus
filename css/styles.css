@@ -1101,12 +1101,24 @@ table {
 }
 
 /* line 283, ../sass/layouts/_responsive.scss */
+.page-syllabus-add #main {
+  padding: 2em 20px;
+}
+/* line 286, ../sass/layouts/_responsive.scss */
 .page-syllabus-add #content {
   float: left;
-  width: 66.66667%;
+  width: 100%;
   margin-left: 0%;
-  margin-right: -66.66667%;
-  margin: 2em 0;
+  margin-right: -100%;
+}
+@media only screen and (min-width: 60em) {
+  /* line 286, ../sass/layouts/_responsive.scss */
+  .page-syllabus-add #content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+  }
 }
 
 /* Component (SMACSS module) rules */
@@ -2400,8 +2412,8 @@ footer#footer {
  */
 /* line 214, ../sass/components/_pages.scss */
 .page-syllabus-add .page__title {
-  padding: 1.6px 24px;
-  padding: 0.1rem 1.5rem;
+  padding: 6.4px 24px;
+  padding: 0.4rem 1.5rem;
   border-bottom: 1px solid whitesmoke;
   margin: 0;
   font-weight: 600;
@@ -2424,10 +2436,48 @@ footer#footer {
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
 }
-/* line 229, ../sass/components/_pages.scss */
+/* line 228, ../sass/components/_pages.scss */
 .page-syllabus-add .content-wrapper {
   padding: 0px 24px 16px;
   padding: 0rem 1.5rem 1rem;
+}
+/* line 231, ../sass/components/_pages.scss */
+.page-syllabus-add #edit-copy {
+  margin-right: 1em;
+}
+/* line 234, ../sass/components/_pages.scss */
+.page-syllabus-add #edit-new {
+  color: white;
+  border: 1px solid #00488a;
+  padding: .2em .5em .3em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 150ms;
+  -moz-transition-duration: 150ms;
+  -o-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background-color: #0062bd;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.05)));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+}
+/* line 154, ../sass/_mixins.scss */
+.page-syllabus-add #edit-new:hover, .page-syllabus-add #edit-new:focus, .page-syllabus-add #edit-new:active {
+  border-color: #003a71;
+  background-color: #005aae;
 }
 
 /**
