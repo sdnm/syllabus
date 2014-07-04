@@ -3,7 +3,6 @@
  */
 main#main, 
 footer#footer{
-  background-color: $medium-grey;
   @include zero;
 }
 
@@ -104,10 +103,14 @@ footer#footer{
 }
 
 .front.logged-in{
-    form{
-      padding: 0;
-    }
-    ul{
+    #block-syllabus-block-syllabus-pending, 
+    #block-syllabus-block-syllabus-current,
+    #block-syllabus-admin-syllabus-administrator-block{
+      form{
+        padding: 0;
+      }
+    } 
+    .content-wrapper ul{
       margin: 0;
       padding: 0;
       list-style-type: none;
@@ -200,12 +203,34 @@ footer#footer{
       @media #{$desktop}{
         float: right;
       }
-    }// buttons 
-    
-    
+    }// buttons    
 }
 
+/**
+ * Create a Syllabus Page
+ */
 
+.page-syllabus-add{
+  .page__title{
+    @include rem-fallback(padding, .1, 1.5);
+    border-bottom: 1px solid $light-grey;
+    margin: 0;
+    font-weight: 600;
+    @include rem-fallback(font-size, 1.3125);
+  }
+  #content{
+    padding: 0;
+    background-color: #fff;
+    @include box-sizing(border-box);
+    @include border-radius(3px);
+    @include box-shadow(rgba(0,0,0,0.1) 0 1px 3px);    
+  }
+  
+  .content-wrapper{
+    @include rem-fallback(padding, 0, 1.5, 1);
+  }
+  
+}
 
 
 

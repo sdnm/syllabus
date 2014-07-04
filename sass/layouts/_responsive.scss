@@ -37,6 +37,10 @@ $zen-auto-include-item-base: false;
   max-width: 1200px;
 }
 
+.content-wrapper{
+  margin-bottom: 2em;
+}
+
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
 #content,
 #navigation,
@@ -221,6 +225,10 @@ $zen-auto-include-item-base: false;
 .responsive .panel-2col-bricks{
   $zen-column-count: 6;
   
+  .block{
+    margin: 0;
+  }
+  
   .inside{
     @include rem-fallback(margin, 2, 0, 0); // Sets spacing at top of page **
   }
@@ -271,4 +279,10 @@ $zen-auto-include-item-base: false;
   }
 }
 
-
+.page-syllabus-add{
+  #content{
+    $zen-column-count: 6;
+    @include zen-grid-item(4, 1);
+    margin: 2em 0;
+  }
+}
