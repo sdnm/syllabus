@@ -615,11 +615,9 @@ input[type="submit"] {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   background-color: whitesmoke;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.05)));
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
-  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
 }
 /* line 154, ../sass/_mixins.scss */
 button:hover, button:focus, button:active,
@@ -635,8 +633,8 @@ input[type="reset"]:active,
 input[type="submit"]:hover,
 input[type="submit"]:focus,
 input[type="submit"]:active {
-  border-color: #cfcfcf;
-  background-color: #ededed;
+  border-color: #c2c2c2;
+  background-color: #e1e1e1;
 }
 
 /**
@@ -1473,16 +1471,16 @@ menu.user-menu #open_secondary-menu:hover, menu.user-menu #open_secondary-menu:f
 /* line 255, ../sass/components/_navigation.scss */
 .tabs-primary, .tabs-secondary {
   overflow: hidden;
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(100%, #bbbbbb), color-stop(100%, transparent));
-  background-image: -webkit-linear-gradient(bottom, #bbbbbb 1px, transparent 1px);
-  background-image: -moz-linear-gradient(bottom, #bbbbbb 1px, transparent 1px);
-  background-image: -o-linear-gradient(bottom, #bbbbbb 1px, transparent 1px);
-  background-image: linear-gradient(bottom, #bbbbbb 1px, transparent 1px);
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(100%, transparent), color-stop(100%, transparent));
+  background-image: -webkit-linear-gradient(bottom, transparent 1px, transparent 1px);
+  background-image: -moz-linear-gradient(bottom, transparent 1px, transparent 1px);
+  background-image: -o-linear-gradient(bottom, transparent 1px, transparent 1px);
+  background-image: linear-gradient(bottom, transparent 1px, transparent 1px);
   /* IE 9 and earlier don't understand gradients. */
   list-style: none;
-  border-bottom: 1px solid #bbbbbb \0/ie;
+  border-bottom: 1px solid transparent \0/ie;
   margin: 1.5em 0;
-  padding: 0 2px;
+  padding: 0 1em;
   white-space: nowrap;
 }
 
@@ -1511,7 +1509,7 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__
   -moz-border-radius-topright: 3px;
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
-  border: 1px solid #bbbbbb;
+  border: 1px solid transparent;
   border-bottom-color: transparent;
   /* IE 9 and earlier don't understand gradients. */
   border-bottom: 0 \0/ie;
@@ -1519,7 +1517,7 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__
 
 /* line 289, ../sass/components/_navigation.scss */
 .is-active.tabs-primary__tab {
-  border-bottom-color: white;
+  border-bottom-color: #e5e5e5;
 }
 
 /* line 295, ../sass/components/_navigation.scss */
@@ -1535,38 +1533,39 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
   color: #333;
-  background-color: whitesmoke;
+  background-color: #cccccc;
   letter-spacing: 1px;
   padding: .2em 1em .1em;
   text-align: center;
+  font-weight: bold;
 }
 
-/* line 305, ../sass/components/_navigation.scss */
+/* line 306, ../sass/components/_navigation.scss */
 a.tabs-primary__tab-link:hover, a.tabs-primary__tab-link:focus {
   background-color: #eee;
 }
 
-/* line 308, ../sass/components/_navigation.scss */
+/* line 309, ../sass/components/_navigation.scss */
 a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
-  background-color: transparent;
-  border-color: #fff;
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
 }
 
 /* Secondary tabs. */
-/* line 330, ../sass/components/_navigation.scss */
+/* line 331, ../sass/components/_navigation.scss */
 .tabs-secondary {
   font-size: .9em;
   /* Collapse bottom margin of ul.primary. */
   margin-top: -1.5em;
 }
 
-/* line 337, ../sass/components/_navigation.scss */
+/* line 338, ../sass/components/_navigation.scss */
 .tabs-secondary__tab,
 .tabs-secondary__tab.is-active {
   margin: 0.75em 3px;
 }
 
-/* line 343, ../sass/components/_navigation.scss */
+/* line 344, ../sass/components/_navigation.scss */
 a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   -webkit-border-radius: 0.75em;
   -moz-border-radius: 0.75em;
@@ -1582,14 +1581,14 @@ a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   padding: 0 .5em;
 }
 
-/* line 352, ../sass/components/_navigation.scss */
+/* line 353, ../sass/components/_navigation.scss */
 a.tabs-secondary__tab-link:hover, a.tabs-secondary__tab-link:focus {
   background-color: #dedede;
   border-color: #999;
   color: #333;
 }
 
-/* line 357, ../sass/components/_navigation.scss */
+/* line 358, ../sass/components/_navigation.scss */
 a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   text-shadow: 1px 1px 0 #333333;
   background-color: #666;
@@ -1601,14 +1600,14 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
  * Pager.
  */
 /* A list of page numbers when more than 1 page of content is available. */
-/* line 386, ../sass/components/_navigation.scss */
+/* line 387, ../sass/components/_navigation.scss */
 .pager {
   clear: both;
   padding: 0;
   text-align: center;
 }
 
-/* line 391, ../sass/components/_navigation.scss */
+/* line 392, ../sass/components/_navigation.scss */
 .pager-item,
 .pager-first,
 .pager-previous,
@@ -1621,7 +1620,7 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   background-image: none;
 }
 
-/* line 403, ../sass/components/_navigation.scss */
+/* line 404, ../sass/components/_navigation.scss */
 .pager-item,
 .pager-first,
 .pager-previous,
@@ -1632,7 +1631,7 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 }
 
 /* The current page's list item. */
-/* line 408, ../sass/components/_navigation.scss */
+/* line 409, ../sass/components/_navigation.scss */
 .pager-current {
   font-weight: bold;
 }
@@ -1640,26 +1639,26 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 /**
  * Menus.
  */
-/* line 417, ../sass/components/_navigation.scss */
+/* line 418, ../sass/components/_navigation.scss */
 .menu__item.is-leaf {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHBAMAAAA2fErgAAAAD1BMVEX///+/v7+Li4sAAADAwMBFvsw8AAAAAXRSTlMAQObYZgAAAB1JREFUCFtjYAADYwMGBmYVZSDhKAwkFJWhYiAAAB2+Aa/9ugeaAAAAAElFTkSuQmCC');
   list-style-type: square;
 }
 
-/* line 424, ../sass/components/_navigation.scss */
+/* line 425, ../sass/components/_navigation.scss */
 .menu__item.is-expanded {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
   list-style-type: circle;
 }
 
-/* line 431, ../sass/components/_navigation.scss */
+/* line 432, ../sass/components/_navigation.scss */
 .menu__item.is-collapsed {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
   list-style-type: disc;
 }
 
 /* The active item in a Drupal menu. */
-/* line 440, ../sass/components/_navigation.scss */
+/* line 441, ../sass/components/_navigation.scss */
 .menu a.active {
   color: #000;
 }
@@ -2378,14 +2377,10 @@ footer#footer {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   background-color: #0062bd;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.05)));
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
-  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  border-color: #0062bd;
 }
 /* line 154, ../sass/_mixins.scss */
 .front.logged-in #edit-public:hover, .front.logged-in #edit-public:focus, .front.logged-in #edit-public:active,
@@ -2395,8 +2390,8 @@ footer#footer {
 .front.logged-in #edit-draft:hover,
 .front.logged-in #edit-draft:focus,
 .front.logged-in #edit-draft:active {
-  border-color: #003a71;
-  background-color: #005aae;
+  border-color: #002d57;
+  background-color: #004d94;
 }
 @media only screen and (min-width: 87.5em) {
   /* line 200, ../sass/components/_pages.scss */
@@ -2468,16 +2463,77 @@ footer#footer {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   background-color: #0062bd;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.05)));
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
-  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  border-color: #0062bd;
 }
 /* line 154, ../sass/_mixins.scss */
 .page-syllabus-add #edit-new:hover, .page-syllabus-add #edit-new:focus, .page-syllabus-add #edit-new:active {
-  border-color: #003a71;
-  background-color: #005aae;
+  border-color: #002d57;
+  background-color: #004d94;
+}
+
+/**
+ * View Page for Individual Syllabi
+ */
+/* line 247, ../sass/components/_pages.scss */
+.page-syllabus- .bar {
+  background-color: #a1a1a1;
+}
+/* line 249, ../sass/components/_pages.scss */
+.page-syllabus- .bar h1 {
+  padding: 24px 24px 0px;
+  padding: 1.5rem 1.5rem 0rem;
+  font-weight: 600;
+}
+
+/* line 260, ../sass/components/_pages.scss */
+.print-page:link, .print-page:visited,
+.print-pdf:link,
+.print-pdf:visited {
+  color: white;
+  border: 1px solid #00488a;
+  padding: .2em .5em .3em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 150ms;
+  -moz-transition-duration: 150ms;
+  -o-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background-color: #0062bd;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  border-color: #0062bd;
+}
+/* line 154, ../sass/_mixins.scss */
+.print-page:link:hover, .print-page:link:focus, .print-page:link:active, .print-page:visited:hover, .print-page:visited:focus, .print-page:visited:active,
+.print-pdf:link:hover,
+.print-pdf:link:focus,
+.print-pdf:link:active,
+.print-pdf:visited:hover,
+.print-pdf:visited:focus,
+.print-pdf:visited:active {
+  border-color: #002d57;
+  background-color: #004d94;
+}
+
+/* line 267, ../sass/components/_pages.scss */
+.syllabus_profile ul, .syllabus_profile li {
+  margin: 0;
+  padding: 0;
 }
 
 /**

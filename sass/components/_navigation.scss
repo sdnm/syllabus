@@ -259,7 +259,7 @@ menu.user-menu{
   list-style: none;
   border-bottom: 1px solid $tabs-border \0/ie;
   margin: rhythm(1) 0;
-  padding: 0 2px;
+  padding: 0 1em;
   white-space: nowrap;
 }
 %tabs__tab {
@@ -297,17 +297,18 @@ menu.user-menu{
   @include border-top-radius(4px);
   @include transition(background-color 0.3s);
   color: #333;
-  background-color: $light-grey;
+  background-color: $grey;
   letter-spacing: 1px;
   padding: .2em 1em .1em;
   text-align: center;
+  font-weight: bold;
 }
 %tabs-primary__tab-link-is-hover {
   background-color: #eee;
 }
 %tabs-primary__tab-link-is-active {
-  background-color: transparent;
-  border-color: #fff;
+  background-color: $medium-grey;
+  border-color: $medium-grey;
 }
 
 a.tabs-primary__tab-link {

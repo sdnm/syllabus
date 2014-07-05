@@ -199,7 +199,7 @@ footer#footer{
     #edit-publish, 
     #edit-draft{
       @include button-3d($primary, #fff);
-      @include box-shadow(rgba(0,0,0, 0.2) 0 1px 3px);
+      border-color: $primary;
       @media #{$desktop}{
         float: right;
       }
@@ -233,11 +233,42 @@ footer#footer{
   }
   #edit-new{
     @include button-3d($primary, #fff);
+    border-color: $primary;
   }
 }
 
+/**
+ * View Page for Individual Syllabi
+ */
+ 
+// See _navigation.scss for tab styles
 
+.page-syllabus-{
+  .bar{
+    background-color: #a1a1a1;
+    h1{
+      @include rem-fallback (padding, 1.5, 1.5, 0);
+      font-weight: 600;
+      //@include rem-fallback(font-size, 1.3125);
+    }
+  }
+}
 
+.print-page,
+.print-pdf{
+  &:link, 
+  &:visited{
+    @include button-3d($primary, #fff);
+    border-color: $primary;
+  }
+}
+
+.syllabus_profile{
+  ul, li{
+    @include zero;
+    //margin-right: 1em;
+  }
+}
 
 
 
