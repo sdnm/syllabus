@@ -2128,47 +2128,53 @@ mark.updated {
  * Background styling
  */
 /* line 5, ../sass/components/_pages.scss */
+#page {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+/* line 10, ../sass/components/_pages.scss */
 main#main,
 footer#footer {
   margin: 0;
   padding: 0;
 }
 
-/* line 9, ../sass/components/_pages.scss */
+/* line 14, ../sass/components/_pages.scss */
 .footer-wrapper {
   text-align: center;
 }
-/* line 11, ../sass/components/_pages.scss */
+/* line 16, ../sass/components/_pages.scss */
 .footer-wrapper .info {
   margin-top: 1em;
 }
-/* line 13, ../sass/components/_pages.scss */
+/* line 18, ../sass/components/_pages.scss */
 .footer-wrapper .info span, .footer-wrapper .info a {
   color: #666666;
   font-size: 12px;
   font-size: 0.75rem;
 }
-/* line 17, ../sass/components/_pages.scss */
+/* line 22, ../sass/components/_pages.scss */
 .footer-wrapper .info span:after {
   content: '|';
   padding: 0 .5em;
 }
-/* line 21, ../sass/components/_pages.scss */
+/* line 26, ../sass/components/_pages.scss */
 .footer-wrapper .info span:last-child:after {
   content: '';
 }
-/* line 25, ../sass/components/_pages.scss */
+/* line 30, ../sass/components/_pages.scss */
 .footer-wrapper .colophon {
   background-color: #c2c2c2;
   margin: 1em 0 0;
   padding: .3em 0;
 }
-/* line 29, ../sass/components/_pages.scss */
+/* line 34, ../sass/components/_pages.scss */
 .footer-wrapper .colophon a {
   color: #333333;
   font-weight: bold;
 }
-/* line 32, ../sass/components/_pages.scss */
+/* line 37, ../sass/components/_pages.scss */
 .footer-wrapper .colophon a:hover {
   text-decoration: underline;
 }
@@ -2176,7 +2182,7 @@ footer#footer {
 /*
  * Page Layout Styles
  */
-/* line 48, ../sass/components/_pages.scss */
+/* line 53, ../sass/components/_pages.scss */
 .responsive .panel-2col-bricks .panel-panel .inside,
 .responsive .panel-2col .panel-panel .inside {
   background-color: #fff;
@@ -2192,7 +2198,7 @@ footer#footer {
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
 }
-/* line 56, ../sass/components/_pages.scss */
+/* line 61, ../sass/components/_pages.scss */
 .responsive h2.block__title {
   padding: 1.6px 24px;
   padding: 0.1rem 1.5rem;
@@ -2202,7 +2208,7 @@ footer#footer {
   font-size: 21px;
   font-size: 1.3125rem;
 }
-/* line 63, ../sass/components/_pages.scss */
+/* line 68, ../sass/components/_pages.scss */
 .responsive .view, .responsive form {
   padding: 0px 24px 16px;
   padding: 0rem 1.5rem 1rem;
@@ -2210,7 +2216,7 @@ footer#footer {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 67, ../sass/components/_pages.scss */
+/* line 72, ../sass/components/_pages.scss */
 .responsive .field {
   padding: 0px 24px;
   padding: 0rem 1.5rem;
@@ -2222,7 +2228,7 @@ footer#footer {
 /*
  * Login Page
  */
-/* line 79, ../sass/components/_pages.scss */
+/* line 84, ../sass/components/_pages.scss */
 .front.not-logged-in .block__title {
   background-color: #0062bd;
   color: #fff;
@@ -2232,11 +2238,11 @@ footer#footer {
   -o-border-radius: 3px 3px 0 0;
   border-radius: 3px 3px 0 0;
 }
-/* line 84, ../sass/components/_pages.scss */
+/* line 89, ../sass/components/_pages.scss */
 .front.not-logged-in input, .front.not-logged-in select {
   width: 100%;
 }
-/* line 89, ../sass/components/_pages.scss */
+/* line 94, ../sass/components/_pages.scss */
 .front.not-logged-in #block-user-login input[type='submit'],
 .front.not-logged-in #block-syllabus-block-syllabus-search input[type='submit'] {
   margin-bottom: 1.5em;
@@ -2245,25 +2251,25 @@ footer#footer {
 /*
  * Dashboard Professor
  */
-/* line 100, ../sass/components/_pages.scss */
+/* line 105, ../sass/components/_pages.scss */
 .front.logged-in .content-wrapper ul li, .front.logged-in .administrative-links {
   border-bottom: 1px solid whitesmoke;
   padding: 1em 1.5em;
 }
 
-/* line 109, ../sass/components/_pages.scss */
+/* line 114, ../sass/components/_pages.scss */
 .front.logged-in #block-syllabus-block-syllabus-pending form,
 .front.logged-in #block-syllabus-block-syllabus-current form,
 .front.logged-in #block-syllabus-admin-syllabus-administrator-block form {
   padding: 0;
 }
-/* line 113, ../sass/components/_pages.scss */
+/* line 118, ../sass/components/_pages.scss */
 .front.logged-in .content-wrapper ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 117, ../sass/components/_pages.scss */
+/* line 122, ../sass/components/_pages.scss */
 .front.logged-in .content-wrapper ul li {
   /*
   a{
@@ -2280,7 +2286,7 @@ footer#footer {
     color: #fff;
   }*/
 }
-/* line 136, ../sass/components/_pages.scss */
+/* line 141, ../sass/components/_pages.scss */
 .front.logged-in fieldset {
   margin: 0;
   -webkit-box-shadow: none;
@@ -2289,7 +2295,7 @@ footer#footer {
   border-bottom: 1px solid whitesmoke;
   padding: .5em 1.5em;
 }
-/* line 142, ../sass/components/_pages.scss */
+/* line 147, ../sass/components/_pages.scss */
 .front.logged-in .legend {
   background-color: whitesmoke;
   color: #666666;
@@ -2299,11 +2305,11 @@ footer#footer {
   font-size: 12px;
   font-size: 0.75rem;
 }
-/* line 149, ../sass/components/_pages.scss */
+/* line 154, ../sass/components/_pages.scss */
 .front.logged-in .legend.first {
   padding-top: 1em;
 }
-/* line 152, ../sass/components/_pages.scss */
+/* line 157, ../sass/components/_pages.scss */
 .front.logged-in .legend.last {
   padding-bottom: 1em;
   -webkit-border-radius: 0 0 3px 3px;
@@ -2312,7 +2318,7 @@ footer#footer {
   -o-border-radius: 0 0 3px 3px;
   border-radius: 0 0 3px 3px;
 }
-/* line 158, ../sass/components/_pages.scss */
+/* line 163, ../sass/components/_pages.scss */
 .front.logged-in #main span {
   display: inline-block;
   padding: 0 1em;
@@ -2328,33 +2334,33 @@ footer#footer {
   font-size: 12px;
   font-size: 0.75rem;
 }
-/* line 168, ../sass/components/_pages.scss */
+/* line 173, ../sass/components/_pages.scss */
 .front.logged-in #main span.draft {
   background-color: #ddd;
 }
-/* line 172, ../sass/components/_pages.scss */
+/* line 177, ../sass/components/_pages.scss */
 .front.logged-in #main span.published, .front.logged-in #main span.public {
   background-color: #697988;
   color: #fff;
 }
-/* line 179, ../sass/components/_pages.scss */
+/* line 184, ../sass/components/_pages.scss */
 .front.logged-in #main .fieldset-wrapper span {
   margin: 0 10em 0 0;
 }
 @media only screen and (min-width: 22.5em) {
-  /* line 179, ../sass/components/_pages.scss */
+  /* line 184, ../sass/components/_pages.scss */
   .front.logged-in #main .fieldset-wrapper span {
     margin: 0 3em 0 1em;
   }
 }
 @media only screen and (min-width: 87.5em) {
-  /* line 186, ../sass/components/_pages.scss */
+  /* line 191, ../sass/components/_pages.scss */
   .front.logged-in #main .fieldset-wrapper a {
     margin-top: .5em;
     display: inline-block;
   }
 }
-/* line 200, ../sass/components/_pages.scss */
+/* line 205, ../sass/components/_pages.scss */
 .front.logged-in #edit-public,
 .front.logged-in #edit-publish,
 .front.logged-in #edit-draft {
@@ -2396,7 +2402,7 @@ footer#footer {
   background-color: #004d94;
 }
 @media only screen and (min-width: 87.5em) {
-  /* line 200, ../sass/components/_pages.scss */
+  /* line 205, ../sass/components/_pages.scss */
   .front.logged-in #edit-public,
   .front.logged-in #edit-publish,
   .front.logged-in #edit-draft {
@@ -2407,7 +2413,7 @@ footer#footer {
 /**
  * Create a Syllabus Page
  */
-/* line 214, ../sass/components/_pages.scss */
+/* line 219, ../sass/components/_pages.scss */
 .page-syllabus-add .page__title {
   padding: 6.4px 24px;
   padding: 0.4rem 1.5rem;
@@ -2417,7 +2423,7 @@ footer#footer {
   font-size: 21px;
   font-size: 1.3125rem;
 }
-/* line 221, ../sass/components/_pages.scss */
+/* line 226, ../sass/components/_pages.scss */
 .page-syllabus-add #content {
   padding: 0;
   background-color: #fff;
@@ -2433,16 +2439,16 @@ footer#footer {
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
 }
-/* line 228, ../sass/components/_pages.scss */
+/* line 233, ../sass/components/_pages.scss */
 .page-syllabus-add .content-wrapper {
   padding: 0px 24px 16px;
   padding: 0rem 1.5rem 1rem;
 }
-/* line 231, ../sass/components/_pages.scss */
+/* line 236, ../sass/components/_pages.scss */
 .page-syllabus-add #edit-copy {
   margin-right: 1em;
 }
-/* line 234, ../sass/components/_pages.scss */
+/* line 239, ../sass/components/_pages.scss */
 .page-syllabus-add #edit-new {
   color: white;
   border: 1px solid #00488a;
@@ -2479,18 +2485,18 @@ footer#footer {
 /**
  * View Page for Individual Syllabi
  */
-/* line 247, ../sass/components/_pages.scss */
+/* line 252, ../sass/components/_pages.scss */
 .page-syllabus- .bar {
   background-color: #a1a1a1;
 }
-/* line 249, ../sass/components/_pages.scss */
+/* line 254, ../sass/components/_pages.scss */
 .page-syllabus- .bar h1 {
   padding: 24px 24px 0px;
   padding: 1.5rem 1.5rem 0rem;
   font-weight: 600;
 }
 
-/* line 260, ../sass/components/_pages.scss */
+/* line 265, ../sass/components/_pages.scss */
 .print-page:link, .print-page:visited,
 .print-pdf:link,
 .print-pdf:visited {
@@ -2532,17 +2538,17 @@ footer#footer {
   background-color: #004d94;
 }
 
-/* line 270, ../sass/components/_pages.scss */
+/* line 275, ../sass/components/_pages.scss */
 .syllabus_profile {
   margin-bottom: 2em;
   /*General Info*/
 }
-/* line 273, ../sass/components/_pages.scss */
+/* line 278, ../sass/components/_pages.scss */
 .syllabus_profile ul, .syllabus_profile li {
   margin: 0;
   padding: 0;
 }
-/* line 277, ../sass/components/_pages.scss */
+/* line 282, ../sass/components/_pages.scss */
 .syllabus_profile .institute_description {
   margin-top: 1.5em;
   background-color: #fff;
@@ -2555,18 +2561,18 @@ footer#footer {
   padding: 0.5rem 1.5rem 0.3rem;
   border-bottom: 1px solid whitesmoke;
 }
-/* line 284, ../sass/components/_pages.scss */
+/* line 289, ../sass/components/_pages.scss */
 .syllabus_profile .institute_description_icon {
   float: left;
 }
-/* line 287, ../sass/components/_pages.scss */
+/* line 292, ../sass/components/_pages.scss */
 .syllabus_profile .institute_description_information {
   float: right;
   padding-top: .3em;
   font-size: 21px;
   font-size: 1.3125rem;
 }
-/* line 293, ../sass/components/_pages.scss */
+/* line 298, ../sass/components/_pages.scss */
 .syllabus_profile .course_description {
   background-color: #fff;
   padding: 16px 24px;
@@ -2574,46 +2580,46 @@ footer#footer {
   text-align: center;
   font-weight: bold;
 }
-/* line 299, ../sass/components/_pages.scss */
+/* line 304, ../sass/components/_pages.scss */
 .syllabus_profile .course_description .field-name-field-program-title {
   padding-top: .2em;
   border: 3px solid #000;
   border-bottom: 0;
 }
-/* line 304, ../sass/components/_pages.scss */
+/* line 309, ../sass/components/_pages.scss */
 .syllabus_profile .course_description .group-course-code {
   border-left: 3px solid #000;
   border-right: 3px solid #000;
 }
-/* line 307, ../sass/components/_pages.scss */
+/* line 312, ../sass/components/_pages.scss */
 .syllabus_profile .course_description .group-course-code div {
   display: inline-block;
 }
-/* line 310, ../sass/components/_pages.scss */
+/* line 315, ../sass/components/_pages.scss */
 .syllabus_profile .course_description .group-course-code .field-name-field-section {
   margin-left: .5em;
 }
-/* line 315, ../sass/components/_pages.scss */
+/* line 320, ../sass/components/_pages.scss */
 .syllabus_profile .course_description .field-name-field-syllabus-professor {
   border-left: 3px solid #000;
   border-right: 3px solid #000;
 }
-/* line 319, ../sass/components/_pages.scss */
+/* line 324, ../sass/components/_pages.scss */
 .syllabus_profile .course_description .field-name-field-syllabus-professor .field-name-field-first-name,
 .syllabus_profile .course_description .field-name-field-syllabus-professor .field-name-field-family-name {
   display: inline-block;
 }
-/* line 322, ../sass/components/_pages.scss */
+/* line 327, ../sass/components/_pages.scss */
 .syllabus_profile .course_description .field-name-field-syllabus-professor .field-name-field-family-name {
   margin-left: .5em;
 }
-/* line 327, ../sass/components/_pages.scss */
+/* line 332, ../sass/components/_pages.scss */
 .syllabus_profile .course_description .field-name-field-session {
   border: 3px solid #000;
   border-top: 0;
   padding-bottom: .2em;
 }
-/* line 334, ../sass/components/_pages.scss */
+/* line 339, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-professor-office-hours .field-name-field-office-day,
 .syllabus_profile .field-name-professor-office-hours .field-name-field-office-location .field-label, .syllabus_profile .field-name-assistant-professor-office-hours .field-name-field-office-day,
 .syllabus_profile .field-name-assistant-professor-office-hours .field-name-field-office-location .field-label {
@@ -2622,57 +2628,72 @@ footer#footer {
   font-size: 12px;
   font-size: 0.75rem;
 }
-/* line 342, ../sass/components/_pages.scss */
+/* line 347, ../sass/components/_pages.scss */
 .syllabus_profile .general_information {
   background-color: #fff;
 }
-/* line 346, ../sass/components/_pages.scss */
+/* line 351, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-professor-office-hours {
   padding: 1em 1.5em;
   border-bottom: 1px solid whitesmoke;
 }
-/* line 355, ../sass/components/_pages.scss */
+/* line 360, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-telephone {
   padding-top: 1em;
 }
-/* line 358, ../sass/components/_pages.scss */
+/* line 363, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-assistant-professor-office-hours {
   padding-bottom: 1em;
 }
-/* line 368, ../sass/components/_pages.scss */
+/* line 373, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-office-day,
 .syllabus_profile .field-name-field-hours-from {
   float: left;
 }
-/* line 371, ../sass/components/_pages.scss */
+/* line 376, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-hours-from {
   clear: left;
 }
-/* line 374, ../sass/components/_pages.scss */
+/* line 379, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-office-location {
   margin-left: 10em;
   margin-bottom: 1em;
 }
-/* line 381, ../sass/components/_pages.scss */
+/* line 386, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-ass-prof-info div {
   display: inline-block;
 }
-/* line 384, ../sass/components/_pages.scss */
+/* line 389, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-ass-prof-info .field-name-field-family-name {
   margin-left: .5em;
 }
-/* line 389, ../sass/components/_pages.scss */
+/* line 394, ../sass/components/_pages.scss */
 .syllabus_profile .center {
   background-color: #fff;
 }
-/* line 397, ../sass/components/_pages.scss */
+/* line 400, ../sass/components/_pages.scss */
+.syllabus_profile .field-name-field-evaluation-info,
+.syllabus_profile .field-name-field-evaluation-list {
+  font-size: 18px;
+  font-size: 1.125rem;
+  display: inline-block;
+}
+/* line 405, ../sass/components/_pages.scss */
+.syllabus_profile .field-name-field-evaluation-list .field-item:before {
+  content: '(';
+}
+/* line 408, ../sass/components/_pages.scss */
+.syllabus_profile .field-name-field-evaluation-list .field-item:after {
+  content: ')';
+}
+/* line 417, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-telephone,
 .syllabus_profile .field-name-email,
 .syllabus_profile .field-name-field-assistant-collection,
 .syllabus_profile .field-name-field-other-teaching-strategies {
   padding: 1em 1.5em 0;
 }
-/* line 409, ../sass/components/_pages.scss */
+/* line 429, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-course-description,
 .syllabus_profile .field-name-field-fc-agreements,
 .syllabus_profile .field-name-field-general-objectives,
@@ -2686,7 +2707,7 @@ footer#footer {
   padding: 1.5em;
   border-top: 1px solid whitesmoke;
 }
-/* line 413, ../sass/components/_pages.scss */
+/* line 433, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-course-description .field-label,
 .syllabus_profile .field-name-field-fc-agreements .field-label,
 .syllabus_profile .field-name-field-general-objectives .field-label,
@@ -2700,9 +2721,10 @@ footer#footer {
   font-size: 1.3125rem;
   border-bottom: 3px solid #000;
   margin-bottom: 1em;
-  padding-bottom: .2em;
+  padding-bottom: .3em;
+  font-weight: 500;
 }
-/* line 419, ../sass/components/_pages.scss */
+/* line 440, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-course-description .field-items .field-label,
 .syllabus_profile .field-name-field-fc-agreements .field-items .field-label,
 .syllabus_profile .field-name-field-general-objectives .field-items .field-label,
@@ -2714,10 +2736,11 @@ footer#footer {
 .syllabus_profile .field-name-field-document-article .field-items .field-label {
   border: 0;
   margin-bottom: 0;
+  font-weight: bold;
   font-size: 16px;
   font-size: 1rem;
 }
-/* line 426, ../sass/components/_pages.scss */
+/* line 448, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-document-article {
   -webkit-border-radius: 0 0 3px 3px;
   -moz-border-radius: 0 0 3px 3px;
@@ -2726,11 +2749,25 @@ footer#footer {
   border-radius: 0 0 3px 3px;
   padding-bottom: 2em;
 }
+/* line 456, ../sass/components/_pages.scss */
+.syllabus_profile .field-name-field-course-progress {
+  padding-bottom: 0;
+}
+/* line 459, ../sass/components/_pages.scss */
+.syllabus_profile .field-name-field-other-teaching-strategies {
+  padding: 0 1.5em 1.5em;
+}
+/* line 461, ../sass/components/_pages.scss */
+.syllabus_profile .field-name-field-other-teaching-strategies .field-items {
+  border-top: 1px solid whitesmoke;
+  padding-top: .5em;
+  margin-top: .5em;
+}
 
 /**
  * Print Page
  */
-/* line 436, ../sass/components/_pages.scss */
+/* line 474, ../sass/components/_pages.scss */
 .print-content {
   margin: 2em;
 }

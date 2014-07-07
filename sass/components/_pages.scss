@@ -1,6 +1,11 @@
 /**
  * Background styling
  */
+ 
+#page{
+  @include rem-fallback(font-size, .875); //12px
+}
+
 main#main, 
 footer#footer{
   @include zero;
@@ -390,6 +395,21 @@ footer#footer{
     background-color: #fff; 
   }
   
+  //Evaluation
+  .field-name-field-evaluation-info,
+  .field-name-field-evaluation-list{
+    @include rem-fallback(font-size, 1.125);
+    display: inline-block;
+  }
+  .field-name-field-evaluation-list .field-item{
+    &:before{
+      content: '(';
+    }
+    &:after{
+      content: ')';
+    }
+  }
+  
   // Added Padding top/left/right
   .field-name-telephone,
   .field-name-email,
@@ -414,11 +434,13 @@ footer#footer{
       @include rem-fallback(font-size, 1.3125);
       border-bottom: 3px solid #000; 
       margin-bottom: 1em;
-      padding-bottom: .2em;
+      padding-bottom: .3em;
+      font-weight: 500;
     }
     .field-items .field-label{
       border: 0;
       margin-bottom: 0;
+      font-weight: bold;
       @include rem-fallback(font-size, 1);
     }
   } // all fields with fancy labels
@@ -427,6 +449,22 @@ footer#footer{
     @include border-radius(0 0 3px 3px);
     padding-bottom: 2em;
   }
+  
+  
+  
+  // Alterations to specific fields
+  .field-name-field-course-progress{
+    padding-bottom: 0;
+  }
+  .field-name-field-other-teaching-strategies{
+    padding: 0 1.5em 1.5em;
+    .field-items{
+      border-top: 1px solid $light-grey;
+      padding-top: .5em;
+      margin-top: .5em;
+    }
+  }
+  
 }
 
 /**
