@@ -2142,6 +2142,167 @@ mark.updated {
   background-color: #fbe9d9;
 }
 
+/* line 406, ../sass/components/_forms.scss */
+input[disabled="disabled"],
+textarea[disabled="disabled"] {
+  background-color: whitesmoke;
+  color: #777;
+}
+
+/**
+ * Edit Page
+ */
+/* line 415, ../sass/components/_forms.scss */
+#edit-tabs {
+  margin: 0;
+  padding: 0;
+}
+/* line 417, ../sass/components/_forms.scss */
+#edit-tabs input[type="submit"] {
+  background-color: #fff;
+  border: 0;
+  padding: .6em .65em .4em;
+  border-bottom: 5px solid #a1a1a1;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+/* line 425, ../sass/components/_forms.scss */
+#edit-tabs input[type="submit"]:hover {
+  background-color: whitesmoke;
+  border-color: #888888;
+}
+/* line 429, ../sass/components/_forms.scss */
+#edit-tabs input[type="submit"].active {
+  border-color: #0062bd;
+}
+@media only screen and (min-width: 75em) {
+  /* line 417, ../sass/components/_forms.scss */
+  #edit-tabs input[type="submit"] {
+    margin: 0 2px 0 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+  }
+  /* line 435, ../sass/components/_forms.scss */
+  #edit-tabs input[type="submit"]:first-child {
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -ms-border-radius: 3px 0 0 3px;
+    -o-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+  }
+  /* line 438, ../sass/components/_forms.scss */
+  #edit-tabs input[type="submit"]:last-child {
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -ms-border-radius: 0 3px 3px 0;
+    -o-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+  }
+}
+
+/* line 445, ../sass/components/_forms.scss */
+.page-syllabus-edit {
+  min-width: 600px;
+}
+/* line 447, ../sass/components/_forms.scss */
+.page-syllabus-edit .content-wrapper {
+  padding: 1.5em;
+  background-color: #fff;
+  position: relative;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  margin: 11em 1.5em 2em;
+}
+/* line 454, ../sass/components/_forms.scss */
+.page-syllabus-edit .content-wrapper #edit-tabs {
+  position: absolute;
+  top: -9.5em;
+  left: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+@media only screen and (min-width: 45.315em) {
+  /* line 447, ../sass/components/_forms.scss */
+  .page-syllabus-edit .content-wrapper {
+    margin-top: 8em;
+  }
+  /* line 463, ../sass/components/_forms.scss */
+  .page-syllabus-edit .content-wrapper #edit-tabs {
+    top: -6.5em;
+  }
+}
+@media only screen and (min-width: 75em) {
+  /* line 447, ../sass/components/_forms.scss */
+  .page-syllabus-edit .content-wrapper {
+    margin-top: 5em;
+  }
+  /* line 470, ../sass/components/_forms.scss */
+  .page-syllabus-edit .content-wrapper #edit-tabs {
+    top: -3.5em;
+    width: 1200px;
+  }
+}
+
+/* line 480, ../sass/components/_forms.scss */
+#edit-submit-draft,
+#edit-submit-publish {
+  margin-right: .5em;
+}
+
+/* line 485, ../sass/components/_forms.scss */
+#edit-submit-publish,
+#edit-submit-next {
+  color: white;
+  border: 1px solid #00488a;
+  padding: .3em .5em .3em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 150ms;
+  -moz-transition-duration: 150ms;
+  -o-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background-color: #0062bd;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  border-color: #0062bd;
+}
+/* line 154, ../sass/_mixins.scss */
+#edit-submit-publish:hover, #edit-submit-publish:focus, #edit-submit-publish:active,
+#edit-submit-next:hover,
+#edit-submit-next:focus,
+#edit-submit-next:active {
+  border-color: #002d57;
+  background-color: #004d94;
+}
+
+/* line 490, ../sass/components/_forms.scss */
+#edit-submit-next {
+  float: right;
+}
+
 /**
  * Background styling
  */
@@ -2783,114 +2944,9 @@ footer#footer {
 }
 
 /**
- * Edit Page
- */
-/* line 476, ../sass/components/_pages.scss */
-#edit-tabs {
-  margin: 0;
-  padding: 0;
-}
-/* line 478, ../sass/components/_pages.scss */
-#edit-tabs input[type="submit"] {
-  background-color: #fff;
-  border: 0;
-  padding: .6em .65em .4em;
-  border-bottom: 5px solid #a1a1a1;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  font-size: 12px;
-  font-size: 0.75rem;
-  font-weight: bold;
-}
-/* line 486, ../sass/components/_pages.scss */
-#edit-tabs input[type="submit"]:hover {
-  background-color: whitesmoke;
-  border-color: #888888;
-}
-/* line 490, ../sass/components/_pages.scss */
-#edit-tabs input[type="submit"].active {
-  border-color: #0062bd;
-}
-@media only screen and (min-width: 75em) {
-  /* line 478, ../sass/components/_pages.scss */
-  #edit-tabs input[type="submit"] {
-    margin: 0 2px 0 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    border-radius: 0;
-  }
-  /* line 496, ../sass/components/_pages.scss */
-  #edit-tabs input[type="submit"]:first-child {
-    -webkit-border-radius: 3px 0 0 3px;
-    -moz-border-radius: 3px 0 0 3px;
-    -ms-border-radius: 3px 0 0 3px;
-    -o-border-radius: 3px 0 0 3px;
-    border-radius: 3px 0 0 3px;
-  }
-  /* line 499, ../sass/components/_pages.scss */
-  #edit-tabs input[type="submit"]:last-child {
-    -webkit-border-radius: 0 3px 3px 0;
-    -moz-border-radius: 0 3px 3px 0;
-    -ms-border-radius: 0 3px 3px 0;
-    -o-border-radius: 0 3px 3px 0;
-    border-radius: 0 3px 3px 0;
-  }
-}
-
-/* line 506, ../sass/components/_pages.scss */
-.page-syllabus-edit {
-  min-width: 600px;
-}
-/* line 508, ../sass/components/_pages.scss */
-.page-syllabus-edit .content-wrapper {
-  padding: 1.5em;
-  background-color: #fff;
-  position: relative;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-  margin: 11em 1.5em 2em;
-}
-/* line 515, ../sass/components/_pages.scss */
-.page-syllabus-edit .content-wrapper #edit-tabs {
-  position: absolute;
-  top: -9.5em;
-  left: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-@media only screen and (min-width: 45.315em) {
-  /* line 508, ../sass/components/_pages.scss */
-  .page-syllabus-edit .content-wrapper {
-    margin-top: 8em;
-  }
-  /* line 524, ../sass/components/_pages.scss */
-  .page-syllabus-edit .content-wrapper #edit-tabs {
-    top: -6.5em;
-  }
-}
-@media only screen and (min-width: 75em) {
-  /* line 508, ../sass/components/_pages.scss */
-  .page-syllabus-edit .content-wrapper {
-    margin-top: 5em;
-  }
-  /* line 531, ../sass/components/_pages.scss */
-  .page-syllabus-edit .content-wrapper #edit-tabs {
-    top: -3.5em;
-    width: 1200px;
-  }
-}
-
-/**
  * Print Page
  */
-/* line 544, ../sass/components/_pages.scss */
+/* line 475, ../sass/components/_pages.scss */
 .print-content {
   margin: 2em;
 }

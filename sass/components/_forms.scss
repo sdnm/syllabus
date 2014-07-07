@@ -401,3 +401,101 @@ mark.updated{
   @extend %mark-sizing;
   background-color: lighten($secondary, 40%);
 }
+
+input[disabled="disabled"], 
+textarea[disabled="disabled"]{
+  background-color: $light-grey;
+  color: #777;
+}
+
+/**
+ * Edit Page
+ */
+
+#edit-tabs{
+  @include zero;
+  input[type="submit"]{
+    background-color: #fff;
+    border: 0;
+    padding: .6em .65em .4em;
+    border-bottom: 5px solid #a1a1a1;
+    @include box-shadow(none);
+    @include rem-fallback(font-size, .75); //12px
+    font-weight: bold;
+    &:hover{
+      background-color: $light-grey;
+      border-color: darken(#a1a1a1, 10%);
+    }
+    &.active{
+      border-color: $primary;
+    }
+    @media #{$desktop-small}{
+      margin: 0 2px 0 0;
+      @include border-radius(0);
+      &:first-child{
+        @include border-radius(3px 0 0 3px);
+      }
+      &:last-child{
+        @include border-radius(0 3px 3px 0);
+      }
+    }//mediaquery
+  }//input
+}
+
+.page-syllabus-edit{
+  min-width: 600px;
+  .content-wrapper{
+    padding: 1.5em;
+    background-color: #fff;
+    position: relative;
+    @include border-radius(3px);
+    margin: 11em 1.5em 2em;
+    
+    #edit-tabs{
+      position: absolute;
+      top: -9.5em;
+      left: 0;
+      @include box-shadow(none);
+    }
+    
+    @media only screen and (min-width: 45.315em){ //725px
+     margin-top: 8em;
+      #edit-tabs{
+        top: -6.5em;
+      }
+    }
+    
+    @media #{$desktop-small}{
+      margin-top: 5em;
+      #edit-tabs{
+        top: -3.5em;
+        width: 1200px;
+      }// #edit-tabs
+    }// .mediaqueries
+  }// .content-wrapper
+}// .page-syllabus-edit
+
+
+#edit-submit-draft, 
+#edit-submit-publish{
+  margin-right: .5em;
+}
+
+#edit-submit-publish,
+#edit-submit-next{
+  @include button-3d($primary, #fff);
+  border-color: $primary;
+}
+
+#edit-submit-next{
+  float: right;
+}
+
+
+
+
+
+
+
+
+
