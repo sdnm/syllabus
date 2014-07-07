@@ -263,12 +263,129 @@ footer#footer{
   }
 }
 
+//<img src="http://localhost:8080/profiles/syllabus_profile/themes/syllabus/images/logo-black.png" alt="logo">
+
+
+
 .syllabus_profile{
+  margin-bottom: 2em;
+  
   ul, li{
     @include zero;
     //margin-right: 1em;
   }
+  .institute_description{
+    margin-top: 1.5em;
+    background-color: #fff; 
+    @include border-radius(3px 3px 0 0);
+    @include rem-fallback(padding, .5, 1.5, .3);
+    border-bottom: 1px solid $light-grey;
+  }
+  .institute_description_icon{
+    float: left;
+  }
+  .institute_description_information{
+    float: right;
+    padding-top: .3em;
+    @include rem-fallback(font-size, 1.3125);
+  }
+  
+  .course_description{
+    background-color: #fff; 
+    @include rem-fallback(padding, 1, 1.5);
+    text-align: center;
+    font-weight: bold;
+    
+    .field-name-field-program-title{
+      padding-top: .2em;
+      border: 3px solid #000;
+      border-bottom: 0;
+    }
+    .group-course-code{
+      border-left: 3px solid #000;
+      border-right: 3px solid #000;
+      div{
+        display: inline-block;
+      }
+      .field-name-field-section{
+        margin-left: .5em;
+      }
+    }// .group-course-code
+    
+    .field-name-field-syllabus-professor{
+      border-left: 3px solid #000;
+      border-right: 3px solid #000;
+      .field-name-field-first-name,
+      .field-name-field-family-name{
+        display: inline-block;
+      }
+      .field-name-field-family-name{
+        margin-left: .5em;
+      }
+    } // .field-name-field-syllabus-professor
+    
+    .field-name-field-session{
+      border: 3px solid #000;
+      border-top: 0;
+      padding-bottom: .2em;
+    }
+  }// .course-description
+  
+  
+  /*General Info*/
+  
+  .general_information{
+    background-color: #fff; 
+  }
+  .field-name-professor-office-hours{
+    padding: 1em 1.5em;
+    border-bottom: 1px solid $light-grey;
+  }
+  .field-name-telephone{
+    padding-top: 1em;
+  }
+  .field-name-assistant-professor-office-hours {
+    padding-bottom: 1em;
+  }
+  .center{
+    background-color: #fff; 
+  }
+  
+  // Added Padding top/left/right
+  .field-name-telephone,
+  .field-name-email,
+  .field-name-field-assistant-collection,
+  .field-name-field-other-teaching-strategies{
+    padding: 1em 1.5em 0;
+  }
+  
+  .field-name-field-course-description,
+  .field-name-field-fc-agreements, 
+  .field-name-field-general-objectives,
+  .field-name-field-required-material,
+  .field-name-field-syllabus-evaluation,
+  .field-name-field-course-progress, 
+  .field-name-field-course-calendar,
+  .field-name-field-monograph,
+  .field-name-field-document-article{
+    background-color: #fff; 
+    padding: 1em 1.5em 1em;
+    border-top: 1px solid $light-grey;
+    .field-label{
+      @include rem-fallback(font-size, 1.3125);
+      border-bottom: 3px solid #000; 
+      margin-bottom: 1em;
+      padding-bottom: .2em;
+    }
+    .field-items .field-label{
+      border: 0;
+      margin-bottom: 0;
+      @include rem-fallback(font-size, 1);
+    }
+  } // all fields with fancy labels
+  
+  .field-name-field-document-article{
+    @include border-radius(0 0 3px 3px);
+    padding-bottom: 2em;
+  }
 }
-
-
-

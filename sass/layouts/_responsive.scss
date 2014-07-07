@@ -279,15 +279,24 @@ $zen-auto-include-item-base: false;
   }
 }
 
+%page-cols{
+  $zen-column-count: 6;
+  @include zen-grid-item(6, 1);
+  @media #{$tablet-landscape}{
+    @include zen-grid-item(4, 1);
+  }
+}
+
+
 .page-syllabus-add{
   #main{
     padding: 2em 20px;
   }
   #content{
-    $zen-column-count: 6;
-    @include zen-grid-item(6, 1);
-    @media #{$tablet-landscape} {
-      @include zen-grid-item(4, 1);
-    }
+    @extend %page-cols;
   }
+}
+
+.syllabus_profile{
+  @extend %page-cols;
 }
