@@ -88,7 +88,7 @@ footer#footer{
 .front .bar{
    @include box-shadow(rgba(0,0,0,.4) 0 0 4px inset);
    color: #fff;
-   background: url(../images/bg-1.jpg) no-repeat top center;
+   background: url(../images/bg.jpg) no-repeat top center;
    background-size: cover;
    height: 190px;
    @media #{$desktop}{
