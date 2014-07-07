@@ -1910,17 +1910,18 @@ table caption {
 }
 /* line 243, ../sass/components/_forms.scss */
 table th {
-  background: whitesmoke;
+  text-align: left;
+  padding: .5em 1.25em;
   border-top: 1px solid #cccccc;
   border-bottom: 2px solid #cccccc;
 }
-/* line 249, ../sass/components/_forms.scss */
+/* line 250, ../sass/components/_forms.scss */
 table td {
   padding: .5em 1.25em;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 255, ../sass/components/_forms.scss */
+/* line 256, ../sass/components/_forms.scss */
 table tbody tr:hover {
   background: whitesmoke;
 }
@@ -1928,7 +1929,7 @@ table tbody tr:hover {
 /**
 * Custom Form Elements
 */
-/* line 266, ../sass/components/_forms.scss */
+/* line 267, ../sass/components/_forms.scss */
 input[type="file"] {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -1938,26 +1939,26 @@ input[type="file"] {
   /*Centers text inside input */
 }
 
-/* line 272, ../sass/components/_forms.scss */
+/* line 273, ../sass/components/_forms.scss */
 .form-managed-file .form-file {
   margin-right: 1em;
 }
 
 /* Password confirmation. */
-/* line 278, ../sass/components/_forms.scss */
+/* line 279, ../sass/components/_forms.scss */
 .password-parent,
 .confirm-parent {
   margin: 0;
   position: relative;
 }
 
-/* line 283, ../sass/components/_forms.scss */
+/* line 284, ../sass/components/_forms.scss */
 .form-item-password {
   width: 256px;
   width: 16rem;
 }
 
-/* line 287, ../sass/components/_forms.scss */
+/* line 288, ../sass/components/_forms.scss */
 .password-strength-title {
   position: absolute !important;
   height: 1px;
@@ -1966,12 +1967,12 @@ input[type="file"] {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 290, ../sass/components/_forms.scss */
+/* line 291, ../sass/components/_forms.scss */
 .password-parent {
   padding-bottom: 1.5em;
 }
 
-/* line 294, ../sass/components/_forms.scss */
+/* line 295, ../sass/components/_forms.scss */
 .password-strength {
   font-size: 12px;
   font-size: 0.75rem;
@@ -1981,28 +1982,28 @@ input[type="file"] {
   width: 16rem;
 }
 
-/* line 301, ../sass/components/_forms.scss */
+/* line 302, ../sass/components/_forms.scss */
 .password-suggestions {
   border: 1px solid whitesmoke;
 }
-/* line 303, ../sass/components/_forms.scss */
+/* line 304, ../sass/components/_forms.scss */
 .password-suggestions ul {
   margin-top: 0;
 }
 
-/* line 308, ../sass/components/_forms.scss */
+/* line 309, ../sass/components/_forms.scss */
 div.form-item div.password-suggestions {
   border: 1px solid #e5e5e5;
   padding: .5em 1em;
 }
 
-/* line 314, ../sass/components/_forms.scss */
+/* line 315, ../sass/components/_forms.scss */
 span.error {
   padding: .05em .5em;
   border: 1px solid #db4852;
 }
 
-/* line 320, ../sass/components/_forms.scss */
+/* line 321, ../sass/components/_forms.scss */
 #edit-image-button {
   padding: .5em 1em .5em;
   height: 2em;
@@ -2024,13 +2025,13 @@ span.error {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 327, ../sass/components/_forms.scss */
+/* line 328, ../sass/components/_forms.scss */
 #edit-image-button:hover {
   background-color: gainsboro;
   border: 1px solid #b2b2b2;
 }
 
-/* line 334, ../sass/components/_forms.scss */
+/* line 335, ../sass/components/_forms.scss */
 fieldset {
   border: 0;
   margin: 4em 0 1em;
@@ -2048,24 +2049,24 @@ fieldset {
   box-shadow: #e5e5e5 0 0 0 1px inset;
 }
 
-/* line 345, ../sass/components/_forms.scss */
+/* line 346, ../sass/components/_forms.scss */
 fieldset.collapsible legend {
   padding: 0.2em .5em;
 }
-/* line 348, ../sass/components/_forms.scss */
+/* line 349, ../sass/components/_forms.scss */
 fieldset.collapsible .fieldset-legend {
   padding-left: 20px !important;
 }
 
 /* Collapsed fieldset */
-/* line 354, ../sass/components/_forms.scss */
+/* line 355, ../sass/components/_forms.scss */
 fieldset.collapsed {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 358, ../sass/components/_forms.scss */
+/* line 359, ../sass/components/_forms.scss */
 .fieldset-description {
   color: #333333;
   font-size: 14px;
@@ -2073,29 +2074,29 @@ fieldset.collapsed {
   font-weight: 100;
 }
 
-/* line 364, ../sass/components/_forms.scss */
+/* line 365, ../sass/components/_forms.scss */
 .vertical-tabs-panes {
   padding: 1em;
 }
-/* line 369, ../sass/components/_forms.scss */
+/* line 370, ../sass/components/_forms.scss */
 .vertical-tabs-panes fieldset {
   margin-top: 2em;
 }
-/* line 372, ../sass/components/_forms.scss */
+/* line 373, ../sass/components/_forms.scss */
 .vertical-tabs-panes .fieldset-wrapper {
   padding-top: .5em;
 }
-/* line 373, ../sass/components/_forms.scss */
+/* line 374, ../sass/components/_forms.scss */
 .vertical-tabs-panes fieldset.collapsible {
   margin-top: 4em;
 }
-/* line 375, ../sass/components/_forms.scss */
+/* line 376, ../sass/components/_forms.scss */
 .vertical-tabs-panes fieldset.collapsible legend {
   top: -1.95em;
   left: 0;
 }
 
-/* line 384, ../sass/components/_forms.scss */
+/* line 385, ../sass/components/_forms.scss */
 fieldset.collapsed,
 fieldset.vertical-tabs-pane,
 fieldset.filter-wrapper {
@@ -2104,7 +2105,7 @@ fieldset.filter-wrapper {
   box-shadow: none;
 }
 
-/* line 389, ../sass/components/_forms.scss */
+/* line 390, ../sass/components/_forms.scss */
 mark.new, mark.updated {
   padding: 0em .5em 0.1em;
   color: #333333;
@@ -2113,12 +2114,12 @@ mark.new, mark.updated {
   font-style: italic;
 }
 
-/* line 395, ../sass/components/_forms.scss */
+/* line 396, ../sass/components/_forms.scss */
 mark.new {
   background-color: #57aeff;
 }
 
-/* line 399, ../sass/components/_forms.scss */
+/* line 400, ../sass/components/_forms.scss */
 mark.updated {
   background-color: #fbe9d9;
 }
