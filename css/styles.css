@@ -596,7 +596,7 @@ input[type="submit"] {
   margin: .25em .25em .25em 0;
   color: #333333;
   border: 1px solid gainsboro;
-  padding: .2em .5em .3em;
+  padding: .3em .5em .3em;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -760,13 +760,20 @@ table {
   max-width: 1200px;
 }
 
-/* line 40, ../sass/layouts/_responsive.scss */
+/* line 41, ../sass/layouts/_responsive.scss */
+.page-syllabus- .bar .page__title {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 49, ../sass/layouts/_responsive.scss */
 .content-wrapper {
   margin-bottom: 2em;
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
-/* line 50, ../sass/layouts/_responsive.scss */
+/* line 59, ../sass/layouts/_responsive.scss */
 .content-wrapper,
 #navigation,
 .region-sidebar-first,
@@ -807,14 +814,14 @@ table {
 
 /* Navigation bar */
 @media all and (min-width: 480px) {
-  /* line 66, ../sass/layouts/_responsive.scss */
+  /* line 75, ../sass/layouts/_responsive.scss */
   #main {
     /* Move all the children of #main down to make room. */
     padding-top: 3em;
     position: relative;
   }
 
-  /* line 71, ../sass/layouts/_responsive.scss */
+  /* line 80, ../sass/layouts/_responsive.scss */
   #navigation {
     /* Move the navbar up inside #main's padding. */
     position: absolute;
@@ -830,19 +837,19 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 92, ../sass/layouts/_responsive.scss */
+  /* line 101, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 94, ../sass/layouts/_responsive.scss */
+  /* line 103, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-  /* line 99, ../sass/layouts/_responsive.scss */
+  /* line 108, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 33.33333%;
@@ -853,19 +860,19 @@ table {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 107, ../sass/layouts/_responsive.scss */
+  /* line 116, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 2 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 3rd column from left. */
   }
-  /* line 109, ../sass/layouts/_responsive.scss */
+  /* line 118, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 66.66667%;
     margin-left: 0%;
     margin-right: -66.66667%;
   }
-  /* line 114, ../sass/layouts/_responsive.scss */
+  /* line 123, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 33.33333%;
@@ -876,27 +883,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 122, ../sass/layouts/_responsive.scss */
+  /* line 131, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Start a new row and span all 3 columns. */
   }
-  /* line 124, ../sass/layouts/_responsive.scss */
+  /* line 133, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-  /* line 129, ../sass/layouts/_responsive.scss */
+  /* line 138, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 33.33333%;
     margin-left: 0%;
     margin-right: -33.33333%;
   }
-  /* line 134, ../sass/layouts/_responsive.scss */
+  /* line 143, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 100%;
@@ -910,7 +917,7 @@ table {
     /* Span 1 column, starting in the 2nd column from left. */
     /* Span 1 column, starting in the 3rd column from left. */
   }
-  /* line 140, ../sass/layouts/_responsive.scss */
+  /* line 149, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block {
     padding-left: 10px;
     padding-right: 10px;
@@ -920,7 +927,7 @@ table {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 144, ../sass/layouts/_responsive.scss */
+  /* line 153, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     float: left;
     width: 33.33333%;
@@ -928,14 +935,14 @@ table {
     margin-right: -33.33333%;
     clear: left;
   }
-  /* line 149, ../sass/layouts/_responsive.scss */
+  /* line 158, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     float: left;
     width: 33.33333%;
     margin-left: 33.33333%;
     margin-right: -66.66667%;
   }
-  /* line 153, ../sass/layouts/_responsive.scss */
+  /* line 162, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     float: left;
     width: 33.33333%;
@@ -950,19 +957,19 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 170, ../sass/layouts/_responsive.scss */
+  /* line 179, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 172, ../sass/layouts/_responsive.scss */
+  /* line 181, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 80%;
     margin-left: 20%;
     margin-right: -100%;
   }
-  /* line 177, ../sass/layouts/_responsive.scss */
+  /* line 186, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 20%;
@@ -973,19 +980,19 @@ table {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 185, ../sass/layouts/_responsive.scss */
+  /* line 194, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 4 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 187, ../sass/layouts/_responsive.scss */
+  /* line 196, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 80%;
     margin-left: 0%;
     margin-right: -80%;
   }
-  /* line 192, ../sass/layouts/_responsive.scss */
+  /* line 201, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 20%;
@@ -996,27 +1003,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 200, ../sass/layouts/_responsive.scss */
+  /* line 209, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 202, ../sass/layouts/_responsive.scss */
+  /* line 211, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 60%;
     margin-left: 20%;
     margin-right: -80%;
   }
-  /* line 207, ../sass/layouts/_responsive.scss */
+  /* line 216, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 20%;
     margin-left: 0%;
     margin-right: -20%;
   }
-  /* line 212, ../sass/layouts/_responsive.scss */
+  /* line 221, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 20%;
@@ -1027,16 +1034,16 @@ table {
 /*
  * Page Layouts
  */
-/* line 228, ../sass/layouts/_responsive.scss */
+/* line 237, ../sass/layouts/_responsive.scss */
 .responsive .panel-2col-bricks .block {
   margin: 0;
 }
-/* line 232, ../sass/layouts/_responsive.scss */
+/* line 241, ../sass/layouts/_responsive.scss */
 .responsive .panel-2col-bricks .inside {
   margin: 32px 0px 0px;
   margin: 2rem 0rem 0rem;
 }
-/* line 240, ../sass/layouts/_responsive.scss */
+/* line 249, ../sass/layouts/_responsive.scss */
 .responsive .panel-2col-bricks .panel-col-top,
 .responsive .panel-2col-bricks .panel-col-middle,
 .responsive .panel-2col-bricks .panel-col-bottom,
@@ -1049,14 +1056,14 @@ table {
   clear: left;
 }
 @media only screen and (min-width: 70em) {
-  /* line 247, ../sass/layouts/_responsive.scss */
+  /* line 256, ../sass/layouts/_responsive.scss */
   .responsive .panel-2col-bricks .panel-col-first {
     float: left;
     width: 50%;
     margin-left: 0%;
     margin-right: -50%;
   }
-  /* line 250, ../sass/layouts/_responsive.scss */
+  /* line 259, ../sass/layouts/_responsive.scss */
   .responsive .panel-2col-bricks .panel-col-last {
     float: left;
     width: 50%;
@@ -1066,12 +1073,12 @@ table {
   }
 }
 
-/* line 261, ../sass/layouts/_responsive.scss */
+/* line 270, ../sass/layouts/_responsive.scss */
 .responsive .panel-2col .inside {
   margin: 32px 0px 0px;
   margin: 2rem 0rem 0rem;
 }
-/* line 266, ../sass/layouts/_responsive.scss */
+/* line 275, ../sass/layouts/_responsive.scss */
 .responsive .panel-2col .panel-col-first,
 .responsive .panel-2col .panel-col-last {
   float: left;
@@ -1081,14 +1088,14 @@ table {
   clear: left;
 }
 @media only screen and (min-width: 60em) {
-  /* line 272, ../sass/layouts/_responsive.scss */
+  /* line 281, ../sass/layouts/_responsive.scss */
   .responsive .panel-2col .panel-col-first {
     float: left;
     width: 50%;
     margin-left: 0%;
     margin-right: -50%;
   }
-  /* line 275, ../sass/layouts/_responsive.scss */
+  /* line 284, ../sass/layouts/_responsive.scss */
   .responsive .panel-2col .panel-col-last {
     float: left;
     width: 50%;
@@ -1098,7 +1105,7 @@ table {
   }
 }
 
-/* line 282, ../sass/layouts/_responsive.scss */
+/* line 291, ../sass/layouts/_responsive.scss */
 .page-syllabus-add #content, .section-syllabus .syllabus_profile {
   float: left;
   width: 100%;
@@ -1106,7 +1113,7 @@ table {
   margin-right: -100%;
 }
 @media only screen and (min-width: 60em) {
-  /* line 282, ../sass/layouts/_responsive.scss */
+  /* line 291, ../sass/layouts/_responsive.scss */
   .page-syllabus-add #content, .section-syllabus .syllabus_profile {
     float: left;
     width: 66.66667%;
@@ -1115,7 +1122,7 @@ table {
   }
 }
 
-/* line 292, ../sass/layouts/_responsive.scss */
+/* line 301, ../sass/layouts/_responsive.scss */
 .page-syllabus-add #main {
   padding: 2em 20px;
 }
@@ -1485,14 +1492,14 @@ menu.user-menu #open_secondary-menu:hover, menu.user-menu #open_secondary-menu:f
   white-space: nowrap;
 }
 
-/* line 265, ../sass/components/_navigation.scss */
+/* line 266, ../sass/components/_navigation.scss */
 .tabs-primary__tab, .tabs-primary__tab.is-active, .tabs-secondary__tab,
 .tabs-secondary__tab.is-active {
   float: left;
   margin: 0 3px;
 }
 
-/* line 269, ../sass/components/_navigation.scss */
+/* line 270, ../sass/components/_navigation.scss */
 a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   border-right: 0;
   border-bottom: 0;
@@ -1502,7 +1509,18 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__
 }
 
 /* Primary tabs. */
-/* line 281, ../sass/components/_navigation.scss */
+@media only screen and (min-width: 75em) {
+  /* line 279, ../sass/components/_navigation.scss */
+  .tabs-primary {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-left: 1.5rem;
+  }
+}
+
+/* line 288, ../sass/components/_navigation.scss */
 .tabs-primary__tab, .tabs-primary__tab.is-active {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -1516,12 +1534,12 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__
   border-bottom: 0 \0/ie;
 }
 
-/* line 289, ../sass/components/_navigation.scss */
+/* line 296, ../sass/components/_navigation.scss */
 .is-active.tabs-primary__tab {
   border-bottom-color: #e5e5e5;
 }
 
-/* line 295, ../sass/components/_navigation.scss */
+/* line 302, ../sass/components/_navigation.scss */
 a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
@@ -1541,32 +1559,32 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
   font-weight: bold;
 }
 
-/* line 306, ../sass/components/_navigation.scss */
+/* line 313, ../sass/components/_navigation.scss */
 a.tabs-primary__tab-link:hover, a.tabs-primary__tab-link:focus {
   background-color: #eee;
 }
 
-/* line 309, ../sass/components/_navigation.scss */
+/* line 316, ../sass/components/_navigation.scss */
 a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
   background-color: #e5e5e5;
   border-color: #e5e5e5;
 }
 
 /* Secondary tabs. */
-/* line 331, ../sass/components/_navigation.scss */
+/* line 338, ../sass/components/_navigation.scss */
 .tabs-secondary {
   font-size: .9em;
   /* Collapse bottom margin of ul.primary. */
   margin-top: -1.5em;
 }
 
-/* line 338, ../sass/components/_navigation.scss */
+/* line 345, ../sass/components/_navigation.scss */
 .tabs-secondary__tab,
 .tabs-secondary__tab.is-active {
   margin: 0.75em 3px;
 }
 
-/* line 344, ../sass/components/_navigation.scss */
+/* line 351, ../sass/components/_navigation.scss */
 a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   -webkit-border-radius: 0.75em;
   -moz-border-radius: 0.75em;
@@ -1582,14 +1600,14 @@ a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   padding: 0 .5em;
 }
 
-/* line 353, ../sass/components/_navigation.scss */
+/* line 360, ../sass/components/_navigation.scss */
 a.tabs-secondary__tab-link:hover, a.tabs-secondary__tab-link:focus {
   background-color: #dedede;
   border-color: #999;
   color: #333;
 }
 
-/* line 358, ../sass/components/_navigation.scss */
+/* line 365, ../sass/components/_navigation.scss */
 a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   text-shadow: 1px 1px 0 #333333;
   background-color: #666;
@@ -1601,14 +1619,14 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
  * Pager.
  */
 /* A list of page numbers when more than 1 page of content is available. */
-/* line 387, ../sass/components/_navigation.scss */
+/* line 394, ../sass/components/_navigation.scss */
 .pager {
   clear: both;
   padding: 0;
   text-align: center;
 }
 
-/* line 392, ../sass/components/_navigation.scss */
+/* line 399, ../sass/components/_navigation.scss */
 .pager-item,
 .pager-first,
 .pager-previous,
@@ -1621,7 +1639,7 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   background-image: none;
 }
 
-/* line 404, ../sass/components/_navigation.scss */
+/* line 411, ../sass/components/_navigation.scss */
 .pager-item,
 .pager-first,
 .pager-previous,
@@ -1632,7 +1650,7 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 }
 
 /* The current page's list item. */
-/* line 409, ../sass/components/_navigation.scss */
+/* line 416, ../sass/components/_navigation.scss */
 .pager-current {
   font-weight: bold;
 }
@@ -1640,26 +1658,26 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 /**
  * Menus.
  */
-/* line 418, ../sass/components/_navigation.scss */
+/* line 425, ../sass/components/_navigation.scss */
 .menu__item.is-leaf {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHBAMAAAA2fErgAAAAD1BMVEX///+/v7+Li4sAAADAwMBFvsw8AAAAAXRSTlMAQObYZgAAAB1JREFUCFtjYAADYwMGBmYVZSDhKAwkFJWhYiAAAB2+Aa/9ugeaAAAAAElFTkSuQmCC');
   list-style-type: square;
 }
 
-/* line 425, ../sass/components/_navigation.scss */
+/* line 432, ../sass/components/_navigation.scss */
 .menu__item.is-expanded {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
   list-style-type: circle;
 }
 
-/* line 432, ../sass/components/_navigation.scss */
+/* line 439, ../sass/components/_navigation.scss */
 .menu__item.is-collapsed {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
   list-style-type: disc;
 }
 
 /* The active item in a Drupal menu. */
-/* line 441, ../sass/components/_navigation.scss */
+/* line 448, ../sass/components/_navigation.scss */
 .menu a.active {
   color: #000;
 }
@@ -2366,7 +2384,7 @@ footer#footer {
 .front.logged-in #edit-draft {
   color: white;
   border: 1px solid #00488a;
-  padding: .2em .5em .3em;
+  padding: .3em .5em .3em;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -2452,7 +2470,7 @@ footer#footer {
 .page-syllabus-add #edit-new {
   color: white;
   border: 1px solid #00488a;
-  padding: .2em .5em .3em;
+  padding: .3em .5em .3em;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -2502,7 +2520,7 @@ footer#footer {
 .print-pdf:visited {
   color: white;
   border: 1px solid #00488a;
-  padding: .2em .5em .3em;
+  padding: .3em .5em .3em;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -2686,14 +2704,14 @@ footer#footer {
 .syllabus_profile .field-name-field-evaluation-list .field-item:after {
   content: ')';
 }
-/* line 417, ../sass/components/_pages.scss */
+/* line 418, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-telephone,
 .syllabus_profile .field-name-email,
 .syllabus_profile .field-name-field-assistant-collection,
 .syllabus_profile .field-name-field-other-teaching-strategies {
   padding: 1em 1.5em 0;
 }
-/* line 429, ../sass/components/_pages.scss */
+/* line 430, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-course-description,
 .syllabus_profile .field-name-field-fc-agreements,
 .syllabus_profile .field-name-field-general-objectives,
@@ -2707,7 +2725,7 @@ footer#footer {
   padding: 1.5em;
   border-top: 1px solid whitesmoke;
 }
-/* line 433, ../sass/components/_pages.scss */
+/* line 434, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-course-description .field-label,
 .syllabus_profile .field-name-field-fc-agreements .field-label,
 .syllabus_profile .field-name-field-general-objectives .field-label,
@@ -2724,7 +2742,7 @@ footer#footer {
   padding-bottom: .3em;
   font-weight: 500;
 }
-/* line 440, ../sass/components/_pages.scss */
+/* line 441, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-course-description .field-items .field-label,
 .syllabus_profile .field-name-field-fc-agreements .field-items .field-label,
 .syllabus_profile .field-name-field-general-objectives .field-items .field-label,
@@ -2740,7 +2758,7 @@ footer#footer {
   font-size: 16px;
   font-size: 1rem;
 }
-/* line 448, ../sass/components/_pages.scss */
+/* line 449, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-document-article {
   -webkit-border-radius: 0 0 3px 3px;
   -moz-border-radius: 0 0 3px 3px;
@@ -2749,15 +2767,15 @@ footer#footer {
   border-radius: 0 0 3px 3px;
   padding-bottom: 2em;
 }
-/* line 456, ../sass/components/_pages.scss */
+/* line 457, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-course-progress {
   padding-bottom: 0;
 }
-/* line 459, ../sass/components/_pages.scss */
+/* line 460, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-other-teaching-strategies {
   padding: 0 1.5em 1.5em;
 }
-/* line 461, ../sass/components/_pages.scss */
+/* line 462, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-other-teaching-strategies .field-items {
   border-top: 1px solid whitesmoke;
   padding-top: .5em;
@@ -2765,9 +2783,114 @@ footer#footer {
 }
 
 /**
+ * Edit Page
+ */
+/* line 476, ../sass/components/_pages.scss */
+#edit-tabs {
+  margin: 0;
+  padding: 0;
+}
+/* line 478, ../sass/components/_pages.scss */
+#edit-tabs input[type="submit"] {
+  background-color: #fff;
+  border: 0;
+  padding: .6em .65em .4em;
+  border-bottom: 5px solid #a1a1a1;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+/* line 486, ../sass/components/_pages.scss */
+#edit-tabs input[type="submit"]:hover {
+  background-color: whitesmoke;
+  border-color: #888888;
+}
+/* line 490, ../sass/components/_pages.scss */
+#edit-tabs input[type="submit"].active {
+  border-color: #0062bd;
+}
+@media only screen and (min-width: 75em) {
+  /* line 478, ../sass/components/_pages.scss */
+  #edit-tabs input[type="submit"] {
+    margin: 0 2px 0 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+  }
+  /* line 496, ../sass/components/_pages.scss */
+  #edit-tabs input[type="submit"]:first-child {
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -ms-border-radius: 3px 0 0 3px;
+    -o-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+  }
+  /* line 499, ../sass/components/_pages.scss */
+  #edit-tabs input[type="submit"]:last-child {
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -ms-border-radius: 0 3px 3px 0;
+    -o-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+  }
+}
+
+/* line 506, ../sass/components/_pages.scss */
+.page-syllabus-edit {
+  min-width: 600px;
+}
+/* line 508, ../sass/components/_pages.scss */
+.page-syllabus-edit .content-wrapper {
+  padding: 1.5em;
+  background-color: #fff;
+  position: relative;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  margin: 11em 1.5em 2em;
+}
+/* line 515, ../sass/components/_pages.scss */
+.page-syllabus-edit .content-wrapper #edit-tabs {
+  position: absolute;
+  top: -9.5em;
+  left: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+@media only screen and (min-width: 45.315em) {
+  /* line 508, ../sass/components/_pages.scss */
+  .page-syllabus-edit .content-wrapper {
+    margin-top: 8em;
+  }
+  /* line 524, ../sass/components/_pages.scss */
+  .page-syllabus-edit .content-wrapper #edit-tabs {
+    top: -6.5em;
+  }
+}
+@media only screen and (min-width: 75em) {
+  /* line 508, ../sass/components/_pages.scss */
+  .page-syllabus-edit .content-wrapper {
+    margin-top: 5em;
+  }
+  /* line 531, ../sass/components/_pages.scss */
+  .page-syllabus-edit .content-wrapper #edit-tabs {
+    top: -3.5em;
+    width: 1200px;
+  }
+}
+
+/**
  * Print Page
  */
-/* line 474, ../sass/components/_pages.scss */
+/* line 544, ../sass/components/_pages.scss */
 .print-content {
   margin: 2em;
 }
@@ -2820,11 +2943,17 @@ body.toolbar header#header {
 html {
   background: #e5e5e5;
 }
+@media print {
+  /* line 29, ../sass/components/_misc.scss */
+  html {
+    background: #fff;
+  }
+}
 
 /**
  * Wireframes.
  */
-/* line 43, ../sass/components/_misc.scss */
+/* line 46, ../sass/components/_misc.scss */
 .with-wireframes #header,
 .with-wireframes #main,
 .with-wireframes #content,
@@ -2840,7 +2969,7 @@ html {
  * Accessibility features.
  */
 /* element-invisible as defined by http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
-/* line 61, ../sass/components/_misc.scss */
+/* line 64, ../sass/components/_misc.scss */
 .element-invisible,
 #navigation .block-menu .block__title,
 #navigation .block-menu-block .block__title,
@@ -2853,7 +2982,7 @@ html {
 }
 
 /* Turns off the element-invisible effect. */
-/* line 66, ../sass/components/_misc.scss */
+/* line 69, ../sass/components/_misc.scss */
 .element-focusable:active, .element-focusable:focus {
   position: static !important;
   clip: auto;
@@ -2865,11 +2994,11 @@ html {
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
  */
-/* line 83, ../sass/components/_misc.scss */
+/* line 86, ../sass/components/_misc.scss */
 #skip-link {
   margin: 0;
 }
-/* line 87, ../sass/components/_misc.scss */
+/* line 90, ../sass/components/_misc.scss */
 #skip-link a,
 #skip-link a:visited {
   display: block;
@@ -2883,7 +3012,7 @@ html {
 /**
  * Titles.
  */
-/* line 106, ../sass/components/_misc.scss */
+/* line 109, ../sass/components/_misc.scss */
 .page__title,
 .node__title,
 .block__title,
@@ -2897,7 +3026,7 @@ html {
 /**
  * Messages.
  */
-/* line 113, ../sass/components/_misc.scss */
+/* line 116, ../sass/components/_misc.scss */
 .messages, .messages--status, .messages--warning, .messages--error {
   margin: 1.5em 0;
   padding: 10px 10px 10px 50px;
@@ -2907,50 +3036,50 @@ html {
   border: 1px solid #be7;
 }
 
-/* line 128, ../sass/components/_misc.scss */
+/* line 131, ../sass/components/_misc.scss */
 .messages--warning {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACuElEQVRIiWP4//8/Ay0xSYqntTpnT252zqeJBf0Njhsykrz/pyd6/e9vcNpGVQv6q2wlm0qc/r0+IPD/3UG+/61l9v9mdrjIUc2C7hqHUzc3S///eZwBjO9tF/vfWe1wjioWTKixVm8otPn38wQT3IKfxxn/t5Va/utpsNSg2ILWcttrNzdJgQ3+dpQRjEHs+9tE/zeXWt+gyILOamuTqlxrsOtPLub+7+emBsSq/88v5wL7oqHQ9H9nmbkF2RbUF1rev7lJEuziuU3i/90ddcB4UZsoJC62ifyvK7R4QJYFrcUGrmUZ5v9hYb9hosh/bzcDMN42VRgeF9W5hv8bi/XdSbagKtfs2c1NEvCIPbaQ/7+/pwkYn17Ki0hR24T/l2eZPCfJgsZ83dCiNOP/yCnn7iau/8G+5mD8aBsHSoqqyNL9X5erHUm0BcVpRm9ubhZHMoTh/4eDzP/DA23+RwTZ/P96hAlF7t5Wof8FyfpvibKgNk8noyDZ4D9quofg1Bjr/1kJlhjiIF+Upmn/r83RzCJoQXaC3qcbm8SwGMLwvybP/H8jMGlik7u7VeB/Zqz2J7wWVGdr1uTG62J1PQgfWST1/+hiCaxyIF8UJqv9r8hQrcVpQVqkzrcbG0WwGvB2H/P/lnx5MAaxsam5vYn3f2KY+jesFpSlqfZnxWjidP2OGWL/g/0swBjExu4Lhv958Ur/i5KU+lEsCA1lYI4JUv95bZ0gTo2Pt3P+z0myBmMQG5e6mxu4/kf4Kf8EmQm3oCRNebKrvSawIGPBqRG9sMOp5hjjfwdrlf/58bKT4RaUpWvtcLZV/39iscD/H0AFP46jYwYiMeP/44u4/9tbKQODSXUH3II9G7v18hI0n8YGKv+IDVT6joxj/BVx4mgcOCde/SnITPRUJAHEGlTCEkQV19TAAN8FC67hZdFXAAAAAElFTkSuQmCC');
   border-color: #ed5;
 }
 
-/* line 137, ../sass/components/_misc.scss */
+/* line 140, ../sass/components/_misc.scss */
 .messages--error {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACpElEQVR42rWWTUgbQRiGQ0Tx4MWDeFM8eBA9iKAoggiCoCiiIiL4L3oQV1CJB0UEf6iRYFpK7UniTw9VSqL2kvQsVDBpSZrtRo35czVNW3oprRf17exSl4yzu1ikAy9h59vvedhkMrMGAGoxknAk2w8MJ/WosXThiZkZt9jdLeglPjn5ATc3mhJNuNjbK0QbG3ExMICL/n6IfX0gcxB7ekDAELu6IHZ2IlJbi1hLS1BLogmPtbUhMTv7oMSamzUlqnByMxLT0/8STQkDj9TV4ZLj5OysrODl8jIu5Gs68dFR7JG6dWkJ0fFx+TpSX89IDMnwcHU1yKec12Yz3rlc4HkeLwjkXJpPip3U3+7vIx6P4ymph4eG5PlwTQ0lMdytlmBxMWKtrXLeT0zA5XTibvj9fjxfXETkb/3N/Dz2dneVuiTZtliU/rPSUsQ5ziuxZYG03IIlJdKKUPJjdRUAKMmzuTnskB/VYbdTtd9HR4g2NCi9Z2VliDY1BSnBaUEBzsrLqXyzWCiQ9HU5HA4afniIUFWV0hOqqMBpURErOM7NxWlhIZOvCwvA7S3Uxq+DA5AnZ3pO8vJYQSArC8c5Oeqx2Rj4udeLQH6+6v2B7GxW8DkjA0JmJpONwUHY7XZGIAgCzCYTeJUewmIFfqMRfEoKlQ2yJbza2oLWcLvdeDI2hk/3+iQWKzAYkJzNjg5srq9TwJ9OJ76YTNScx+ORJT66X1/grKyEbW2NgfPp6XKd/JMZySrHaQsSU1Oe+0/w3WpVgyu5HBlR6lc+H8gioevDwz6JrWwV5+3txyoSFk5DcOX1MnCyJ4Vwfb1zt1UY9SR8aioDpuppaVpwZbPTl+hHF04dOKzk8XBF8DgJC3/woU/W/EciOtELOWi8DDwp//215Q+p7kiKh2lQSAAAAABJRU5ErkJggg==');
   border-color: #ed541d;
 }
 
-/* line 147, ../sass/components/_misc.scss */
+/* line 150, ../sass/components/_misc.scss */
 .messages__list {
   margin: 0;
 }
 
-/* line 150, ../sass/components/_misc.scss */
+/* line 153, ../sass/components/_misc.scss */
 .messages__item {
   list-style-image: none;
 }
 
 /* Core/module installation error messages. */
-/* line 155, ../sass/components/_misc.scss */
+/* line 158, ../sass/components/_misc.scss */
 .messages--error p.error {
   color: #333;
 }
 
 /* System status report. */
-/* line 161, ../sass/components/_misc.scss */
+/* line 164, ../sass/components/_misc.scss */
 .ok,
 .messages--status {
   background-color: #f8fff0;
   color: #234600;
 }
 
-/* line 166, ../sass/components/_misc.scss */
+/* line 169, ../sass/components/_misc.scss */
 .warning,
 .messages--warning {
   background-color: #fffce5;
   color: #840;
 }
 
-/* line 171, ../sass/components/_misc.scss */
+/* line 174, ../sass/components/_misc.scss */
 .error,
 .messages--error {
   background-color: #fef5f1;
@@ -2961,12 +3090,12 @@ html {
  * Inline styles.
  */
 /* List of links generated by theme_links(). */
-/* line 182, ../sass/components/_misc.scss */
+/* line 185, ../sass/components/_misc.scss */
 .inline {
   display: inline;
   padding: 0;
 }
-/* line 186, ../sass/components/_misc.scss */
+/* line 189, ../sass/components/_misc.scss */
 .inline li {
   display: inline;
   list-style-type: none;
@@ -2974,7 +3103,7 @@ html {
 }
 
 /* The inline field label used by the Fences module. */
-/* line 194, ../sass/components/_misc.scss */
+/* line 197, ../sass/components/_misc.scss */
 span.field-label {
   padding: 0 1em 0 0;
 }
@@ -2982,17 +3111,17 @@ span.field-label {
 /**
  * "More" links.
  */
-/* line 201, ../sass/components/_misc.scss */
+/* line 204, ../sass/components/_misc.scss */
 .more-link {
   text-align: right;
 }
 
-/* line 204, ../sass/components/_misc.scss */
+/* line 207, ../sass/components/_misc.scss */
 .more-help-link {
   text-align: right;
 }
 
-/* line 207, ../sass/components/_misc.scss */
+/* line 210, ../sass/components/_misc.scss */
 .more-help-link a {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA7UlEQVR42qWTPQqDQBCFcwSPkCNITpAj5AjeIm1uYpkyR7Cy2Mot7OwsBAsRwUKwmOwLGRle3EIy8PyBfZ/z3J2TiPylz8VWWZZpUB40BonRKyizaxkA88MYYiqCEgv4MTvnZJom0VqWRbz3FlJZgLYtqmEY1Lg9r+sKsIXcLSC3AC019H0vqLquLeC5AfiHYSGkcdAJimKIBQiJ4+CO92OAtm0FNc8zOjkMwE5Q63FAtbeg6zpAYvG8BWR7i5qmQYwY4MIHqYhE2DOPQWcGJBQF2XU72ZzyUeZ5GCNt5/hybJgYdAXsq5sOEE/jG6dC5IOqCXTmAAAAAElFTkSuQmCC');
   background-position: 0 50%;
@@ -3004,7 +3133,7 @@ span.field-label {
  * Blocks.
  */
 /* Block wrapper. */
-/* line 224, ../sass/components/_misc.scss */
+/* line 227, ../sass/components/_misc.scss */
 .block {
   margin-bottom: 1.5em;
 }
@@ -3013,7 +3142,7 @@ span.field-label {
  * Marker.
  */
 /* The "new" or "updated" marker. */
-/* line 236, ../sass/components/_misc.scss */
+/* line 239, ../sass/components/_misc.scss */
 .new,
 .update {
   font-size: 10.8px;
@@ -3027,7 +3156,7 @@ span.field-label {
  * Unpublished note.
  */
 /* The word "Unpublished" displayed underneath the content. */
-/* line 248, ../sass/components/_misc.scss */
+/* line 251, ../sass/components/_misc.scss */
 .unpublished {
   height: 0;
   overflow: visible;
@@ -3048,31 +3177,31 @@ span.field-label {
  * Comments.
  */
 /* Wrapper for the list of comments and its title. */
-/* line 276, ../sass/components/_misc.scss */
+/* line 279, ../sass/components/_misc.scss */
 .comments {
   margin: 1.5em 0;
 }
 
 /* Preview of the comment before submitting new or updated comment. */
-/* line 281, ../sass/components/_misc.scss */
+/* line 284, ../sass/components/_misc.scss */
 .comment-preview {
   /* Drupal core will use a #ffffea background. See #1110842. */
   background-color: #ffffea;
 }
 
 /* Wrapper for a single comment. */
-/* line 287, ../sass/components/_misc.scss */
+/* line 290, ../sass/components/_misc.scss */
 .comment {
   /* Comment's permalink wrapper. */
 }
-/* line 290, ../sass/components/_misc.scss */
+/* line 293, ../sass/components/_misc.scss */
 .comment .permalink {
   text-transform: uppercase;
   font-size: 75%;
 }
 
 /* Nested comments are indented. */
-/* line 297, ../sass/components/_misc.scss */
+/* line 300, ../sass/components/_misc.scss */
 .indented {
   /* Drupal core uses a 25px left margin. */
   margin-left: 30px;

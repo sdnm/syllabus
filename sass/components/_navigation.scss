@@ -261,6 +261,7 @@ menu.user-menu{
   margin: rhythm(1) 0;
   padding: 0 1em;
   white-space: nowrap;
+
 }
 %tabs__tab {
   float: left;
@@ -277,6 +278,12 @@ menu.user-menu{
 /* Primary tabs. */
 .tabs-primary {
   @extend %tabs;
+  @media #{$desktop-small} {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    @include rem-fallback(padding-left, 1.5);
+  }
 }
 .tabs-primary__tab {
   @extend %tabs__tab;

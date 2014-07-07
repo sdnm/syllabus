@@ -28,6 +28,9 @@ body.toolbar{
 
 html{
   background: $medium-grey;
+  @media print {
+    background: #fff;
+  }
 }
 /**
  * Wireframes.
