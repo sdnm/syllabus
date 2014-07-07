@@ -331,22 +331,61 @@ footer#footer{
     }
   }// .course-description
   
+  %grey-title{
+    font-weight: bold;
+    color: $link-grey;
+    @include rem-fallback(font-size, .75); //12px
+  }
   
   /*General Info*/
   
   .general_information{
     background-color: #fff; 
   }
+  
   .field-name-professor-office-hours{
     padding: 1em 1.5em;
     border-bottom: 1px solid $light-grey;
+    .field-name-field-office-day, 
+    .field-name-field-office-location .field-label{
+      @extend %grey-title;
+    }
   }
+  
   .field-name-telephone{
     padding-top: 1em;
   }
   .field-name-assistant-professor-office-hours {
     padding-bottom: 1em;
+    .field-name-field-office-day,
+    .field-name-field-office-location .field-label{
+      @extend %grey-title;
+    }
   }
+  
+  // float left to allow location to go beside
+  .field-name-field-office-day, 
+  .field-name-field-hours-from{
+    float: left;
+  }
+  .field-name-field-hours-from{
+    clear: left;
+  }
+  .field-name-field-office-location{
+    margin-left: 10em;
+    margin-bottom: 1em;
+  }
+  
+  // TA Name 
+  .field-name-field-ass-prof-info{
+    div{
+      display: inline-block;
+    }
+    .field-name-field-family-name{
+     margin-left: .5em;
+    }
+  }
+  
   .center{
     background-color: #fff; 
   }
@@ -369,7 +408,7 @@ footer#footer{
   .field-name-field-monograph,
   .field-name-field-document-article{
     background-color: #fff; 
-    padding: 1em 1.5em 1em;
+    padding: 1.5em;
     border-top: 1px solid $light-grey;
     .field-label{
       @include rem-fallback(font-size, 1.3125);
@@ -389,3 +428,16 @@ footer#footer{
     padding-bottom: 2em;
   }
 }
+
+/**
+ * Print Page
+ */
+ 
+ .print-content{
+   margin: 2em;
+ }
+ 
+ .print-logo, 
+ .print-hr{
+   //display: none;
+ }
