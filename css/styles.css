@@ -2992,11 +2992,17 @@ footer#footer {
 }
 
 /**
- * Print Page
+ * Print and PDF Page
  */
-/* line 504, ../sass/components/_pages.scss */
-.print-content {
+/* line 505, ../sass/components/_pages.scss */
+.print .print-content {
   margin: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* line 510, ../sass/components/_pages.scss */
+.print.pdf {
+  background-color: #fff;
 }
 
 /**

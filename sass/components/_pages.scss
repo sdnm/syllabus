@@ -498,14 +498,17 @@ footer#footer{
 
 
 /**
- * Print Page
+ * Print and PDF Page
  */
  
- .print-content{
-   margin: 2em;
+ .print{
+   .print-content{
+     margin: 2em;
+     max-width: 1200px;
+     margin: 0 auto;
+   }
+   &.pdf{
+     background-color: #fff;
+   }
  }
  
- .print-logo, 
- .print-hr{
-   //display: none;
- }

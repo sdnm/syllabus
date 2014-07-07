@@ -70,7 +70,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
   "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"  class="print" >
   <head>
     <?php print $head; ?>
     <base href='<?php print $url ?>' />
@@ -87,16 +87,11 @@
     <?php if (!empty($message)): ?>
       <div class="print-message"><?php print $message; ?></div><p />
     <?php endif; ?>
-    <?php if ($print_logo): ?>
-      <div class="print-logo"><?php print $print_logo; ?></div>
-    <?php endif; ?>
-    <hr class="print-hr" />
     <?php if (!isset($node->type)): ?>
       <h2 class="print-title"><?php print $print_title; ?></h2>
     <?php endif; ?>
     <div class="print-content"><?php print $content; ?></div>
     <div class="print-footer"><?php print theme('print_footer'); ?></div>
-    <hr class="print-hr" />
     
     <?php print $footer_scripts; ?>
   </body>
