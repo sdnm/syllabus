@@ -1905,7 +1905,7 @@ tr.selected td {
 /* line 219, ../sass/components/_forms.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1403623814');
+  background-image: url('../images/progress.gif?1404745268');
 }
 
 /**
@@ -2898,52 +2898,76 @@ footer#footer {
 .syllabus_profile .center {
   background-color: #fff;
 }
-/* line 426, ../sass/components/_pages.scss */
-.syllabus_profile .field-name-field-evaluation-info,
-.syllabus_profile .field-name-field-evaluation-list {
+/* line 427, ../sass/components/_pages.scss */
+.syllabus_profile .field-name-field-syllabus-evaluation .field-name-field-evaluation-list {
   font-size: 18px;
   font-size: 1.125rem;
   display: inline-block;
 }
 /* line 431, ../sass/components/_pages.scss */
-.syllabus_profile .field-name-field-evaluation-list .field-item:before {
+.syllabus_profile .field-name-field-syllabus-evaluation .field-name-field-evaluation-list .field-item:before {
   content: '(';
 }
 /* line 434, ../sass/components/_pages.scss */
-.syllabus_profile .field-name-field-evaluation-list .field-item:after {
+.syllabus_profile .field-name-field-syllabus-evaluation .field-name-field-evaluation-list .field-item:after {
   content: ')';
 }
-/* line 444, ../sass/components/_pages.scss */
+/* line 439, ../sass/components/_pages.scss */
+.syllabus_profile .field-name-field-syllabus-evaluation .field-item {
+  padding: 1em;
+  border-top: 1px solid whitesmoke;
+}
+/* line 442, ../sass/components/_pages.scss */
+.syllabus_profile .field-name-field-syllabus-evaluation .field-item:first-child {
+  border: 0;
+}
+/* line 445, ../sass/components/_pages.scss */
+.syllabus_profile .field-name-field-syllabus-evaluation .field-item .field-item {
+  padding: 0;
+}
+/* line 456, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-telephone,
 .syllabus_profile .field-name-email,
 .syllabus_profile .field-name-field-assistant-collection,
 .syllabus_profile .field-name-field-other-teaching-strategies {
   padding: 1em 1.5em 0;
 }
-/* line 456, ../sass/components/_pages.scss */
+/* line 474, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-course-description,
+.syllabus_profile .field-name-field-cl-outcomes,
 .syllabus_profile .field-name-field-fc-agreements,
 .syllabus_profile .field-name-field-general-objectives,
 .syllabus_profile .field-name-field-required-material,
 .syllabus_profile .field-name-field-syllabus-evaluation,
 .syllabus_profile .field-name-field-course-progress,
+.syllabus_profile .field-name-field-teaching-methods,
 .syllabus_profile .field-name-field-course-calendar,
 .syllabus_profile .field-name-field-monograph,
-.syllabus_profile .field-name-field-document-article {
+.syllabus_profile .field-name-field-scientific-article,
+.syllabus_profile .field-name-field-document-article,
+.syllabus_profile .field-name-field-other-documents,
+.syllabus_profile .field-name-field-append-files,
+.syllabus_profile .field-name-field-plagiarism-text {
   background-color: #fff;
   padding: 1.5em;
   border-top: 1px solid whitesmoke;
 }
-/* line 460, ../sass/components/_pages.scss */
+/* line 478, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-course-description .field-label,
+.syllabus_profile .field-name-field-cl-outcomes .field-label,
 .syllabus_profile .field-name-field-fc-agreements .field-label,
 .syllabus_profile .field-name-field-general-objectives .field-label,
 .syllabus_profile .field-name-field-required-material .field-label,
 .syllabus_profile .field-name-field-syllabus-evaluation .field-label,
 .syllabus_profile .field-name-field-course-progress .field-label,
+.syllabus_profile .field-name-field-teaching-methods .field-label,
 .syllabus_profile .field-name-field-course-calendar .field-label,
 .syllabus_profile .field-name-field-monograph .field-label,
-.syllabus_profile .field-name-field-document-article .field-label {
+.syllabus_profile .field-name-field-scientific-article .field-label,
+.syllabus_profile .field-name-field-document-article .field-label,
+.syllabus_profile .field-name-field-other-documents .field-label,
+.syllabus_profile .field-name-field-append-files .field-label,
+.syllabus_profile .field-name-field-plagiarism-text .field-label {
   font-size: 21px;
   font-size: 1.3125rem;
   border-bottom: 3px solid #000;
@@ -2951,24 +2975,30 @@ footer#footer {
   padding-bottom: .3em;
   font-weight: 500;
 }
-/* line 467, ../sass/components/_pages.scss */
+/* line 485, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-course-description .field-items .field-label,
+.syllabus_profile .field-name-field-cl-outcomes .field-items .field-label,
 .syllabus_profile .field-name-field-fc-agreements .field-items .field-label,
 .syllabus_profile .field-name-field-general-objectives .field-items .field-label,
 .syllabus_profile .field-name-field-required-material .field-items .field-label,
 .syllabus_profile .field-name-field-syllabus-evaluation .field-items .field-label,
 .syllabus_profile .field-name-field-course-progress .field-items .field-label,
+.syllabus_profile .field-name-field-teaching-methods .field-items .field-label,
 .syllabus_profile .field-name-field-course-calendar .field-items .field-label,
 .syllabus_profile .field-name-field-monograph .field-items .field-label,
-.syllabus_profile .field-name-field-document-article .field-items .field-label {
+.syllabus_profile .field-name-field-scientific-article .field-items .field-label,
+.syllabus_profile .field-name-field-document-article .field-items .field-label,
+.syllabus_profile .field-name-field-other-documents .field-items .field-label,
+.syllabus_profile .field-name-field-append-files .field-items .field-label,
+.syllabus_profile .field-name-field-plagiarism-text .field-items .field-label {
   border: 0;
   margin-bottom: 0;
   font-weight: bold;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
-/* line 475, ../sass/components/_pages.scss */
-.syllabus_profile .field-name-field-document-article {
+/* line 493, ../sass/components/_pages.scss */
+.syllabus_profile .field-name-field-plagiarism-text {
   -webkit-border-radius: 0 0 3px 3px;
   -moz-border-radius: 0 0 3px 3px;
   -ms-border-radius: 0 0 3px 3px;
@@ -2976,15 +3006,28 @@ footer#footer {
   border-radius: 0 0 3px 3px;
   padding-bottom: 2em;
 }
-/* line 483, ../sass/components/_pages.scss */
-.syllabus_profile .field-name-field-course-progress {
-  padding-bottom: 0;
+/* line 499, ../sass/components/_pages.scss */
+.syllabus_profile .field-name-field-plagiarism-text ul {
+  padding-left: 30px;
 }
-/* line 486, ../sass/components/_pages.scss */
+/* line 508, ../sass/components/_pages.scss */
+.syllabus_profile .field-name-field-cl-outcomes .field-item,
+.syllabus_profile .field-name-field-teaching-methods .field-item,
+.syllabus_profile .field-name-field-append-files .field-item {
+  padding: .5em 1em;
+  border-top: 1px solid whitesmoke;
+}
+/* line 511, ../sass/components/_pages.scss */
+.syllabus_profile .field-name-field-cl-outcomes .field-item:first-child,
+.syllabus_profile .field-name-field-teaching-methods .field-item:first-child,
+.syllabus_profile .field-name-field-append-files .field-item:first-child {
+  border: 0;
+}
+/* line 520, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-other-teaching-strategies {
   padding: 0 1.5em 1.5em;
 }
-/* line 488, ../sass/components/_pages.scss */
+/* line 522, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-other-teaching-strategies .field-items {
   border-top: 1px solid whitesmoke;
   padding-top: .5em;
@@ -2994,13 +3037,13 @@ footer#footer {
 /**
  * Print and PDF Page
  */
-/* line 505, ../sass/components/_pages.scss */
+/* line 539, ../sass/components/_pages.scss */
 .print .print-content {
   margin: 2em;
   max-width: 1200px;
   margin: 0 auto;
 }
-/* line 510, ../sass/components/_pages.scss */
+/* line 544, ../sass/components/_pages.scss */
 .print.pdf {
   background-color: #fff;
 }
