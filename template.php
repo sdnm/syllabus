@@ -130,3 +130,39 @@ function syllabus_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+
+/**
+ * Override or insert variables into the page template.
+ *
+ * @param $variables
+ *   An array of variables to pass to the theme template.
+ * @param $hook
+ *   The name of the template being rendered ("page" in this case.)
+ */
+function syllabus_preprocess_page(&$variables, $hook) {
+  // Find the title of the menu used by the secondary links.
+  $secondary_links = variable_get('menu_secondary_links_source', 'user-menu');
+
+  if ($secondary_links) {
+    $menus = function_exists('menu_get_menus') ? menu_get_menus() : menu_list_system_menus();
+    $variables['secondary_menu_heading'] = $menus[$secondary_links];
+  }
+  else {
+    $variables['secondary_menu_heading'] = '';
+  }
+  //Add the block translation block here. 
+  $block = block_load('syllabus_block', 'language_switcher');
+  $renderable_block = _block_get_renderable_array(_block_render_blocks(array($block)));
+  $title = $href = array();
+  $href = explode('"',$renderable_block['syllabus_block_language_switcher']['#items'][0]);
+  $query = explode('?', $href[1]);
+  $language_switcher = array();
+  $language_switcher['href'] = check_plain(substr($query[0], 1));
+  $query = explode('=', $query[1]);
+  $language_switcher['query'] = array($query[0] => $query[1]);
+  $title = explode('>',$renderable_block['syllabus_block_language_switcher']['#items'][0]);
+  $language_switcher['title'] = str_replace('</a', '', $title[1]);
+  array_unshift($variables['secondary_menu'], $language_switcher);
+}
+
