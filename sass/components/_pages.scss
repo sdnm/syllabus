@@ -229,13 +229,24 @@ footer#footer{
     #edit-public, 
     #edit-publish, 
     #edit-draft{
-      @include button-3d($primary, #fff);
-      border-color: $primary;
-      @media #{$desktop}{
-        float: right;
-      }
+
     }// buttons    
 }
+
+#syllabus-mine-form{
+  input[type="submit"]{
+    @include button-3d($primary, #fff);
+    border-color: $primary;
+    margin-left: .5em;
+    @media #{$desktop}{
+      float: right;
+    }
+  }
+  
+}
+
+
+
 
 /**
  * Create a Syllabus Page

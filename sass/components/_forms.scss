@@ -259,6 +259,20 @@ table {
   
 }
 
+// Remove hover state inside page editing
+
+.page-syllabus-edit{
+  tbody tr:hover{
+    background: #fff;
+  }
+  tbody tr.draggable{
+    border-left: 3px solid transparent;
+    &:hover{
+     border-left: 3px solid $primary;
+    }
+  }
+}
+
 
 /**
 * Custom Form Elements
@@ -490,7 +504,6 @@ textarea[disabled="disabled"]{
 #edit-submit-next{
   float: right;
 }
-
 
 
 
