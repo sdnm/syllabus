@@ -397,12 +397,9 @@ footer#footer{
   .field-name-telephone{
     padding-top: 1em;
   }
+  
   .field-name-assistant-professor-office-hours {
     padding-bottom: 1em;
-    .field-name-field-office-day,
-    .field-name-field-office-location .field-label{
-      @extend %grey-title;
-    }
   }
   
   // float left to allow location to go beside
@@ -410,22 +407,47 @@ footer#footer{
   .field-name-field-hours-from{
     float: left;
   }
+  .field-name-field-office-day,
+  .field-name-field-office-location .field-label{
+    @extend %grey-title;
+    font-size: 12px !important;
+    font-size: .75rem !important;
+    padding-bottom: .3em;
+  }
+  
+  .field-collection-item-field-course-hours, 
+  .syllabus-time-field{
+    margin: 1em 0 0;
+
+  }
+  
   .field-name-field-hours-from{
     clear: left;
   }
   .field-name-field-office-location{
     margin-left: 10em;
-    margin-bottom: 1em;
   }
   
   // TA Name 
   .field-name-field-ass-prof-info{
-    div{
+
+    .field-name-field-family-name, 
+    .field-name-field-first-name{
+      float: left;
+      margin-right: .5em;
+    }
+    .field-name-field-office-number, 
+    .field-name-field-email{
+      clear: left;
       display: inline-block;
+      margin-left: 2em;
     }
-    .field-name-field-family-name{
-     margin-left: .5em;
-    }
+  }
+  
+  .field-collection-item-field-assistant-collection{
+    padding: 2em 0 2em;
+    border-bottom: 1px solid $light-grey;
+    margin-bottom: -1px;
   }
   
   .center{
@@ -461,14 +483,19 @@ footer#footer{
 
   
   // Added Padding top/left/right
-  .field-name-telephone,
   .field-name-email,
   .field-name-field-assistant-collection,
   .field-name-field-other-teaching-strategies{
     padding: 1em 1.5em 0;
+  } 
+  
+  .field-name-field-office-number{
+    padding: 0 1.5em 0;
   }
   
+  
   .field-name-field-course-description,
+  .field-name-field-course-hours,
   .field-name-field-cl-outcomes,
   .field-name-field-fc-agreements, 
   .field-name-field-general-objectives,
@@ -539,7 +566,43 @@ footer#footer{
   
 }
 
+/**
+ * Search Results
+ */
 
+.page-search-result{
+  min-width: 600px;
+  
+  .page__title{
+    display: none;
+  }
+  
+  .block__title{
+    @include rem-fallback(padding, .4, 1.5);
+    border-bottom: 1px solid $light-grey;
+    margin: 0;
+    font-weight: 600;
+    @include rem-fallback(font-size, 1.3125);
+  }
+  #syllabus-block-search-result-form{
+    margin-top: 2em;
+    padding: 0 0 2em;
+    background-color: #fff;
+    @include box-sizing(border-box);
+    @include border-radius(3px);
+    @include box-shadow(rgba(0,0,0,0.1) 0 1px 3px);    
+    
+    .form-item, 
+    .form-actions{
+      padding: 0 1.5em;
+    }
+    
+    #search-result-table{
+      border-left: 1.5em solid #fff;
+      border-right: 1.5em solid #fff;
+    }
+  }
+}
 
 
 /**
