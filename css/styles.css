@@ -3056,11 +3056,15 @@ footer#footer {
 .syllabus_profile .field-name-field-append-files .field-item:first-child {
   border: 0;
 }
-/* line 558, ../sass/components/_pages.scss */
+/* line 557, ../sass/components/_pages.scss */
+.syllabus_profile th.field_agreement_cl_outcome {
+  display: none;
+}
+/* line 560, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-other-teaching-strategies {
   padding: 0 1.5em 1.5em;
 }
-/* line 560, ../sass/components/_pages.scss */
+/* line 562, ../sass/components/_pages.scss */
 .syllabus_profile .field-name-field-other-teaching-strategies .field-items {
   border-top: 1px solid whitesmoke;
   padding-top: .5em;
@@ -3070,15 +3074,15 @@ footer#footer {
 /**
  * Search Results
  */
-/* line 573, ../sass/components/_pages.scss */
+/* line 575, ../sass/components/_pages.scss */
 .page-search-result {
   min-width: 600px;
 }
-/* line 576, ../sass/components/_pages.scss */
+/* line 578, ../sass/components/_pages.scss */
 .page-search-result .page__title {
   display: none;
 }
-/* line 580, ../sass/components/_pages.scss */
+/* line 582, ../sass/components/_pages.scss */
 .page-search-result .block__title {
   padding: 6.4px 24px;
   padding: 0.4rem 1.5rem;
@@ -3088,7 +3092,7 @@ footer#footer {
   font-size: 21px;
   font-size: 1.3125rem;
 }
-/* line 587, ../sass/components/_pages.scss */
+/* line 589, ../sass/components/_pages.scss */
 .page-search-result #syllabus-block-search-result-form {
   margin-top: 2em;
   padding: 0 0 2em;
@@ -3105,12 +3109,12 @@ footer#footer {
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
 }
-/* line 596, ../sass/components/_pages.scss */
+/* line 598, ../sass/components/_pages.scss */
 .page-search-result #syllabus-block-search-result-form .form-item,
 .page-search-result #syllabus-block-search-result-form .form-actions {
   padding: 0 1.5em;
 }
-/* line 600, ../sass/components/_pages.scss */
+/* line 602, ../sass/components/_pages.scss */
 .page-search-result #syllabus-block-search-result-form #search-result-table {
   border-left: 1.5em solid #fff;
   border-right: 1.5em solid #fff;
@@ -3119,13 +3123,13 @@ footer#footer {
 /**
  * Print and PDF Page
  */
-/* line 613, ../sass/components/_pages.scss */
+/* line 615, ../sass/components/_pages.scss */
 .print .print-content {
   margin: 2em;
   max-width: 1200px;
   margin: 0 auto;
 }
-/* line 618, ../sass/components/_pages.scss */
+/* line 620, ../sass/components/_pages.scss */
 .print.pdf {
   background-color: #fff;
 }

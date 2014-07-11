@@ -554,7 +554,9 @@ footer#footer{
   
   
   // Alterations to specific fields
-
+  th.field_agreement_cl_outcome{
+    display: none;
+  }
   .field-name-field-other-teaching-strategies{
     padding: 0 1.5em 1.5em;
     .field-items{
