@@ -465,6 +465,11 @@ textarea[disabled="disabled"]{
     @include border-radius(3px);
     margin: 11em 1.5em 2em;
     
+    // Hide learning outcome selection box
+    .field-name-field-agreement-lc{
+      display: none;
+    }
+    
     #edit-tabs{
       position: absolute;
       top: -9.5em;
