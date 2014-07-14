@@ -652,3 +652,18 @@ footer#footer{
    }
  }
  
+ // Page Break for PDF and Print sheets
+.center{
+  .field-name-field-course-description,
+  .field-name-field-general-objectives,
+  .field-name-field-specific-objectives,
+  .field-name-field-agreements,
+  .field-name-field-required-material,
+  .field-name-field-syllabus-evaluation,
+  .field-name-field-fc-agreements,
+  .field-name-field-course-progress,
+  .field-name-field-teaching-methods {
+    page-break-inside:avoid;
+  }
+}
+ 

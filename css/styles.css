@@ -3160,6 +3160,19 @@ footer#footer {
   background-color: #fff;
 }
 
+/* line 665, ../sass/components/_pages.scss */
+.center .field-name-field-course-description,
+.center .field-name-field-general-objectives,
+.center .field-name-field-specific-objectives,
+.center .field-name-field-agreements,
+.center .field-name-field-required-material,
+.center .field-name-field-syllabus-evaluation,
+.center .field-name-field-fc-agreements,
+.center .field-name-field-course-progress,
+.center .field-name-field-teaching-methods {
+  page-break-inside: avoid;
+}
+
 /**
  * @file
  * SMACSS Modules
