@@ -415,10 +415,28 @@ footer#footer{
     padding-bottom: .3em;
   }
   
-  .field-collection-item-field-course-hours, 
-  .syllabus-time-field{
-    margin: 1em 0 0;
-
+  .field-collection-item-field-course-hours{
+    margin: 0;
+    padding: 1em 0;
+    display: block;
+    clear: both;
+    @extend .cf;
+  }
+  
+  .field-name-field-course-hours-type{
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .field-name-professor-office-hours, 
+  .field-name-field-assistant-collection{
+    .syllabus-time-field{
+      margin: 0;
+      padding: 1em 0;
+      display: block;
+      clear: both;
+      @extend .cf;
+    }
   }
   
   .field-name-field-hours-from{
@@ -435,12 +453,20 @@ footer#footer{
     .field-name-field-first-name{
       float: left;
       margin-right: .5em;
+      @media only screen and (min-width: 48em){
+
+      }
     }
     .field-name-field-office-number, 
     .field-name-field-email{
-      clear: left;
-      display: inline-block;
-      margin-left: 2em;
+      display: block;
+      clear: both;
+      @media only screen and (min-width: 48em){
+        clear: left;
+        display: inline-block;
+        margin-left: 2em;
+        padding: 0;
+      }
     }
   }
   
@@ -448,6 +474,10 @@ footer#footer{
     padding: 2em 0 2em;
     border-bottom: 1px solid $light-grey;
     margin-bottom: -1px;
+
+    .field-name-field-office-number{
+      padding: 0;
+    }
   }
   
   .center{
@@ -462,10 +492,10 @@ footer#footer{
     display: inline-block;
     .field-item{
       &:before{
-        content: '(';
+        //content: '(';
       }
       &:after{
-        content: ')';
+        //content: ')';
       }
     }//.field-item
   }
