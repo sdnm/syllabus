@@ -296,11 +296,22 @@ footer#footer{
 
 .page-syllabus-{
   .bar{
-    background-color: #a1a1a1;
+    background: url(../images/bg.jpg) no-repeat top center;
+    background-size: cover;
+    @media #{$tablet-landscape}{
+      background-position: center -100px;
+    }
+    @media #{$desktop}{
+      background-position: center -200px;
+    }
+    @media only screen and (min-width: 120em){
+      background-position: center -300px;
+    }
     h1{
-      @include rem-fallback (padding, 1.5, 1.5, 0);
-      font-weight: 600;
-      //@include rem-fallback(font-size, 1.3125);
+      color: #fff;
+      @include rem-fallback (padding, 2, 1.5, 0);
+      padding: 2rem 1.5rem 0rem;
+      margin-bottom: -.75em;
     }
   }
 }
