@@ -166,3 +166,32 @@ function syllabus_preprocess_page(&$variables, $hook) {
   array_unshift($variables['secondary_menu'], $language_switcher);
 }
 
+/**
+ * Implements theme_fieldset().
+ */
+function syllabus_fieldset($variables) {
+  $element = $variables['element'];
+  element_set_attributes($element, array('id'));
+  _form_set_class($element, array('form-wrapper'));
+  $output = '';
+  //If not title do not show the title and fieldset wrapper
+  if (!empty($element['#title']) && $element['#title'] != 'NULL') {
+     $output = '<fieldset' . drupal_attributes($element['#attributes']) . '>';
+     $output .= '<legend><span class="fieldset-legend">' . $element['#title'] . '</span></legend>';
+  }
+
+  $output .= '<div class="fieldset-wrapper">';
+  if (!empty($element['#description'])) {
+    $output .= '<div class="fieldset-description">' . $element['#description'] . '</div>';
+  }
+  $output .= $element['#children'];
+  if (isset($element['#value'])) {
+    $output .= $element['#value'];
+  }
+  $output .= '</div>';
+  if (!empty($element['#title']) && $element['#title'] != 'NULL') {
+    $output .= "</fieldset>\n";
+  }
+  return $output;
+}
+
