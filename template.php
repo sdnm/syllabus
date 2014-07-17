@@ -175,9 +175,11 @@ function syllabus_fieldset($variables) {
   _form_set_class($element, array('form-wrapper'));
   $output = '';
   //If not title do not show the title and fieldset wrapper
-  if (!empty($element['#title']) && $element['#title'] != 'NULL') {
+  if (isset($element['#title']) && $element['#title'] != 'NULL') {
      $output = '<fieldset' . drupal_attributes($element['#attributes']) . '>';
-     $output .= '<legend><span class="fieldset-legend">' . $element['#title'] . '</span></legend>';
+     if (!empty($element['#title'])) {
+       $output .= '<legend><span class="fieldset-legend">' . $element['#title'] . '</span></legend>';
+     }
   }
 
   $output .= '<div class="fieldset-wrapper">';
@@ -189,7 +191,7 @@ function syllabus_fieldset($variables) {
     $output .= $element['#value'];
   }
   $output .= '</div>';
-  if (!empty($element['#title']) && $element['#title'] != 'NULL') {
+  if (isset($element['#title']) && $element['#title'] != 'NULL') {
     $output .= "</fieldset>\n";
   }
   return $output;
