@@ -1139,31 +1139,38 @@ table {
  */
 /* line 320, ../sass/layouts/_responsive.scss */
 .page-syllabus-edit .content-wrapper .form-item {
-  display: inline-block;
   margin: 1em 0;
 }
+/* line 323, ../sass/layouts/_responsive.scss */
+.page-syllabus-edit .content-wrapper .field-name-field-program-title .form-item {
+  display: inline-block;
+}
 /* line 326, ../sass/layouts/_responsive.scss */
+.page-syllabus-edit .content-wrapper .form-type-textarea {
+  width: 100%;
+}
+/* line 331, ../sass/layouts/_responsive.scss */
 .page-syllabus-edit .content-wrapper .field-name-field-course-code {
   float: left;
   width: 33.33333%;
   margin-left: 0%;
   margin-right: -33.33333%;
 }
-/* line 327, ../sass/layouts/_responsive.scss */
+/* line 332, ../sass/layouts/_responsive.scss */
 .page-syllabus-edit .content-wrapper .field-name-field-section {
   float: left;
   width: 33.33333%;
   margin-left: 33.33333%;
   margin-right: -66.66667%;
 }
-/* line 328, ../sass/layouts/_responsive.scss */
+/* line 333, ../sass/layouts/_responsive.scss */
 .page-syllabus-edit .content-wrapper .field-name-field-session {
   float: left;
   width: 33.33333%;
   margin-left: 66.66667%;
   margin-right: -100%;
 }
-/* line 330, ../sass/layouts/_responsive.scss */
+/* line 335, ../sass/layouts/_responsive.scss */
 .page-syllabus-edit .content-wrapper .field-name-field-faculty {
   clear: left;
   float: left;
@@ -1171,30 +1178,43 @@ table {
   margin-left: 0%;
   margin-right: -33.33333%;
 }
-/* line 330, ../sass/layouts/_responsive.scss */
+/* line 335, ../sass/layouts/_responsive.scss */
 .page-syllabus-edit .content-wrapper .field-name-field-faculty .chosen-container {
   width: 100% !important;
 }
-/* line 331, ../sass/layouts/_responsive.scss */
+/* line 336, ../sass/layouts/_responsive.scss */
 .page-syllabus-edit .content-wrapper .field-name-field-department {
   float: left;
   width: 33.33333%;
   margin-left: 33.33333%;
   margin-right: -66.66667%;
 }
-/* line 332, ../sass/layouts/_responsive.scss */
+/* line 337, ../sass/layouts/_responsive.scss */
 .page-syllabus-edit .content-wrapper .field-name-field-program-title {
   clear: left;
 }
-/* line 335, ../sass/layouts/_responsive.scss */
-.page-syllabus-edit .content-wrapper .field-name-field-timetable,
-.page-syllabus-edit .content-wrapper .field-name-field-course-hours-type {
-  padding-left: 0;
-  padding-right: 0;
-}
 /* line 339, ../sass/layouts/_responsive.scss */
 .page-syllabus-edit .content-wrapper .field-type-timefield .form-item {
+  display: inline-block;
   margin: 1em 2em 1em 0;
+}
+/* line 346, ../sass/layouts/_responsive.scss */
+.page-syllabus-edit .content-wrapper .form-type-date-popup {
+  margin: 0;
+  padding: 0;
+}
+/* line 348, ../sass/layouts/_responsive.scss */
+.page-syllabus-edit .content-wrapper .form-type-date-popup .form-item {
+  margin: 0;
+  padding: 0;
+}
+/* line 357, ../sass/layouts/_responsive.scss */
+.page-syllabus-edit .content-wrapper .field-name-field-timetable,
+.page-syllabus-edit .content-wrapper .field-name-field-course-hours-type,
+.page-syllabus-edit .content-wrapper .field-name-field-syllabus-professor,
+.page-syllabus-edit .content-wrapper .field-name-field-syllabus-office-hours {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* Component (SMACSS module) rules */
@@ -2306,11 +2326,11 @@ textarea[disabled="disabled"] {
   border-radius: 3px;
   margin: 11em 1.5em 2em;
 }
-/* line 469, ../sass/components/_forms.scss */
+/* line 468, ../sass/components/_forms.scss */
 .page-syllabus-edit .content-wrapper .field-name-field-agreement-lc {
   display: none;
 }
-/* line 473, ../sass/components/_forms.scss */
+/* line 472, ../sass/components/_forms.scss */
 .page-syllabus-edit .content-wrapper #edit-tabs {
   position: absolute;
   top: -9.5em;
@@ -2324,7 +2344,7 @@ textarea[disabled="disabled"] {
   .page-syllabus-edit .content-wrapper {
     margin-top: 8em;
   }
-  /* line 482, ../sass/components/_forms.scss */
+  /* line 481, ../sass/components/_forms.scss */
   .page-syllabus-edit .content-wrapper #edit-tabs {
     top: -6.5em;
   }
@@ -2333,21 +2353,28 @@ textarea[disabled="disabled"] {
   /* line 461, ../sass/components/_forms.scss */
   .page-syllabus-edit .content-wrapper {
     margin-top: 5em;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  /* line 489, ../sass/components/_forms.scss */
+  /* line 491, ../sass/components/_forms.scss */
   .page-syllabus-edit .content-wrapper #edit-tabs {
     top: -3.5em;
     width: 1200px;
   }
 }
-
 /* line 499, ../sass/components/_forms.scss */
+.page-syllabus-edit .content-wrapper .remove-button {
+  float: right;
+}
+
+/* line 509, ../sass/components/_forms.scss */
 #edit-submit-draft,
 #edit-submit-publish {
   margin-right: .5em;
 }
 
-/* line 504, ../sass/components/_forms.scss */
+/* line 514, ../sass/components/_forms.scss */
 #edit-submit-publish,
 #edit-submit-next {
   color: white;
@@ -2385,7 +2412,7 @@ textarea[disabled="disabled"] {
   background-color: #004d94;
 }
 
-/* line 509, ../sass/components/_forms.scss */
+/* line 519, ../sass/components/_forms.scss */
 #edit-submit-next {
   float: right;
 }

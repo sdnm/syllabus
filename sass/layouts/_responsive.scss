@@ -318,8 +318,13 @@ $zen-auto-include-item-base: false;
 .page-syllabus-edit{
   .content-wrapper{
     .form-item{
-      display: inline-block;
       margin: 1em 0;
+    }
+    .field-name-field-program-title .form-item{
+      display:inline-block;
+    }
+    .form-type-textarea{
+      width: 100%;
     }
     $zen-column-count: 6;
     // Course Identification
@@ -330,21 +335,27 @@ $zen-auto-include-item-base: false;
      .field-name-field-faculty{ @include zen-clear; @include zen-grid-item(2, 1); .chosen-container{width: 100% !important;}}
      .field-name-field-department { @include zen-grid-item(2, 3);}
      .field-name-field-program-title{ @include zen-clear;}
-     
-     .field-name-field-timetable, 
-     .field-name-field-course-hours-type{
-        @include zen-nested-container();
-     }
      .field-type-timefield{
        .form-item{
+         display: inline-block;
          margin: 1em 2em 1em 0;
        }
      }
     
+    // Evaluation
+    .form-type-date-popup{
+      @include zero;
+      .form-item{
+        @include zero;
+      }
+    }
     
-    // Professor Identification
-    
-    
-    
+    // Nested Containers
+    .field-name-field-timetable, 
+    .field-name-field-course-hours-type,
+    .field-name-field-syllabus-professor, 
+    .field-name-field-syllabus-office-hours{ 
+       @include zen-nested-container();
+    }
   }//.content-wrapper
 }
