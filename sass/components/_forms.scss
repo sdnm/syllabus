@@ -464,7 +464,6 @@ textarea[disabled="disabled"]{
     position: relative;
     @include border-radius(3px);
     margin: 11em 1.5em 2em;
-    
     // Hide learning outcome selection box
     .field-name-field-agreement-lc{
       display: none;
@@ -486,11 +485,22 @@ textarea[disabled="disabled"]{
     
     @media #{$desktop-small}{
       margin-top: 5em;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
       #edit-tabs{
         top: -3.5em;
         width: 1200px;
       }// #edit-tabs
     }// .mediaqueries
+    
+    
+    // Global Styles
+    .remove-button{
+      float: right;
+    }
+    
+    
   }// .content-wrapper
 }// .page-syllabus-edit
 
@@ -509,11 +519,4 @@ textarea[disabled="disabled"]{
 #edit-submit-next{
   float: right;
 }
-
-
-
-
-
-
-
 
