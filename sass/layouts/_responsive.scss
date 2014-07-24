@@ -297,16 +297,6 @@ $zen-auto-include-item-base: false;
   }
 }
 
-
-.page-syllabus-add{
-  #main{
-    padding: 2em 20px;
-  }
-  #content{
-    @extend %page-cols;
-  }
-}
-
 .section-syllabus .syllabus_profile{
   @extend %page-cols;
 }
@@ -315,47 +305,46 @@ $zen-auto-include-item-base: false;
  * Edit Page Zen Grids
  */
 
-.page-syllabus-edit{
-  .content-wrapper{
-    .form-item{
-      margin: 1em 0;
-    }
-    .field-name-field-program-title .form-item{
-      display:inline-block;
-    }
-    .form-type-textarea{
-      width: 100%;
-    }
-    $zen-column-count: 6;
-    // Course Identification
-      .field-name-field-course-code{ @include zen-grid-item(2, 1);}
-      .field-name-field-section{ @include zen-grid-item(2, 3);}
-      .field-name-field-session{ @include zen-grid-item(2, 5);}
-     // Row 2
-     .field-name-field-faculty{ @include zen-clear; @include zen-grid-item(2, 1); .chosen-container{width: 100% !important;}}
-     .field-name-field-department { @include zen-grid-item(2, 3);}
-     .field-name-field-program-title{ @include zen-clear;}
-     .field-type-timefield{
-       .form-item{
-         display: inline-block;
-         margin: 1em 2em 1em 0;
-       }
+.page-syllabus-edit, 
+.page-syllabus-add{
+  .form-item{
+    margin: 1em 0;
+  }
+  .field-name-field-program-title .form-item{
+    display:inline-block;
+  }
+  .form-type-textarea{
+    width: 100%;
+  }
+  $zen-column-count: 6;
+  // Course Identification
+    .field-name-field-course-code{ @include zen-grid-item(2, 1);}
+    .field-name-field-section{ @include zen-grid-item(2, 3);}
+    .field-name-field-session{ @include zen-grid-item(2, 5);}
+   // Row 2
+   .field-name-field-faculty{ @include zen-clear; @include zen-grid-item(2, 1); .chosen-container{width: 100% !important;}}
+   .field-name-field-department { @include zen-grid-item(2, 3);}
+   .field-name-field-program-title{ @include zen-clear;}
+   .field-type-timefield{
+     .form-item{
+       display: inline-block;
+       margin: 1em 2em 1em 0;
      }
-    
-    // Evaluation
-    .form-type-date-popup{
+   }
+
+  // Evaluation
+  .form-type-date-popup{
+    @include zero;
+    .form-item{
       @include zero;
-      .form-item{
-        @include zero;
-      }
     }
-    
-    // Nested Containers
-    .field-name-field-timetable, 
-    .field-name-field-course-hours-type,
-    .field-name-field-syllabus-professor, 
-    .field-name-field-syllabus-office-hours{ 
-       @include zen-nested-container();
-    }
-  }//.content-wrapper
+  }
+
+  // Nested Containers
+  .field-name-field-timetable, 
+  .field-name-field-course-hours-type,
+  .field-name-field-syllabus-professor, 
+  .field-name-field-syllabus-office-hours{ 
+     @include zen-nested-container();
+  }
 }
