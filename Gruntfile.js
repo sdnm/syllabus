@@ -60,10 +60,6 @@ module.exports = function(grunt) {
       js: {
         files: ['<%= jshint.beforeconcat %>'],
         tasks: ['jshint']
-      },
-      img: {
-        files: ['**/*.svg', '**/*.png'],
-        tasks: ['svg-sprites']
       }
     }
   });
