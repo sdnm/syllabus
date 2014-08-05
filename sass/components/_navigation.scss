@@ -72,11 +72,7 @@ header.header{
 }
 
 /* Gear Icon for Sliding Menu */
-.not-logged-in{
-  menu.user-menu #open_secondary-menu{
-    display: none;
-  }
-}
+
 menu.user-menu{
   display: inline-block;
   @include zero;
