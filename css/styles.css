@@ -2002,7 +2002,7 @@ tr.selected td {
 /* line 219, ../sass/components/_forms.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1405345037');
+  background-image: url('../images/progress.gif?1405951779');
 }
 
 /**
@@ -3171,7 +3171,7 @@ footer#footer {
   border: 0;
 }
 /* line 586, ../sass/components/_pages.scss */
-.syllabus_profile th.field_agreement_cl_outcome {
+.syllabus_profile th.field_agreement_inclusion {
   display: none;
 }
 /* line 589, ../sass/components/_pages.scss */
