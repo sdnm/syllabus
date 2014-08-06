@@ -329,6 +329,7 @@ footer#footer{
     float: right;
     padding-top: .3em;
     @include rem-fallback(font-size, 1.3125);
+    padding-right:200px
   }
   
   .course_description{
