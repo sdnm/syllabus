@@ -3266,7 +3266,7 @@ footer#footer {
   background-color: #fff;
 }
 
-/* line 670, ../sass/components/_pages.scss */
+/* line 669, ../sass/components/_pages.scss */
 .center .field-name-field-course-description,
 .center .field-name-field-general-objectives,
 .center .field-name-field-specific-objectives,
@@ -3275,8 +3275,12 @@ footer#footer {
 .center .field-name-field-syllabus-evaluation,
 .center .field-name-field-fc-agreements,
 .center .field-name-field-course-progress,
-.center .field-name-field-teaching-methods,
-.center .field-name-field-plagiarism-text {
+.center .field-name-field-teaching-methods {
+  page-break-inside: avoid;
+}
+
+/* line 674, ../sass/components/_pages.scss */
+footer .field-name-field-plagiarism-text {
   page-break-inside: avoid;
 }
 
