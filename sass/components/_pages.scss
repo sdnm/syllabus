@@ -256,7 +256,7 @@ footer#footer{
 
 
 /**
- * View Page for Individual Syllabi
+ * View Page for Individual Syllabifield-na
  */
  
 // See _navigation.scss for tab styles
@@ -428,7 +428,8 @@ footer#footer{
   }
   
   .field-name-professor-office-hours, 
-  .field-name-field-assistant-collection{
+  .field-name-field-assistant-collection,
+  .field-name-professor {
     .syllabus-time-field{
       margin: 0;
       padding: 1em 0;
@@ -446,29 +447,30 @@ footer#footer{
   }
   
   // TA Name 
-  .field-name-field-ass-prof-info{
+  .general_information{ 
+    .field-name-field-ass-prof-info,
+    .field-name-field-syllabus-professor{
+      .field-name-field-family-name, 
+      .field-name-field-first-name{
+        float: left;
+        margin-right: .5em;
+        @media only screen and (min-width: 48em){
 
-    .field-name-field-family-name, 
-    .field-name-field-first-name{
-      float: left;
-      margin-right: .5em;
-      @media only screen and (min-width: 48em){
-
+        }
+      } 
+      .field-name-field-office-number, 
+      .field-name-field-email{
+        display: block;
+        clear: both;
+        @media only screen and (min-width: 48em){
+          clear: left;
+          display: inline-block;
+          margin-left: 2em;
+          padding: 0;
+        }
       }
     }
-    .field-name-field-office-number, 
-    .field-name-field-email{
-      display: block;
-      clear: both;
-      @media only screen and (min-width: 48em){
-        clear: left;
-        display: inline-block;
-        margin-left: 2em;
-        padding: 0;
-      }
-    }
-  }
-  
+  }  
   .field-collection-item-field-assistant-collection{
     padding: 2em 0 2em;
     border-bottom: 1px solid $light-grey;
@@ -514,6 +516,7 @@ footer#footer{
   // Added Padding top/left/right
   .field-name-email,
   .field-name-field-assistant-collection,
+  .field-name-professor,
   .field-name-field-other-teaching-strategies{
     padding: 1em 1.5em 0;
   } 
@@ -538,7 +541,9 @@ footer#footer{
   .field-name-field-document-article,
   .field-name-field-other-documents, 
   .field-name-field-append-files,
-  .field-name-field-plagiarism-text{
+  .field-name-field-plagiarism-text,
+  .field-name-professor,
+  .field-name-field-assistant-collection {
     background-color: #fff; 
     padding: 1.5em;
     border-top: 1px solid $light-grey;
