@@ -326,10 +326,10 @@ footer#footer{
     float: left;
   }
   .institute_description_information{
-    float: right;
+    float: left;
     padding-top: .3em;
     @include rem-fallback(font-size, 1.3125);
-    padding-right:200px
+    margin-left:50px
   }
   
   .course_description{
@@ -677,3 +677,9 @@ footer{
   }
 }
  
+
+.field-name-field-general-objectives {
+  ul {
+    padding-left: 1em;
+  }
+}
