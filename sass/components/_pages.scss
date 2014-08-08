@@ -50,11 +50,12 @@ footer#footer{
   // Responsive Dashboard
   .panel-2col-bricks, 
   .panel-2col{
-    .panel-panel .inside{
+    .panel-panel .inside .block{
       background-color: #fff;
       @include box-sizing(border-box);
       @include border-radius(3px);
       @include box-shadow(rgba(0,0,0,0.1) 0 1px 3px);
+      margin-bottom: 1em;
     }
   }
   // Responsive Non Dashboard
