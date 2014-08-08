@@ -490,7 +490,8 @@ footer#footer{
   //Evaluation
 
 .field-name-field-syllabus-evaluation{
-  .field-name-field-evaluation-list{
+  .field-name-field-evaluation-list,
+  .field-name-field-evalutation-other {
     @include rem-fallback(font-size, 1.125);
     display: inline-block;
     .field-item{
