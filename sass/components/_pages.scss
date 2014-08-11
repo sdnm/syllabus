@@ -3,7 +3,8 @@
  */
  
 #page{
-  @include rem-fallback(font-size, .875); //12px
+  //@include rem-fallback(font-size, .875); //12px
+  @include rem-fallback(font-size, 1); //12px
 }
 
 main#main, 
@@ -84,7 +85,7 @@ footer#footer{
 // Global setting
 .bar{
   text-align: center;
-  height:101px;
+  min-height:101px;
 }
 
 .front .bar{
@@ -311,6 +312,9 @@ footer#footer{
 
 
 .syllabus_profile{
+  header {
+    padding-top:1em;
+  }
   margin-bottom: 2em;
   
   ul, li{
