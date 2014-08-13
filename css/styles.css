@@ -3210,19 +3210,27 @@ footer#footer {
   padding-top: .5em;
   margin-top: .5em;
 }
+/* line 614, ../sass/components/_pages.scss */
+.syllabus_profile .field-name-field-monograph .field-item,
+.syllabus_profile .field-name-field-scientific-article .field-item,
+.syllabus_profile .field-name-field-document-article .field-item,
+.syllabus_profile .field-name-field-other-documents .field-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
 /**
  * Search Results
  */
-/* line 616, ../sass/components/_pages.scss */
+/* line 625, ../sass/components/_pages.scss */
 .page-search-result {
   min-width: 600px;
 }
-/* line 619, ../sass/components/_pages.scss */
+/* line 628, ../sass/components/_pages.scss */
 .page-search-result .page__title {
   display: none;
 }
-/* line 623, ../sass/components/_pages.scss */
+/* line 632, ../sass/components/_pages.scss */
 .page-search-result .block__title {
   padding: 6.4px 24px;
   padding: 0.4rem 1.5rem;
@@ -3232,7 +3240,7 @@ footer#footer {
   font-size: 21px;
   font-size: 1.3125rem;
 }
-/* line 630, ../sass/components/_pages.scss */
+/* line 639, ../sass/components/_pages.scss */
 .page-search-result #syllabus-block-search-result-form {
   margin-top: 2em;
   padding: 0 0 2em;
@@ -3249,12 +3257,12 @@ footer#footer {
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
 }
-/* line 639, ../sass/components/_pages.scss */
+/* line 648, ../sass/components/_pages.scss */
 .page-search-result #syllabus-block-search-result-form .form-item,
 .page-search-result #syllabus-block-search-result-form .form-actions {
   padding: 0 1.5em;
 }
-/* line 643, ../sass/components/_pages.scss */
+/* line 652, ../sass/components/_pages.scss */
 .page-search-result #syllabus-block-search-result-form #search-result-table {
   border-left: 1.5em solid #fff;
   border-right: 1.5em solid #fff;
@@ -3263,18 +3271,18 @@ footer#footer {
 /**
  * Print and PDF Page
  */
-/* line 656, ../sass/components/_pages.scss */
+/* line 665, ../sass/components/_pages.scss */
 .print .print-content {
   margin: 2em;
   max-width: 1200px;
   margin: 0 auto;
 }
-/* line 661, ../sass/components/_pages.scss */
+/* line 670, ../sass/components/_pages.scss */
 .print.pdf {
   background-color: #fff;
 }
 
-/* line 676, ../sass/components/_pages.scss */
+/* line 685, ../sass/components/_pages.scss */
 .center .field-name-field-course-description,
 .center .field-name-field-general-objectives,
 .center .field-name-field-specific-objectives,
@@ -3287,17 +3295,17 @@ footer#footer {
   page-break-inside: avoid;
 }
 
-/* line 681, ../sass/components/_pages.scss */
+/* line 690, ../sass/components/_pages.scss */
 footer .field-name-field-plagiarism-text {
   page-break-inside: avoid;
 }
 
-/* line 688, ../sass/components/_pages.scss */
+/* line 697, ../sass/components/_pages.scss */
 .field-name-field-general-objectives ul {
   padding-left: 1em;
 }
 
-/* line 694, ../sass/components/_pages.scss */
+/* line 703, ../sass/components/_pages.scss */
 #syllabus-student-form fieldset {
   margin: 4em 0px 1em;
 }

@@ -607,6 +607,15 @@ footer#footer{
     }
   }
   
+  .field-name-field-monograph,
+  .field-name-field-scientific-article,
+  .field-name-field-document-article,
+  .field-name-field-other-documents {
+    .field-item{
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
 }
 
 /**
