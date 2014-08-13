@@ -3297,6 +3297,11 @@ footer .field-name-field-plagiarism-text {
   padding-left: 1em;
 }
 
+/* line 695, ../sass/components/_pages.scss */
+#syllabus-student-form fieldset {
+  margin: 4em 0px 1em;
+}
+
 /**
  * @file
  * SMACSS Modules
