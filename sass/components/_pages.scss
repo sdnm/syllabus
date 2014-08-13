@@ -4,7 +4,7 @@
  
 #page{
   //@include rem-fallback(font-size, .875); //12px
-  @include rem-fallback(font-size, 1); //12px
+  @include rem-fallback(font-size, .875); //12px
 }
 
 main#main, 
