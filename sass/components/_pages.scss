@@ -688,7 +688,8 @@ footer#footer{
 }
 footer{
   .field-name-field-plagiarism-text {
-    page-break-inside:avoid;
+    page-break-before:always; 
+    //page-break-inside:avoid;
   }
 }
  
